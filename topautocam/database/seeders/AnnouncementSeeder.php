@@ -16,15 +16,15 @@ class AnnouncementSeeder extends Seeder
     {
         $list = [
             [
-                'title' => 'Top Auto Cam is one of the best car sellers',
+                'title' => 'Top Auto is one of the best car sellers',
                 'image' => 'd1.jpg'
             ],
             [
-                'title' => 'Top Auto Cam is awesome',
+                'title' => 'Top Auto is awesome',
                 'image' => 'd2.jpg'
             ],
             [
-                'title' => 'Top Auto Cam is good',
+                'title' => 'Top Auto is good',
                 'image' => 'd3.jpg'
             ],
         ];

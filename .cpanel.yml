@@ -9,4 +9,4 @@ deployment:
     - /bin/rm -rf $PUBLIC_HTML
     - /bin/rm -rf $SRC
     - /bin/cp -R $PUBLIC_HTML_DIR $DEPLOY_PATH
-    - /bin/cp -R $SRC $DEPLOY_PATH
+    - /bin/cp -R $SRC_DIR $DEPLOY_PATH

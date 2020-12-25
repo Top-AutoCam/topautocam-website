@@ -10,3 +10,5 @@ deployment:
     - /bin/rm -rf $SRC
     - /bin/cp -R $PUBLIC_HTML_DIR $DEPLOY_PATH
     - /bin/cp -R $SRC_DIR $DEPLOY_PATH
+    - /bin/rm -rf $SRC/.env
+    - /bin/cp $SRC/.env.prod $SRC/.env

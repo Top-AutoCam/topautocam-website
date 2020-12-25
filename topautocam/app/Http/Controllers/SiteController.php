@@ -7,10 +7,9 @@ use App\Models\Car;
 use App\Models\Motorbike;
 use App\Models\Part;
 
-class SiteController extends Controller
-{
-    public function index()
-    {
+class SiteController extends Controller {
+
+    public function index() { 
         // featured
         $featuredCars = Car::where('selected', config('enums.SELECTED.FEATURED'))
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
@@ -18,18 +17,18 @@ class SiteController extends Controller
 
         $featuredMotorbikes = Motorbike::where('selected', config('enums.SELECTED.FEATURED'))
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', 'desc')->take(4)->get();
+            ->orderBy('id', b'desc')->take(4)->get();
 
         $featuredParts = Part::where('selected', config('enums.SELECTED.FEATURED'))
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
             ->orderBy('id', 'desc')->take(4)->get();
 
-        // recents
+        // recent
         $recentCars = Car::latest()
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
             ->take(12)->get();
-
-        $recentMotorbikes = Motorbike::latest()
+	
+	    $recentMotorbikes = Motorbike::latest()
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
             ->take(12)->get();
 
@@ -78,12 +77,16 @@ class SiteController extends Controller
             'motorbikes' => $motorbikes
         ]);
     }
-
+    
+    /**
+     * parts menu
+     *
+     */
     public function parts() {
-
+        
         $parts = Part::where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
             ->orderBy('id', 'desc')->get();
-
+        
         $announcements = Announcement::latest()
             ->take(12)->get();
 

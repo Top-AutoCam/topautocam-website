@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export PUBLIC_HTML_DIR=public_html
+    - export SRC_DIR=topautocam
+    - export DEPLOY_PATH=/home/dqzgnpzy
+    - export PUBLIC_HTML=$DEPLOY_PATH/$PUBLIC_HTML_DIR
+    - export SRC=$DEPLOY_PATH/$SRC_DIR
+    - /bin/rm -rf $PUBLIC_HTML
+    - /bin/rm -rf $SRC
+    - /bin/cp -R $PUBLIC_HTML_DIR $DEPLOY_PATH
+    - /bin/cp -R $SRC $DEPLOY_PATH

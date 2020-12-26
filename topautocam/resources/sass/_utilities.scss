@@ -1,0 +1,38 @@
+// Container
+.uk-container-no {
+    max-width: none;
+    padding: 0;
+}
+
+// Buttons
+.uk-button {
+    font-size: 11px;
+    font-family: $mainFnt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0 20px;
+}
+
+// Image Ratios
+.cover-image {
+    background-color: #ececec;
+    display: block;
+    padding-top: 66.6666667%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // -webkit-filter: grayscale(100%);
+    // filter: grayscale(100%);
+    &.ratio-square {
+        padding-top: 100%;
+    }
+    &.ratio-portrait {
+        padding-top: 150%;
+    }
+}
+
+// Text
+.uk-text-lead {
+    font-size: 1.2rem;
+    color: #000;
+}

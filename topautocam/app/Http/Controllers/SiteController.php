@@ -6,6 +6,9 @@ use App\Models\Announcement;
 use App\Models\Car;
 use App\Models\Motorbike;
 use App\Models\Part;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Session;
 
 class SiteController extends Controller {
 
@@ -39,7 +42,7 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
 
-        return view('car/pages/home', [
+        return view('front/pages/home', [
             'announcements' => $announcements,
             'featuredCars' => $featuredCars,
             'featuredMotorbikes' => $featuredMotorbikes,
@@ -58,7 +61,7 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
 
-        return view('car/pages/cars', [
+        return view('front/pages/cars', [
             'announcements' => $announcements,
             'cars' => $cars
         ]);
@@ -72,7 +75,7 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
 
-        return view('car/pages/motorbikes', [
+        return view('front/pages/motorbikes', [
             'announcements' => $announcements,
             'motorbikes' => $motorbikes
         ]);
@@ -90,7 +93,7 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
 
-        return view('car/pages/parts', [
+        return view('front/pages/parts', [
             'announcements' => $announcements,
             'parts' => $parts
         ]);
@@ -101,8 +104,36 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
             
-        return view('car/pages/loan', [
+        return view('front/pages/loan', [
             'announcements' => $announcements
         ]);   
+    }
+
+    public function contact() {
+
+        return view('front/pages/contact');   
+    }
+
+    public function login() {
+
+        $announcements = Announcement::latest()
+            ->take(12)->get();
+            
+        return view('front/pages/login', [
+            'announcements' => $announcements
+        ]);   
+    }
+
+    public function locale(Request $request) {
+
+        $session = $request->session();
+
+        $locale = $session->get('locale', 'en');
+
+        Log::debug("previous locale = ${locale}");
+
+        $session->put('locale', $locale == 'en' ? 'km' : 'en');
+
+        return back();
     }
 }

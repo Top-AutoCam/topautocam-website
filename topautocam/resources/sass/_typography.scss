@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700%7CPT+Serif:400,700';
+
+// Body
+body {
+    font: 400 15px $bodyFnt;
+    line-height: 1.815;
+    letter-spacing: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6 {
+    font-family: $headingFnt;
+    font-weight: 700;
+    color: $headingClr;
+    letter-spacing: -.2px;
+    text-transform: unset;
+    font-style: normal;
+}

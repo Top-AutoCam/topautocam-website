@@ -16,4 +16,4 @@ mix.setPublicPath(path.normalize('../public_html'));
 mix.js('resources/js/app.js', 'js')
     .postCss('resources/css/app.css', 'css', [
         //
-    ]);
+    ]); 

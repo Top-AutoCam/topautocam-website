@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Notera - The northern coastline: How I fell in love</title>
+        <link rel="stylesheet" media="screen" href="assets/css/floicons.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/normalize.min.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/uikit.min.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/animate.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" media="screen" href="style.css" />
+        <script src="assets/js/jquery.min.js"></script>
+    </head>
+    <body class="single single-post">
+
+        <div id="loader">
+            <div class="loading">
+                <div></div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+
+        <div id="wrapper" class="site-wrapper">
+            
+            <div class="uk-offcanvas-content">
+
+                <header id="header" class="site-header" data-uk-sticky="top: 300; animation: uk-animation-slide-top">
+                    <div class="uk-container uk-container-expand">
+                        <div class="uk-flex uk-flex-between uk-flex-middle">
+                            <h2 class="site-logo">
+                                <a class="navbar-brand site-title" href="index.html">
+                                    Notera.
+                                </a>
+                            </h2>
+                            <nav class="primary-menu uk-visible@l">
+                                <ul class="menu">
+                                    <li><a href="#">Features</a>
+                                        <ul>
+                                            <li><a href="#">Home Layouts</a>
+                                                <ul>
+                                                    <li><a href="index.html">Multi Layouts</a></li>
+                                                    <li><a href="home-magazine.html">Magazine Layout</a></li>
+                                                    <li><a href="home-classic.html">Classic Layout</a></li>
+                                                    <li><a href="#">Grid Layout</a>
+                                                        <ul>
+                                                            <li><a href="home-grid-2cols.html">2 Columns</a></li>
+                                                            <li><a href="home-grid-3cols.html">3 Columns</a></li>
+                                                            <li><a href="home-grid-4cols.html">4 Columns</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Masonry Layout</a>
+                                                        <ul>
+                                                            <li><a href="home-masonry-2cols.html">2 Columns</a></li>
+                                                            <li><a href="home-masonry-3cols.html">3 Columns</a></li>
+                                                            <li><a href="home-masonry-4cols.html">4 Columns</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Featured Slider</a>
+                                                <ul>
+                                                    <li><a href="slider-modern.html">Modern</a></li>
+                                                    <li><a href="slider-full.html">Full Width</a></li>
+                                                    <li><a href="slider-boxed.html">Boxed Width</a></li>
+                                                    <li><a href="#">Grid Layout</a>
+                                                        <ul>
+                                                            <li><a href="slider-grid-2cols.html">2 Columns</a></li>
+                                                            <li><a href="slider-grid-3cols.html">3 Columns</a></li>
+                                                            <li><a href="slider-grid-4cols.html">4 Columns</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Post Templates</a>
+                                                <ul>
+                                                    <li><a href="single.html">Full Post</a></li>
+                                                    <li><a href="single-sidebar.html">With Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Page Templates</a>
+                                                <ul>
+                                                    <li><a href="page-author.html">Author Page</a></li>
+                                                    <li><a href="page-category.html">Category Page</a></li>
+                                                    <li><a href="page-archive.html">Archive Page</a></li>
+                                                    <li><a href="page-error.html">Error Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="page-typography.html">Typography</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Categories</a>
+                                        <ul>
+                                            <li><a href="#">Life Style</a></li>
+                                            <li><a href="#">Fashion</a></li>
+                                            <li><a href="#">Make Up</a></li>
+                                            <li><a href="#">Beauty</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="shop.html">Shop</a>
+                                        <ul>
+                                            <li><a href="shop.html">Products Listing</a>
+                                                <ul>
+                                                    <li><a href="shop-full.html">Full Width</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="shop-product.html">Simple Product</a></li>
+                                            <li><a href="shop-cart.html">Cart</a></li>
+                                            <li><a href="shop-checkout.html">Checkout</a></li>
+                                            <li><a href="shop-account.html">My Account</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="page-about.html">About</a></li>
+                                    <li><a href="page-contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="secondary-menu uk-visible@s">
+                                <div class="search">
+                                    <a class="toggle" href="#"><i class="icon flo_search"></i></a>
+                                    <div class="uk-drop" data-uk-drop="mode: click; pos: left-center; offset: 0">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1" action="/">
+                                            <input class="uk-search-input" name="q" type="search" placeholder="Search" autofocus="">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <a href="shop-cart.html">Cart <span class="count">(3)</span></a>
+                                </div>
+                                <div class="membership">
+                                    <a href="#" class="login">Log In</a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu uk-hidden@s">
+                                <div class="cart">
+                                    <a href="shop-cart.html">
+                                        <i class="icon flo_bag_alt"></i>
+                                        <span class="count">3</span>
+                                    </a>
+                                </div>
+                                <div class="trigger" data-uk-toggle="target: #mobile-menu">
+                                    <div class="toggle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- End Header -->
+
+                <div id="content" class="site-content">
+
+                    <div id="primary" class="site-primary has-sidebar">
+                        <div class="uk-container">
+                            
+                            <div class="uk-grid" data-uk-grid="">
+                                <div class="uk-width-expand">
+                                    <main id="main" class="site-main">
+                                        <div class="inner">
+                                            <article class="post type-post single">
+                                                <div class="entry-content">
+                                                    <header class="entry-header uk-text-center">
+                                                        <div class="entry-category">
+                                                            <a href="page-category.html">Beauty</a>
+                                                        </div>
+                                                        <h1 class="entry-title uk-h2">The northern coastline: How I fell in love</h1>
+                                                        <div class="entry-meta">
+                                                            <div>
+                                                                <span class="meta-author">
+                                                                    By <a href="page-author.html">Sarah Janie</a>
+                                                                </span>
+                                                                <span class="meta-date">
+                                                                    15 January, 2018
+                                                                </span>
+                                                                <span class="meta-comment">
+                                                                    <a href="single.html#comments">3 Comments</a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="entry-share">
+                                                            <a class="facebook" href="#"><i class="icon flo_facebook"></i></a>
+                                                            <a class="twitter" href="#"><i class="icon flo_twitter"></i></a>
+                                                            <a class="gplus" href="#"><i class="icon flo_google_plus"></i></a>
+                                                        </div>
+                                                    </header>
+                                                    <div class="entry-thumb">
+                                                        <img src="assets/images/posts/50.jpg" alt="The northern coastline: How I fell in love" />
+                                                    </div>
+                                                    <div class="entry-body uk-container uk-container-small">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                                                            <b>alias distinctio</b>. Nisi et iure facilis? Molestias voluptas assumenda vero quibusdam
+                                                            <em>voluptatibus</em> sunt ullam non, sed, accusantium minus voluptatem quae atque
+                                                            <del>laudantium</del> impedit voluptatum amet error laboriosam? Repellendus sint
+                                                            <ins>voluptatem</ins> saepe!</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut inventore molestias ea tempore, amet ab rerum voluptates
+                                                            pariatur quod distinctio?</p>
+                                                        <h3 class="uk-h3">A list of tips for fashion bloggers</h3>
+                                                        <ul>
+                                                            <li>Laudantium impedit voluptatum amet error laboriosam?</li>
+                                                            <li>Repellendus sint voluptatem saepe!</li>
+                                                            <li>Amet ab rerum voluptates pariatur quod distinctio?</li>
+                                                        </ul>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ullam maxime natus nobis beatae illo eius magni explicabo
+                                                            alias nesciunt molestiae et nostrum rem dolore placeat amet ipsum fugit magnam saepe, consequatur cumque ad? Consequuntur
+                                                            praesentium doloremque molestias quae voluptate.</p>
+                                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia cumque eligendi fugit error vel accusamus magni, hic
+                                                            esse numquam est? Explicabo culpa nulla facilis optio vitae, voluptate beatae alias! Aliquid.</p>
+                                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero velit, saepe eligendi porro dolores illo debitis autem
+                                                            corrupti soluta, obcaecati harum laborum facilis illum. Dicta hic mollitia incidunt, impedit quibusdam labore repellat,
+                                                            aspernatur libero a ducimus amet in perferendis sapiente et. Voluptas incidunt hic sapiente, vel tenetur aut aliquam
+                                                            recusandae error animi adipisci velit doloremque officiis dolor id doloribus consequuntur.</p>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+                                                            <b>alias distinctio</b>. Nisi et iure facilis? Molestias voluptas assumenda vero quibusdam
+                                                            <em>voluptatibus</em> sunt ullam non, sed, accusantium minus voluptatem quae atque
+                                                            <del>laudantium</del> impedit voluptatum amet error laboriosam? Repellendus sint
+                                                            <ins>voluptatem</ins> saepe!</p>
+                                                        <ul>
+                                                            <li>Laudantium impedit voluptatum amet error laboriosam?</li>
+                                                            <li>Repellendus sint voluptatem saepe!</li>
+                                                            <li>Amet ab rerum voluptates pariatur quod distinctio?</li>
+                                                        </ul>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ullam maxime natus nobis beatae illo eius magni explicabo
+                                                            alias nesciunt molestiae et nostrum rem dolore placeat amet ipsum fugit magnam saepe, consequatur cumque ad? Consequuntur
+                                                            praesentium doloremque molestias quae voluptate.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-footer">
+                                                    <div>
+                                                        <div class="entry-tags">
+                                                            <span>Tags:</span>
+                                                            <a href="#">Women</a>
+                                                            <a href="#">Fashion</a>
+                                                            <a href="#">Model</a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="entry-share mini-share">
+                                                            <span>Share Article:</span>
+                                                            <a href="#"><i class="icon flo_facebook"></i></a>
+                                                            <a href="#"><i class="icon flo_twitter"></i></a>
+                                                            <a href="#"><i class="icon flo_google_plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <!-- End Article -->
+                                            <section class="float-pagination">
+                                                <div class="inner">
+                                                    <a class="prev" href="single.html#prev">
+                                                        <span>Previous Article</span>
+                                                        <h5>Experience nature, tranquility and relaxation</h5>
+                                                    </a>
+                                                    <a class="next" href="single.html#next">
+                                                        <span>Next Article</span>
+                                                        <h5>The northern coastline: How I fell in love</h5>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            <!-- End Pagination -->
+                                            <section class="author-box">
+                                                <div class="uk-grid" data-uk-grid="">
+                                                    <div class="uk-width-auto@m">
+                                                        <figure class="author-avatar">
+                                                            <img alt="Sarah Janie" src="assets/images/instagram/07.jpg"/>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="uk-width-expand@m">
+                                                        <div class="author-info">
+                                                            <h6 class="author-name">
+                                                                <span>Posted by</span>
+                                                                <a href="page-author.html">Sarah Janie</a>
+                                                            </h6>
+                                                            <p>Quaerat, alias distinctio. Nisi et iure facilis? Molestias voluptas assumenda vero quibusdam voluptatibus sunt ullam non, sed, accusantium minus voluptatem quae atque laudantium impedit voluptatum amet error laboriosam? Repellendus sint voluptatem saepe!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <!-- End Author Box -->
+                                            <section class="related-posts" id="related-posts">
+                                                <div class="heading">
+                                                    <div>
+                                                        <h4 class="title uk-h2">You might also like</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid="">
+                                                    <div class="post type-post">
+                                                        <div class="entry-outer">
+                                                            <div class="entry-thumb">
+                                                                <div class="image cover-image" data-src="assets/images/posts/34.jpg" data-uk-img="" title="Post Title"></div>
+                                                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                            </div>
+                                                            <div class="entry-inner">
+                                                                <div class="entry-content">
+                                                                    <div class="entry-category">
+                                                                        <a href="page-category.html">Beauty</a>
+                                                                    </div>
+                                                                    <h5 class="entry-title">
+                                                                        <a href="single.html">5 Ways to stay motivated after January</a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post type-post">
+                                                        <div class="entry-outer">
+                                                            <div class="entry-thumb">
+                                                                <div class="image cover-image" data-src="assets/images/posts/32.jpg" data-uk-img="" title="Post Title"></div>
+                                                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                            </div>
+                                                            <div class="entry-inner">
+                                                                <div class="entry-content">
+                                                                    <div class="entry-category">
+                                                                        <a href="page-category.html">Travel</a>
+                                                                    </div>
+                                                                    <h5 class="entry-title">
+                                                                        <a href="single.html">The northern coastline: How I fell in love</a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post type-post">
+                                                        <div class="entry-outer">
+                                                            <div class="entry-thumb">
+                                                                <div class="image cover-image" data-src="assets/images/posts/50.jpg" data-uk-img="" title="Post Title"></div>
+                                                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                            </div>
+                                                            <div class="entry-inner">
+                                                                <div class="entry-content">
+                                                                    <div class="entry-category">
+                                                                        <a href="page-category.html">Fashion</a>
+                                                                    </div>
+                                                                    <h5 class="entry-title">
+                                                                        <a href="single.html">Experience nature, tranquility and relaxation</a>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <!-- End Related Posts -->
+                                            <section class="comments-area" id="comments">
+                                                <div class="uk-container uk-container-small">
+                                                    <div class="inner uk-position-relative">
+                                                        <div class="comments-title">
+                                                            <h2><span>3 replies to</span> “5 Ways To Stay Motivated After January”</h2>
+                                                        </div>
+                                                        <ol class="comments-list">
+                                                            <li class="uk-comment">
+                                                                <div class="uk-comment-header uk-grid uk-grid-medium uk-flex-middle">
+                                                                    <div class="uk-width-auto">
+                                                                        <img class="comment-avatar uk-comment-avatar" src="assets/images/avatar.jpg" width="80" height="80" alt="Author Name" />
+                                                                    </div>
+                                                                    <div class="uk-width-expand">
+                                                                        <h4 class="comment-name uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Janie Doe</a></h4>
+                                                                        <ul class="comment-meta uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                                            <li><a href="#">2 days ago</a></li>
+                                                                            <li><a href="#reply_to">Reply</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-content uk-comment-body">
+                                                                    <p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="uk-comment">
+                                                                <div class="uk-comment-header uk-grid uk-grid-medium uk-flex-middle">
+                                                                    <div class="uk-width-auto">
+                                                                        <img class="comment-avatar uk-comment-avatar" src="assets/images/instagram/06.jpg" width="80" height="80" alt="Author Name" />
+                                                                    </div>
+                                                                    <div class="uk-width-expand">
+                                                                        <h4 class="comment-name uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Sarah Janie</a></h4>
+                                                                        <ul class="comment-meta uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                                            <li><a href="#">1 day ago</a></li>
+                                                                            <li><a href="#reply_to">Reply</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-content uk-comment-body">
+                                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="uk-comment">
+                                                                <div class="uk-comment-header uk-grid uk-grid-medium uk-flex-middle">
+                                                                    <div class="uk-width-auto">
+                                                                        <img class="comment-avatar uk-comment-avatar" src="assets/images/avatar.jpg" width="80" height="80" alt="Author Name" />
+                                                                    </div>
+                                                                    <div class="uk-width-expand">
+                                                                        <h4 class="comment-name uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Richard Roe</a></h4>
+                                                                        <ul class="comment-meta uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                                            <li><a href="#"> 2 mins ago</a></li>
+                                                                            <li><a href="#reply_to">Reply</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-content uk-comment-body">
+                                                                    <p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                        <p class="no-comments">Comments are closed.</p>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </main>
+                                </div>
+                                <div class="uk-width-1-4@m">
+                                    <aside id="sidebar" class="site-sidebar" data-uk-sticky="offset: 70; media: @m; bottom: #primary">
+                                        <div class="widget post-listing popular" id="popular-posts">
+                                            <h2 class="title uk-h4">
+                                                <span>Popular Posts</span>
+                                            </h2>
+                                            <div class="widget-content">
+                                                <article class="post type-post has-post-thumbnail">
+                                                    <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
+                                                        <div class="entry-thumb">
+                                                            <span class="image cover-image" data-src="assets/images/posts/05.jpg" data-uk-img="" title="Post Title"></span>
+                                                            <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                        </div>
+                                                        <div class="entry-inner">
+                                                            <div class="entry-content">
+                                                                <h5 class="entry-title uk-h5">
+                                                                    <a href="single.html">The Best Views in London Right Now</a>
+                                                                </h5>
+                                                                <div class="entry-meta">
+                                                                    <div>
+                                                                        <span class="meta-date">
+                                                                            15 January, 2018
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="post type-post has-post-thumbnail">
+                                                    <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
+                                                        <div class="entry-thumb">
+                                                            <span class="image cover-image" data-src="assets/images/posts/07.jpg" data-uk-img="" title="Post Title"></span>
+                                                            <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                        </div>
+                                                        <div class="entry-inner">
+                                                            <div class="entry-content">
+                                                                <h5 class="entry-title uk-h5">
+                                                                    <a href="single.html">Exclusive Design a Master Bed Scratch</a>
+                                                                </h5>
+                                                                <div class="entry-meta">
+                                                                    <div>
+                                                                        <span class="meta-date">
+                                                                            15 January, 2018
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="post type-post has-post-thumbnail">
+                                                    <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
+                                                        <div class="entry-thumb">
+                                                            <span class="image cover-image" data-src="assets/images/posts/11.jpg" data-uk-img="" title="Post Title"></span>
+                                                            <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                        </div>
+                                                        <div class="entry-inner">
+                                                            <div class="entry-content">
+                                                                <h5 class="entry-title uk-h5">
+                                                                    <a href="single.html">Get a First Look at the Fall Collection</a>
+                                                                </h5>
+                                                                <div class="entry-meta">
+                                                                    <div>
+                                                                        <span class="meta-date">
+                                                                            15 January, 2018
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="widget stay-connected" id="stay-connected">
+                                            <h2 class="title uk-h4">
+                                                <span>Stay Connected</span>
+                                            </h2>
+                                            <div class="widget-content">
+                                                <ul class="uk-flex">
+                                                    <li><a href="#" class="facebook"><i class="icon flo_facebook"></i></a></li>
+                                                    <li><a href="#" class="twitter"><i class="icon flo_twitter"></i></a></li>
+                                                    <li><a href="#" class="instagram"><i class="icon flo_instagram"></i></a></li>
+                                                    <li><a href="#" class="dribbble"><i class="icon flo_dribbble"></i></a></li>
+                                                    <li><a href="#" class="rss"><i class="icon flo_rss"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="widget newsletter" id="newsletter">
+                                            <h2 class="title uk-h4">
+                                                <span>Join the family!</span>
+                                            </h2>
+                                            <div class="widget-content">
+                                                <form class="mc4wp-form" method="post">
+                                                    <div class="mc4wp-form-fields">
+                                                        <input class="uk-input" type="email" name="EMAIL" placeholder="Email Address" required="">
+                                                        <button class="uk-button uk-button-secondary">
+                                                            <span>Subscribe</span>
+                                                        </button>
+                                                        <span class="spamMsg">Don't worry we don't spam!</span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="widget post-listing" id="recent-posts">
+                                            <h2 class="title uk-h4"><span>Recent Posts</span></h2>
+                                            <div class="widget-content">
+                                                <article class="post type-post">
+                                                    <div class="entry-outer uk-grid uk-grid-small">
+                                                        <div class="uk-width-1-3">
+                                                            <div class="entry-thumb">
+                                                                <div class="image cover-image ratio-square" data-src="assets/images/posts/01.jpg" data-uk-img="" title="Post Title"></div>
+                                                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="entry-inner">
+                                                                <div class="entry-content">
+                                                                    <h6 class="entry-title uk-h6">
+                                                                        <a href="single.html">Exclusive Design a Master Bed Scratch</a>
+                                                                    </h6>
+                                                                    <div class="entry-meta">
+                                                                        <div>
+                                                                            <span class="meta-date">
+                                                                                <span class="date">27 July, 2018</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="post type-post">
+                                                    <div class="entry-outer uk-grid uk-grid-small">
+                                                        <div class="uk-width-1-3">
+                                                            <div class="entry-thumb">
+                                                                <div class="image cover-image ratio-square" data-src="assets/images/posts/02.jpg" data-uk-img="" title="Post Title"></div>
+                                                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="entry-inner">
+                                                                <div class="entry-content">
+                                                                    <h6 class="entry-title uk-h6">
+                                                                        <a href="single.html">The Best Views in London Right Now</a>
+                                                                    </h6>
+                                                                    <div class="entry-meta">
+                                                                        <div>
+                                                                            <span class="meta-date"> 
+                                                                                <span class="date">27 July, 2018</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="post type-post">
+                                                    <div class="entry-outer uk-grid uk-grid-small">
+                                                        <div class="uk-width-1-3">
+                                                            <div class="entry-thumb">
+                                                                <div class="image cover-image ratio-square" data-src="assets/images/posts/03.jpg" data-uk-img="" title="Post Title"></div>
+                                                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-expand">
+                                                            <div class="entry-inner">
+                                                                <div class="entry-content">
+                                                                    <h6 class="entry-title uk-h6">
+                                                                        <a href="single.html">Get a First Look at the Fall Collection</a>
+                                                                    </h6>
+                                                                    <div class="entry-meta">
+                                                                        <div>
+                                                                            <span class="meta-date">
+                                                                                <span class="date">27 July, 2018</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="widget categories-list" id="categories-list">
+                                            <h2 class="title uk-h4"><span>Categories</span></h2>
+                                            <div class="widget-content">
+                                                <ul class="uk-list uk-list-divider">
+                                                    <li>
+                                                        <a href="page-category.html">
+                                                            <span class="cat">Travel</span>
+                                                            <span class="count">12</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-category.html">
+                                                            <span class="cat">Fashion</span>
+                                                            <span class="count">10</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-category.html">
+                                                            <span class="cat">Life Style</span>
+                                                            <span class="count">8</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-category.html">
+                                                            <span class="cat">Music</span>
+                                                            <span class="count">4</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-category.html">
+                                                            <span class="cat">Stories</span>
+                                                            <span class="count">2</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Primary -->
+
+                </div>
+                <!-- End Content -->
+
+                <footer id="footer" class="site-footer">
+                    <div class="uk-container">
+                        <div class="inner uk-position-relative">
+                            <div class="widget instagram-feeds" id="instagram-footer">
+                                <h2 class="title uk-h4">
+                                    <span>Follow us <a href="#">@Instagram</a></span>
+                                </h2>
+                                <div class="widget-content">
+                                    <ul class="uk-grid-small uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-expand@m uk-grid" data-uk-grid="">
+                                        <li class="uk-first-column">
+                                            <div class="thumbnail">
+                                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/01.jpg" data-uk-img="" title="Post Title"></span>
+                                                <a class="cover-link" href="#">
+                                                    <span class="likes">
+                                                        <i class="icon flo_heart"></i>
+                                                        <span>782</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail">
+                                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/02.jpg" data-uk-img="" title="Post Title"></span>
+                                                <a class="cover-link" href="#">
+                                                    <span class="likes">
+                                                        <i class="icon flo_heart"></i>
+                                                        <span>1.5k</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail">
+                                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/03.jpg" data-uk-img="" title="Post Title"></span>
+                                                <a class="cover-link" href="#">
+                                                    <span class="likes">
+                                                        <i class="icon flo_heart"></i>
+                                                        <span>2.7k</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail">
+                                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/04.jpg" data-uk-img="" title="Post Title"></span>
+                                                <a class="cover-link" href="#">
+                                                    <span class="likes">
+                                                        <i class="icon flo_heart"></i>
+                                                        <span>3.1k</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail">
+                                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/05.jpg" data-uk-img="" title="Post Title"></span>
+                                                <a class="cover-link" href="#">
+                                                    <span class="likes">
+                                                        <i class="icon flo_heart"></i>
+                                                        <span>782</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumbnail">
+                                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/06.jpg" data-uk-img="" title="Post Title"></span>
+                                                <a class="cover-link" href="#">
+                                                    <span class="likes">
+                                                        <i class="icon flo_heart"></i>
+                                                        <span>1.5k</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Widget: Instagram Footer -->
+                            <div class="widget stay-connected" id="social-footer">
+                                <div class="widget-content">
+                                    <ul class="uk-flex">
+                                        <li>
+                                            <a href="#" class="facebook">
+                                                <i class="icon flo_facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twitter">
+                                                <i class="icon flo_twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="instagram">
+                                                <i class="icon flo_instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dribbble">
+                                                <i class="icon flo_dribbble"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="rss">
+                                                <i class="icon flo_rss"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Widget: Social Footer -->
+                        </div>
+                    </div>
+                    <div class="copyrights">
+                        <div class="uk-container">
+                            2018 © All rights reserved. <a href="#">Terms of use</a>, <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer -->
+            
+                <div id="mobile-menu" data-uk-offcanvas="overlay: true">
+                    <div class="inner uk-offcanvas-bar">
+            
+                        <header class="header">
+                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                                <div class="site-logo">
+                                    <a class="navbar-brand site-title" href="index.html">Notera.</a>
+                                </div>
+                                <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close="ratio: 1.2;"></button>
+                            </div>
+                        </header>
+            
+                        <div class="content">
+                            <ul class="mobile-nav uk-nav-default uk-nav-parent-icon" data-uk-nav="">
+                                <li class="uk-parent">
+                                    <a href="#">Features</a>
+                                    <ul data-uk-nav="">
+                                        <li class="uk-parent">
+                                            <a href="#">Home Layouts</a>
+                                            <ul>
+                                                <li><a href="index.html">Multi Layouts</a></li>
+                                                <li><a href="home-magazine.html">Magazine Layout</a></li>
+                                                <li><a href="home-classic.html">Classic Layout</a></li>
+                                                <li><a href="#">Grid Layout</a>
+                                                    <ul>
+                                                        <li><a href="home-grid-2cols.html">2 Columns</a></li>
+                                                        <li><a href="home-grid-3cols.html">3 Columns</a></li>
+                                                        <li><a href="home-grid-4cols.html">4 Columns</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Masonry Layout</a>
+                                                    <ul>
+                                                        <li><a href="home-masonry-2cols.html">2 Columns</a></li>
+                                                        <li><a href="home-masonry-3cols.html">3 Columns</a></li>
+                                                        <li><a href="home-masonry-4cols.html">4 Columns</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a href="#">Featured Slider</a>
+                                            <ul>
+                                                <li><a href="slider-modern.html">Modern</a></li>
+                                                <li><a href="slider-full.html">Full Width</a></li>
+                                                <li><a href="slider-boxed.html">Boxed Width</a></li>
+                                                <li><a href="#">Grid Layout</a>
+                                                    <ul>
+                                                        <li><a href="slider-grid-2cols.html">2 Columns</a></li>
+                                                        <li><a href="slider-grid-3cols.html">3 Columns</a></li>
+                                                        <li><a href="slider-grid-4cols.html">4 Columns</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a href="#">Post Templates</a>
+                                            <ul>
+                                                <li><a href="single.html">Full Post</a></li>
+                                                <li><a href="single-sidebar.html">With Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-parent">
+                                            <a href="#">Page Templates</a>
+                                            <ul>
+                                                <li><a href="page-author.html">Author Page</a></li>
+                                                <li><a href="page-category.html">Category Page</a></li>
+                                                <li><a href="page-archive.html">Archive Page</a></li>
+                                                <li><a href="page-error.html">Error Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="page-typography.html">Typography</a></li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">Categories</a>
+                                    <ul data-uk-nav="">
+                                        <li><a href="#">Life Style</a></li>
+                                        <li><a href="#">Fashion</a></li>
+                                        <li><a href="#">Make Up</a></li>
+                                        <li><a href="#">Beauty</a></li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="shop.html">Shop</a>
+                                    <ul data-uk-nav="">
+                                        <li class="uk-parent"><a href="shop.html">Products Listing</a>
+                                            <ul>
+                                                <li><a href="shop-full.html">Full Width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop-product.html">Simple Product</a></li>
+                                        <li><a href="shop-cart.html">Cart</a></li>
+                                        <li><a href="shop-checkout.html">Checkout</a></li>
+                                        <li><a href="shop-account.html">My Account</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page-about.html">About</a></li>
+                                <li><a href="page-contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+            
+                    </div>
+                </div>
+                <!-- End Off Canvas Sidebar -->
+            
+            </div>
+            <!-- End Off Canvas Content -->
+
+        </div>
+        <!-- End Wrapper -->
+
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

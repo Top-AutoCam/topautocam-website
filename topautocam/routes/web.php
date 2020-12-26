@@ -14,8 +14,14 @@ use App\Http\Controllers\SiteController;
 |
 */
 
-Route::get('/', [ SiteController::class, 'index']);
-Route::get('/cars', [ SiteController::class, 'cars']);
-Route::get('/motorbikes', [ SiteController::class, 'motorbikes']);
-Route::get('/parts', [ SiteController::class, 'parts']);
-Route::get('/loan', [ SiteController::class, 'loan']);
+Route::middleware('locale')->group(function () {
+
+    Route::get('/', [SiteController::class, 'index']);
+    Route::get('/cars', [SiteController::class, 'cars']);
+    Route::get('/motorbikes', [SiteController::class, 'motorbikes']);
+    Route::get('/parts', [SiteController::class, 'parts']);
+    Route::get('/loan', [SiteController::class, 'loan']);
+    Route::get('/login', [SiteController::class, 'login']);
+    Route::get('/contact', [SiteController::class, 'contact']);
+    Route::post('/locale', [SiteController::class, 'locale']);
+});

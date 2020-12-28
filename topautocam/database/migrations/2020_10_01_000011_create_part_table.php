@@ -1,5 +1,6 @@
 <?php
 
+use App\Util\UTIL;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -28,10 +29,13 @@ class CreatePartTable extends Migration
             $table->string('make', 32)->nullable();
             $table->string('model', 32)->nullable();
             $table->string('color', 32)->nullable();
-            $table->enum('status', config('enums.INVENTORY_STATUS'))
-                ->default(config('enums.INVENTORY_STATUS.IN_STOCK'));
-            $table->enum('selected', config('enums.SELECTED'))
-                ->default(config('enums.SELECTED.NORMAL'));
+           
+            $table->enum('status', UTIL::INVENTORY_STATUS)
+                ->default(UTIL::INVENTORY_STATUS['IN_STOCK']);
+            $table->enum('selected', UTIL::SELECTED)
+                ->default(UTIL::SELECTED['NORMAL']);
+            $table->integer('view_count')->default(0);
+            
             $table->softDeletes();
             $table->timestamps();
         });

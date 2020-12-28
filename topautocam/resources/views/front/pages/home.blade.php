@@ -12,7 +12,7 @@
             <div class="uk-container">
                 <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 khmer-listing-title">
+                        <h4 class="title uk-h2 khmer-title-font">
                             {!! __('Featured') !!}
                         </h4>
                     </div>

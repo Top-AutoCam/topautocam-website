@@ -16,6 +16,7 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700%7CPT+Serif:400,700';
 @import 'https://fonts.googleapis.com/css2?family=Nokora:wght@400;700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Moul&family=Nokora:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Content:wght@400;700&display=swap';
 @import './floicons.css';
 
 * {
@@ -46,8 +47,12 @@ a {
 /* malinka
 -----------*/
 
-.khmer-listing-title {
+.khmer-title-font {
   font-family: "Moul", cursive !important
+}
+
+.khmer-content-font {
+  font-family: "Content", cursive !important;
 }
 
 body {

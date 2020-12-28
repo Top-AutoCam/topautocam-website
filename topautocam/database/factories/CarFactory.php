@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use App\Models\Car;
 use App\Models\Order;
-
+use App\Util\UTIL;
 
 class CarFactory extends Factory
 {
@@ -27,18 +27,20 @@ class CarFactory extends Factory
         $orders = Order::pluck('id');
 
         return [
-            'image' => $this->faker->randomElement($array = array('a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg', 'a5.jpg')),
+            'title' => 'best car ever ' . Str::uuid(),
+            'detail' => 'this is detail ......' . Str::random(10),
+            'image' => 'storage/' . $this->faker->randomElement($array = array('a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg', 'a5.jpg')),
             'price' => $this->faker->randomNumber($nbDigits = 6, $strict = false),
             'code' => Str::random(10),
             'vin' => Str::uuid(),
-            'make' => $this->faker->randomElement(config('enums.MAKE')),
-            'model' => $this->faker->randomElement(config('enums.MODEL')),
-            'color' => $this->faker->randomElement(config('enums.COLOR')),
-            'drive' => $this->faker->randomElement(config('enums.DRIVE')),
-            'fuel' => $this->faker->randomElement(config('enums.FUEL')),
-            'grade' => $this->faker->randomElement(config('enums.GRADE')),
-            'status' => $this->faker->randomElement(config('enums.INVENTORY_STATUS')),
-            'selected' => $this->faker->randomElement(config('enums.SELECTED')),
+            'make' => $this->faker->randomElement(UTIL::MAKE),
+            'model' => $this->faker->randomElement(UTIL::MODEL),
+            'color' => $this->faker->randomElement(UTIL::COLOR),
+            'drive' => $this->faker->randomElement(UTIL::DRIVE),
+            'fuel' => $this->faker->randomElement(UTIL::FUEL),
+            'grade' => $this->faker->randomElement(UTIL::GRADE),
+            'status' => $this->faker->randomElement(UTIL::INVENTORY_STATUS),
+            'selected' => $this->faker->randomElement(UTIL::SELECTED),
             'order_id' => $this->faker->randomElement($orders)
         ];
     }

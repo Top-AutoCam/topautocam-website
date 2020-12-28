@@ -14,9 +14,19 @@ class SiteController extends Controller {
 
     public function index() { 
         // featured
-        $featuredCars = Car::where('selected', config('enums.SELECTED.FEATURED'))
-            ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', 'desc')->take(4)->get();
+        $featuredCars = Car::featureds();
+        
+        $mainFeaturedCar = $featuredCars[0];
+
+        $topLeftFeaturedCar = $featuredCars[1];
+        $topRightFeaturedCar = $featuredCars[2];
+
+        $bottomLeftFeaturedCar = $featuredCars[3];
+        $bottomRightFeaturedCar = $featuredCars[4];
+
+        //dd($featuredCars);
+
+        //$featuredCars = array_slice($featuredCars, 1);
 
         $featuredMotorbikes = Motorbike::where('selected', config('enums.SELECTED.FEATURED'))
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
@@ -44,6 +54,11 @@ class SiteController extends Controller {
 
         return view('front/pages/home', [
             'announcements' => $announcements,
+            'mainFeaturedCar' => $mainFeaturedCar,
+            'topLeftFeaturedCar' => $topLeftFeaturedCar,
+            'topRightFeaturedCar' => $topRightFeaturedCar,
+            'bottomLeftFeaturedCar' => $bottomLeftFeaturedCar,
+            'bottomRightFeaturedCar' => $bottomRightFeaturedCar,
             'featuredCars' => $featuredCars,
             'featuredMotorbikes' => $featuredMotorbikes,
             'featuredParts' => $featuredParts,

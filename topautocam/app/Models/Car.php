@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Util\UTIL;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -31,5 +32,11 @@ class Car extends Model
     public function order()
     {
         return $this->belongsTo(Order::class);
+    }
+
+    public static function featureds() {
+        return Car::where('selected', UTIL::SELECTED['FEATURED'])
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy('id', 'desc')->take(5)->get();
     }
 }

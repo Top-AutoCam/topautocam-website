@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Announcement;
+use App\Util\UTIL;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Config;
 
 class AnnouncementSeeder extends Seeder
 {
@@ -16,15 +18,21 @@ class AnnouncementSeeder extends Seeder
     {
         $list = [
             [
-                'title' => 'Top Auto is one of the best car sellers',
+                'top_title' => 'quality first',
+                'title' => UTIL::PROJECT_NAME . ' is one of the best car sellers',
+                'bottom_title' => 'quality forever',
                 'image' => 'd1.jpg'
             ],
             [
-                'title' => 'Top Auto is awesome',
+                'top_title' => 'acceptable price',
+                'title' => UTIL::PROJECT_NAME . ' is awesome',
+                'bottom_title' => 'price for everyone',
                 'image' => 'd2.jpg'
             ],
             [
-                'title' => 'Top Auto is good',
+                'top_title' => 'trustability',
+                'title' => 'customers are being taken care of',
+                'bottom_title' => 'trustability',
                 'image' => 'd3.jpg'
             ],
         ];

@@ -1,5 +1,6 @@
 <?php
 
+use App\Util\UTIL;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -21,6 +22,8 @@ class CreateCarTable extends Migration
             $table->foreign('order_id')->references('id')->on('order')
                 ->onUpdate('cascade')->onDelete('set null');
 
+            $table->string('title', 64)->unique();
+            $table->text('detail', 102400);
             $table->string('image', 64)->nullable();
             $table->decimal('price', 15, 2)->unsigned()->nullable();
             $table->string('code', 32)->unique()->nullable();
@@ -31,10 +34,13 @@ class CreateCarTable extends Migration
             $table->string('drive', 32)->nullable();
             $table->string('grade', 32)->nullable();
             $table->string('fuel', 32)->nullable();
-            $table->enum('status', config('enums.INVENTORY_STATUS'))
-                ->default(config('enums.INVENTORY_STATUS.IN_STOCK'));
-            $table->enum('selected', config('enums.SELECTED'))
-                ->default(config('enums.SELECTED.NORMAL'));
+            
+            $table->enum('status', UTIL::INVENTORY_STATUS)
+                ->default(UTIL::INVENTORY_STATUS['IN_STOCK']);
+            $table->enum('selected', UTIL::SELECTED)
+                ->default(UTIL::SELECTED['NORMAL']);
+            $table->integer('view_count')->default(0);
+            
             $table->softDeletes();
             $table->timestamps();
         });

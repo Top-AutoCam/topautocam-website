@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600,700%7CPT+Serif:400,700);@import url(https://fonts.googleapis.com/css2?family=Nokora:wght@400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Moul&family=Nokora:wght@400;700&display=swap);@font-face {
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600,700%7CPT+Serif:400,700);@import url(https://fonts.googleapis.com/css2?family=Nokora:wght@400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Moul&family=Nokora:wght@400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Content:wght@400;700&display=swap);@font-face {
   font-family: 'Floicons';
   src:  url(/fonts/Floicons.eot?f2f667005ed0cbfcdcf0f399aa25c4b7);
   src : url(/fonts/Floicons.eot?f2f667005ed0cbfcdcf0f399aa25c4b7#iefix) format('embedded-opentype'),
@@ -665,8 +665,12 @@ a {
 /* malinka
 -----------*/
 
-.khmer-listing-title {
+.khmer-title-font {
   font-family: "Moul", cursive !important
+}
+
+.khmer-content-font {
+  font-family: "Content", cursive !important;
 }
 
 body {

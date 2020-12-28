@@ -4,7 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 khmer-listing-title">
+                    <h4 class="title uk-h2 khmer-title-font">
                         {{ __("Services") }}
                     </h4>
                 </div>

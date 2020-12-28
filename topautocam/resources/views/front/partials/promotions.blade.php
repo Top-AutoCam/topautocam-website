@@ -4,12 +4,12 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 khmer-listing-title">
+                    <h4 class="title uk-h2 khmer-title-font">
                         {{ __("Promotions") }}
                     </h4>
                 </div>
                 <div>
-                    <a href="/promotions" class="more-link">{{ __("See all in promotions")</a>
+                    <a href="/promotions" class="more-link">{{ __("See all in promotions") }}</a>
                 </div>
             </div>
 

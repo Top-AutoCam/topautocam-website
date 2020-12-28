@@ -18,7 +18,7 @@
                             <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                 <div class="entry-content">
                                     <div class="entry-category">
-                                        <a href="page-category.html">{{$announcement->title}}</a>
+                                        <a href="page-category.html">{{$announcement->top_title}}</a>
                                     </div>
                                     <h2 class="entry-title">
                                         <a href="single.html">{{$announcement->title}}</a>
@@ -26,7 +26,7 @@
                                     <div class="entry-meta">
                                         <div>
                                             <span class="meta-date">
-                                                15 January, 2018
+                                                {{$announcement->bottom_title}}
                                             </span>
                                         </div>
                                     </div>

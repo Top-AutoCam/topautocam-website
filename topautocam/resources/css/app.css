@@ -55,6 +55,11 @@ a {
   font-family: "Content", cursive !important;
 }
 
+.selected-menu {
+  font-weight: bold;
+}
+
+
 body {
   font: 400 15px "Montserrat", sans-serif;
   line-height: 1.815;

@@ -91,16 +91,7 @@ class SiteController extends Controller {
 
     public function motorbikes() {
 
-        $motorbikes = Motorbike::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
-            ->orderBy('id', UTIL::DESC)->get();
-
-        $announcements = Announcement::latest()
-            ->take(12)->get();
-
-        return view('front/pages/motorbikes', [
-            'announcements' => $announcements,
-            'motorbikes' => $motorbikes
-        ]);
+        return view('front/pages/motorbikes');
     }
     
     /**
@@ -109,26 +100,7 @@ class SiteController extends Controller {
      */
     public function parts() {
         
-        $parts = Part::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
-            ->orderBy('id', UTIL::DESC)->get();
-        
-        $announcements = Announcement::latest()
-            ->take(12)->get();
-
-        return view('front/pages/parts', [
-            'announcements' => $announcements,
-            'parts' => $parts
-        ]);
-    }
-    
-    public function loan() {
-
-        $announcements = Announcement::latest()
-            ->take(12)->get();
-            
-        return view('front/pages/loan', [
-            'announcements' => $announcements
-        ]);   
+        return view('front/pages/parts');
     }
 
     public function contact() {

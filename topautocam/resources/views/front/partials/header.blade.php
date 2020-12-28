@@ -1,3 +1,4 @@
+
 <header id="header" class="site-header" data-uk-sticky="top: 300; animation: uk-animation-slide-top">
     <div class="uk-container uk-container-expand">
         <div class="uk-flex uk-flex-between uk-flex-middle">
@@ -9,19 +10,22 @@
             <nav class="primary-menu uk-visible@l">
                 <ul class="menu">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">Home</a>
                     </li>
                     <li>
-                        <a href="/cars">Car</a>
+                        <a href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">Car</a>
                     </li>
                     <li>
-                        <a href="/motorbikes">Motorbike</a>
+                        <a href="/motorbikes" class="{{ Route::currentRouteName() == 'motorbike-index' ? 'selected-menu' : '' }}">Motorbike</a>
                     </li>
                     <li>
-                        <a href="/parts">Part</a>
+                        <a href="/parts" class="{{ Route::currentRouteName() == 'part-index' ? 'selected-menu' : '' }}">Part</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/blog" class="{{ Route::currentRouteName() == 'blog-index' ? 'selected-menu' : '' }}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">Contact</a>
                     </li>
 
                     <!-- 

@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Promotion extends Model
+class Testimonial extends Model
 {
     use HasFactory;
 
-    protected $table = 'promotion';
+    protected $table = 'testimonial';
 
     public static function list($size) {
-        return Promotion::orderBy('name', 'ASC')->take($size)->get();
+        return Testimonial::orderBy('name', 'ASC')->take($size)->get();
     }
 }

@@ -2,8 +2,8 @@
     <div class="uk-container">
         <div class="inner uk-position-relative">
             <div class="widget instagram-feeds" id="instagram-footer">
-                <h2 class="title uk-h4">
-                    <span>Follow us <a href="#">@Instagram</a></span>
+                <h2 class="uk-h4 khmer-title-font" style="padding-top: 3px;">
+                    <span>{{ __("Follow Us") }}</span>
                 </h2>
                 <div class="widget-content">
                     <ul class="uk-grid-small uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-expand@m uk-grid" data-uk-grid="">

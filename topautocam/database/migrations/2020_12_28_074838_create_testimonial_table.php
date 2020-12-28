@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCarServiceTable extends Migration
+class CreateTestimonialTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateCarServiceTable extends Migration
      */
     public function up()
     {
-        Schema::create('car_service', function (Blueprint $table) {
+        Schema::create('testimonial', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 32)->unique();
-            $table->string('image', 64)->nullable();
             $table->text('detail', 102400);
+            $table->string('image', 64);
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateCarServiceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('car_service');
+        Schema::dropIfExists('testimonial');
     }
 }

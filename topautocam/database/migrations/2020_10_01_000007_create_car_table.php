@@ -21,8 +21,7 @@ class CreateCarTable extends Migration
             $table->integer('order_id')->unsigned()->nullable();
             $table->foreign('order_id')->references('id')->on('order')
                 ->onUpdate('cascade')->onDelete('set null');
-
-            $table->string('title', 64)->unique();
+            $table->string('title', 32);
             $table->text('detail', 102400);
             $table->string('image', 64)->nullable();
             $table->decimal('price', 15, 2)->unsigned()->nullable();

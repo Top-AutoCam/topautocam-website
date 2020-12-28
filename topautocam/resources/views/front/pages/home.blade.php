@@ -35,12 +35,11 @@
     
                     @include('front/partials/promotions')
     
-                    <!--
-                        @include('front/partials/fashions')
-                    -->
                     @include('front/partials/recents')
     
                     @include('front/partials/most_viewed')
+
+                    @include('front/partials/testimonials')
     
                 </main>
     

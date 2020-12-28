@@ -27,7 +27,7 @@ class CarFactory extends Factory
         $orders = Order::pluck('id');
 
         return [
-            'title' => 'best car ever ' . Str::uuid(),
+            'title' => 'best car ever',
             'detail' => 'this is detail ......' . Str::random(10),
             'image' => 'storage/' . $this->faker->randomElement($array = array('a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg', 'a5.jpg')),
             'price' => $this->faker->randomNumber($nbDigits = 6, $strict = false),

@@ -4,10 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2">Fashion</h4>
-                </div>
-                <div>
-                    <a href="page-category.html" class="more-link">See all in Fashion</a>
+                    <h4 class="title uk-h2">Testimonials</h4>
                 </div>
             </div>
 

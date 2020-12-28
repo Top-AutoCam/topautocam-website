@@ -16,6 +16,10 @@ class UTIL {
 
     const PROJECT_NAME = "TOP AUTO";
 
+    const DESC = "desc";
+
+    const ASC = "asc";
+
     const CATEGORY = [
         "CAR" => "Car",
         "MOTORBIKE" => "Motorbike",

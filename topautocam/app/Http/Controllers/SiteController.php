@@ -8,6 +8,8 @@ use App\Models\CarService;
 use App\Models\Motorbike;
 use App\Models\Part;
 use App\Models\Promotion;
+use App\Models\Testimonial;
+use App\Util\UTIL;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
@@ -15,41 +17,40 @@ use Illuminate\Support\Facades\Session;
 class SiteController extends Controller {
 
     public function index() { 
+
         // featured
-        $featuredCars = Car::featureds();
+        $featuredCars = Car::featureds(5);
         $mainFeaturedCar = $featuredCars[0];
         $topLeftFeaturedCar = $featuredCars[1];
         $topRightFeaturedCar = $featuredCars[2];
         $bottomLeftFeaturedCar = $featuredCars[3];
         $bottomRightFeaturedCar = $featuredCars[4];
 
-        // services
-        
-        $services = CarService::all();
-
-        $promotions = Promotion::all();
+        $services = CarService::list(3);
+        $promotions = Promotion::list(2);
+        $testimonials = Testimonial::list(3);
 
         $recents = Car::recents(8);
 
-        $featuredMotorbikes = Motorbike::where('selected', config('enums.SELECTED.FEATURED'))
-            ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', b'desc')->take(4)->get();
+        $featuredMotorbikes = Motorbike::where('selected', UTIL::SELECTED['FEATURED'])
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy('id', UTIL::DESC)->take(4)->get();
 
-        $featuredParts = Part::where('selected', config('enums.SELECTED.FEATURED'))
-            ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', 'desc')->take(4)->get();
+        $featuredParts = Part::where('selected', UTIL::SELECTED['FEATURED'])
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy('id', UTIL::DESC)->take(4)->get();
 
         // recent
         $recentCars = Car::latest()
-            ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->take(12)->get();
 	
 	    $recentMotorbikes = Motorbike::latest()
-            ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->take(12)->get();
 
         $recentParts = Part::latest()
-            ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->take(12)->get();
 
         $announcements = Announcement::latest()
@@ -64,6 +65,7 @@ class SiteController extends Controller {
             'bottomRightFeaturedCar' => $bottomRightFeaturedCar,
             'services' => $services,
             'promotions' => $promotions,
+            'testimonials' => $testimonials,
             'recents' => $recents,
             'featuredMotorbikes' => $featuredMotorbikes,
             'featuredParts' => $featuredParts,
@@ -75,8 +77,8 @@ class SiteController extends Controller {
 
     public function cars() {
 
-        $cars = Car::where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', 'desc')->get();
+        $cars = Car::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy('id', UTIL::DESC)->get();
 
         $announcements = Announcement::latest()
             ->take(12)->get();
@@ -89,8 +91,8 @@ class SiteController extends Controller {
 
     public function motorbikes() {
 
-        $motorbikes = Motorbike::where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', 'desc')->get();
+        $motorbikes = Motorbike::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy('id', UTIL::DESC)->get();
 
         $announcements = Announcement::latest()
             ->take(12)->get();
@@ -107,8 +109,8 @@ class SiteController extends Controller {
      */
     public function parts() {
         
-        $parts = Part::where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
-            ->orderBy('id', 'desc')->get();
+        $parts = Part::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy('id', UTIL::DESC)->get();
         
         $announcements = Announcement::latest()
             ->take(12)->get();

@@ -19,13 +19,13 @@ class Car extends Model
 
     public function sold()
     {
-        $this->status = config('enums.INVENTORY_STATUS')['SOLD'];
+        $this->status = UTIL::INVENTORY_STATUS['SOLD'];
         $this->save();
     }
 
     public function returned()
     {
-        $this->status = config('enums.INVENTORY_STATUS')['IN_STOCK'];
+        $this->status = UTIL::INVENTORY_STATUS['IN_STOCK'];
         $this->save();
     }
 
@@ -34,11 +34,11 @@ class Car extends Model
         return $this->belongsTo(Order::class);
     }
 
-    public static function featureds() 
+    public static function featureds($size) 
     {
         return Car::where('selected', UTIL::SELECTED['FEATURED'])
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
-            ->orderBy('id', 'desc')->take(5)->get();
+            ->orderBy('id', 'DESC')->take($size)->get();
     }
 
     public static function recents($size) 

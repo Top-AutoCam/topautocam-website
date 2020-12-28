@@ -26,7 +26,7 @@ class CarSeeder extends Seeder
         //featured
         for($i = 0; $i < 5; $i++) {
             Car::create([
-            'title' => 'most reliable car ever manufactured ' . $i,
+            'title' => 'most reliable car ' . $i,
             'detail' => 'This car is amazing, even though it runs for 10 thousand miles; it\'s still kicking',
             'image' => 'storage/' . $faker->randomElement($array = array('a6.jpg', 'a7.jpg', 'a8.jpg', 'a9.jpg', 'a10.jpg')),
             'price' => $faker->randomNumber($nbDigits = 6, $strict = false),

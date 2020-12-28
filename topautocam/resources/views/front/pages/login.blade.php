@@ -41,7 +41,6 @@
                                             </form>
                                         </div>
 
-                                        <!--
                                         <div class="u-column2 col-2">
                                             <h2>Register</h2>
                                             <form method="post" class="woocommerce-form woocommerce-form-register register">
@@ -52,9 +51,10 @@
                                                     <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="">
                                                 </p>
                                                 <div class="woocommerce-privacy-policy-text">
-                                                    <p>Your personal data will be used to support your experience throughout this website, to manage access
-                                                        to your account, and for other purposes described in our
-                                                        <a href="#" class="woocommerce-privacy-policy-link" target="_blank">privacy policy</a>.</p>
+                                                    <p>
+                                                        Being our partner will grant you access to some restrict information such as price, 
+                                                        and some other. Your membership must be approved first.
+                                                    </p>
                                                 </div>
                                                 <p class="woocommerce-FormRow form-row">
                                                     <input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce">
@@ -63,7 +63,7 @@
                                                 </p>
                                             </form>
                                         </div>
-                                        -->
+                                    
                                     </div>
                                 </div>
                             </div>

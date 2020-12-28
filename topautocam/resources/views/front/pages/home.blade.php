@@ -31,11 +31,11 @@
     
                     @include('front/partials/featured')
     
-                    @include('front/partials/services')
-    
                     @include('front/partials/promotions')
     
                     @include('front/partials/recents')
+    
+                    @include('front/partials/services')
     
                     @include('front/partials/most_viewed')
 

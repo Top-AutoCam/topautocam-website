@@ -4,8 +4,8 @@
 
             <div class="heading center">
                 <div>
-                    <h4 class="title uk-h2">Most Viewed</h4>
-                    <span class="text uk-text-small">Come to see what everyone is seeing</span>
+                    <h4 class="title uk-h2 khmer-title-font" style="padding-top: 5px;">{{ __("Most Viewed")}}</h4>
+                    <span class="text uk-text-small khmer-content-font">{{ __("Come to see what everyone is seeing")}}</span>
                 </div>
             </div>
 

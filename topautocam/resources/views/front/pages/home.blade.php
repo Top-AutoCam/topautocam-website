@@ -38,7 +38,7 @@
                     <!--
                         @include('front/partials/fashions')
                     -->
-                    @include('front/partials/recent')
+                    @include('front/partials/recents')
     
                     @include('front/partials/most_viewed')
     

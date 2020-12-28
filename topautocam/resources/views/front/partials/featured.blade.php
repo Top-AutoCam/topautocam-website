@@ -63,7 +63,7 @@
                                             <a href="page-category.html">{{$topLeftFeaturedCar->title}}</a>
                                         </div>
                                         -->
-                                        <h3 class="entry-title uk-h5 uk-text-small">
+                                        <h3 class="uk-h5 uk-text-small">
                                             <a href="single.html">{{$topLeftFeaturedCar->title}}</a>
                                         </h3>
                                     </div>
@@ -83,7 +83,7 @@
                                             <a href="page-category.html">{{$topRightFeaturedCar->title}}</a>
                                         </div>
                                         -->
-                                        <h3 class="entry-title uk-h5 uk-text-small">
+                                        <h3 class="uk-h5 uk-text-small">
                                             <a href="single.html">{{$topRightFeaturedCar->title}}</a>
                                         </h3>
                                     </div>
@@ -106,7 +106,7 @@
                                             <a href="page-category.html">{{$bottomLeftFeaturedCar->title}}</a>
                                         </div>
                                         -->
-                                        <h3 class="entry-title uk-h5 uk-text-small">
+                                        <h3 class="uk-h5 uk-text-small">
                                             <a href="single.html">{{$bottomLeftFeaturedCar->title}}</a>
                                         </h3>
                                     </div>
@@ -126,7 +126,7 @@
                                             <a href="page-category.html">{{ $bottomRightFeaturedCar->title }}</a>
                                         </div>
                                         -->
-                                        <h3 class="entry-title uk-h5 uk-text-small">
+                                        <h3 class="uk-h5 uk-text-small">
                                             <a href="single.html">{{ $bottomRightFeaturedCar->title }}</a>
                                         </h3>
                                     </div>

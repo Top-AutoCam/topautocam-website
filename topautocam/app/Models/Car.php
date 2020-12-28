@@ -34,9 +34,17 @@ class Car extends Model
         return $this->belongsTo(Order::class);
     }
 
-    public static function featureds() {
+    public static function featureds() 
+    {
         return Car::where('selected', UTIL::SELECTED['FEATURED'])
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->orderBy('id', 'desc')->take(5)->get();
     }
+
+    public static function recents($size) 
+    {
+        return Car::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->latest()->take($size)->get();
+    }
+
 }

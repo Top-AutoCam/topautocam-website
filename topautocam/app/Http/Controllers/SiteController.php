@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Announcement;
 use App\Models\Car;
+use App\Models\CarService;
 use App\Models\Motorbike;
 use App\Models\Part;
+use App\Models\Promotion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
@@ -15,18 +17,19 @@ class SiteController extends Controller {
     public function index() { 
         // featured
         $featuredCars = Car::featureds();
-        
         $mainFeaturedCar = $featuredCars[0];
-
         $topLeftFeaturedCar = $featuredCars[1];
         $topRightFeaturedCar = $featuredCars[2];
-
         $bottomLeftFeaturedCar = $featuredCars[3];
         $bottomRightFeaturedCar = $featuredCars[4];
 
-        //dd($featuredCars);
+        // services
+        
+        $services = CarService::all();
 
-        //$featuredCars = array_slice($featuredCars, 1);
+        $promotions = Promotion::all();
+
+        $recents = Car::recents(8);
 
         $featuredMotorbikes = Motorbike::where('selected', config('enums.SELECTED.FEATURED'))
             ->where('status', config('enums.INVENTORY_STATUS.IN_STOCK'))
@@ -59,7 +62,9 @@ class SiteController extends Controller {
             'topRightFeaturedCar' => $topRightFeaturedCar,
             'bottomLeftFeaturedCar' => $bottomLeftFeaturedCar,
             'bottomRightFeaturedCar' => $bottomRightFeaturedCar,
-            'featuredCars' => $featuredCars,
+            'services' => $services,
+            'promotions' => $promotions,
+            'recents' => $recents,
             'featuredMotorbikes' => $featuredMotorbikes,
             'featuredParts' => $featuredParts,
             'recentCars' => $recentCars,

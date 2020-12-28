@@ -15,6 +15,8 @@
 
             <div class="block-layout grid-layout three-cols">
                 <div class="uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid="">
+                    
+                    @foreach($services as $service)
                     <article class="post type-post">
                         <div class="entry-outer">
                             <div class="entry-thumb">
@@ -24,42 +26,14 @@
                             <div class="entry-inner">
                                 <div class="entry-content">
                                     <h3 class="entry-title">
-                                        <a href="single.html">5 Ways to stay motivated after January</a>
+                                        <a href="single.html">{{ $service->name }}</a>
                                     </h3>
                                 </div>
                             </div>
                         </div>
                     </article>
-                    <article class="post type-post">
-                        <div class="entry-outer">
-                            <div class="entry-thumb">
-                                <div class="image cover-image" data-src="assets/images/posts/02.jpg" data-uk-img="" title="Post Title"></div>
-                                <a class="link-overlay uk-position-cover" href="single.html"></a>
-                            </div>
-                            <div class="entry-inner">
-                                <div class="entry-content">
-                                    <h3 class="entry-title">
-                                        <a href="single.html">Traveling alone on the road</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="post type-post">
-                        <div class="entry-outer">
-                            <div class="entry-thumb">
-                                <div class="image cover-image" data-src="assets/images/posts/06.jpg" data-uk-img="" title="Post Title"></div>
-                                <a class="link-overlay uk-position-cover" href="single.html"></a>
-                            </div>
-                            <div class="entry-inner">
-                                <div class="entry-content">
-                                    <h3 class="entry-title">
-                                        <a href="single.html">A list of tips for fashion bloggers</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    @endforeach
+
                 </div>
             </div>
             <!-- End Layout -->

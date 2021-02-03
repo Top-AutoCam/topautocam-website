@@ -108,11 +108,6 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
 
-        return view('front/pages/motorbikes', [
-            'announcements' => $announcements,
-            'recents' => $recents
-        ]);
-
         return view('front/pages/parts', [
             'announcements' => $announcements,
             'recents' => $recents

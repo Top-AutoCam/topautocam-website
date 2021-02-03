@@ -50,8 +50,10 @@ class Part extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('name')->sortable(),
             Image::make('image')->disableDownload()->rules('required'),
+            Text::make('title'),
+            Text::make('detail')->hideFromIndex(),
+            Text::make('name')->sortable(),
             Text::make('code')->readonly()->hideFromIndex()->hideWhenCreating(),
             Currency::make('price')->currency('USD')->sortable()->rules('required'),
             Select::make('make')->options(config('enums.MAKE'))->sortable()->rules('required'),

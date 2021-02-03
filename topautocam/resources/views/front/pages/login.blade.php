@@ -41,6 +41,7 @@
                                             </form>
                                         </div>
 
+                                        <!--
                                         <div class="u-column2 col-2">
                                             <h2>Register</h2>
                                             <form method="post" class="woocommerce-form woocommerce-form-register register">
@@ -63,6 +64,7 @@
                                                 </p>
                                             </form>
                                         </div>
+                                        -->
                                     
                                     </div>
                                 </div>

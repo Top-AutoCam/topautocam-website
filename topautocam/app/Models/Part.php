@@ -39,4 +39,24 @@ class Part extends Model
         return Part::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->latest()->take($size)->get();
     }
+
+    public static function search($search, $sort, $order, $make, $model, $color)
+    {
+        return
+            Part::when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%'.$search.'%')
+                            ->orWhere('detail', 'like', '%'.$search.'%');
+            })
+            ->when($make, function ($query, $make) {
+                return $query->where('make', $make);
+            })
+            ->when($model, function ($query, $model) {
+                return $query->where('model', $model);
+            })
+            ->when($color, function ($query, $color) {
+                return $query->where('color', $color);
+            })
+            ->orderBy($sort, $order)
+            ->paginate(UTIL::RESULTS_PER_PAGE);
+    }
 }

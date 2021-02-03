@@ -21,7 +21,7 @@ class CreatePartTable extends Migration
             $table->integer('order_id')->unsigned()->nullable();
             $table->foreign('order_id')->references('id')->on('order')
                 ->onUpdate('cascade')->onDelete('set null');
-
+            
             $table->string('name', 32);
             $table->string('image', 64)->nullable();
             $table->decimal('price', 8, 2)->unsigned()->nullable();

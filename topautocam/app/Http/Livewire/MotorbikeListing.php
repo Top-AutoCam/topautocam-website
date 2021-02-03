@@ -12,6 +12,11 @@ class MotorbikeListing extends Component
 {
     use WithPagination;
 
+    public $sort;
+    public $order;
+
+    public $search;
+
     public $makes;
     public $make1;
 
@@ -20,9 +25,6 @@ class MotorbikeListing extends Component
 
     public $colors;
     public $color1;
-
-    public $sort;
-    public $order;
     
     public function mount() {
         $this->sort = 'title';
@@ -34,7 +36,7 @@ class MotorbikeListing extends Component
 
     public function render()
     {
-        $motorbikes = Motorbike::search($this->sort, $this->order, 
+        $motorbikes = Motorbike::search($this->search, $this->sort, $this->order, 
         $this->make1, $this->model1, $this->color1);
         return view('livewire.motorbike-listing', [
             'total' => sizeof($motorbikes),

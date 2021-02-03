@@ -34,38 +34,42 @@ class Car extends Model
         return $this->belongsTo(Order::class);
     }
 
-    public static function featureds($size) 
+    public static function featureds($size)
     {
         return Car::where('selected', UTIL::SELECTED['FEATURED'])
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->orderBy('id', 'DESC')->take($size)->get();
     }
 
-    public static function recents($size) 
+    public static function recents($size)
     {
         return Car::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->latest()->take($size)->get();
     }
 
-    public static function search($sort, $order, $make, $model, $color, $drive, $fuel) 
+    public static function search($search, $sort, $order, $make, $model, $color, $drive, $fuel)
     {
-        return Car::when($make, function ($query, $make) {
-                        return $query->where('make', $make);
-                    })
-                    ->when($model, function($query, $model) {
-                        return $query->where('model', $model);
-                   })
-                   ->when($color, function($query, $color) {
-                        return $query->where('color', $color);
-                   })
-                   ->when($drive, function($query, $drive) {
-                        return $query->where('drive', $drive);
-                    })
-                   ->when($fuel, function($query, $fuel) {
-                        return $query->where('fuel', $fuel);
-                   })
-                  ->orderBy($sort, $order)
-                  ->paginate(UTIL::RESULTS_PER_PAGE);
+        return
+            Car::when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('detail', 'like', '%' . $search . '%');
+            })
+            ->when($make, function ($query, $make) {
+                return $query->where('make', $make);
+            })
+            ->when($model, function ($query, $model) {
+                return $query->where('model', $model);
+            })
+            ->when($color, function ($query, $color) {
+                return $query->where('color', $color);
+            })
+            ->when($drive, function ($query, $drive) {
+                return $query->where('drive', $drive);
+            })
+            ->when($fuel, function ($query, $fuel) {
+                return $query->where('fuel', $fuel);
+            })
+            ->orderBy($sort, $order)
+            ->paginate(UTIL::RESULTS_PER_PAGE);
     }
-
 }

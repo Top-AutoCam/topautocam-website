@@ -40,10 +40,14 @@ class Motorbike extends Model
             ->latest()->take($size)->get();
     }
 
-    public static function search($sort, $order, $make, $model, $color)
+    public static function search($search, $sort, $order, $make, $model, $color)
     {
         return
-            Motorbike::when($make, function ($query, $make) {
+            Motorbike::when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('detail', 'like', '%' . $search . '%');
+            })
+            ->when($make, function ($query, $make) {
                 return $query->where('make', $make);
             })
             ->when($model, function ($query, $model) {

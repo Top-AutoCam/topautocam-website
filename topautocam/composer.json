@@ -18,7 +18,9 @@
         "laravel/framework": "^8.0",
         "laravel/nova": "*",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.3"
+        "livewire/livewire": "^2.3",
+        "optimistdigital/nova-blog": "^9.4",
+        "optimistdigital/nova-drafts": "^1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

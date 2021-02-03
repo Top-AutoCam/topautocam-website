@@ -25,7 +25,7 @@
                                 <legend class="uk-legend">Filter</legend>
 
                                 <div class="uk-margin">
-                                    <input type="text" />
+                                    <input type="text" wire:model="search"/>
                                 </div>
 
                                 <div class="uk-margin">
@@ -102,7 +102,7 @@
                             @foreach($cars as $car)
                             <li class="product type-product has-post-thumbnail">
                                 <a href="shop-product.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                    <img src={{ asset($car->image)}} width="250" height="250">
+                                    <img src={{ asset('/storage/'.$car->image)}} width="250" height="250">
                                     <h2 class="woocommerce-loop-product__title">{{ $car->title }}</h2>
 
                                     <span class="price">

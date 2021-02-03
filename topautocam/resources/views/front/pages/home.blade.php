@@ -49,6 +49,6 @@
 
 </div>
 
-
+@include('front/partials/newsletter')
 
 @endsection

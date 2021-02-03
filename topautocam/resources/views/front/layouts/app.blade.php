@@ -43,8 +43,6 @@
 
             @yield('content')
 
-            @include('front/partials/newsletter')
-            
             </div>
             
             @include('front/partials/footer')

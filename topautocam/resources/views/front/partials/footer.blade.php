@@ -9,8 +9,8 @@
                     <ul class="uk-grid-small uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-expand@m uk-grid" data-uk-grid="">
                         <li class="uk-first-column">
                             <div class="thumbnail">
-                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/01.jpg" data-uk-img="" title="Post Title"></span>
-                                <a class="cover-link" href="#">
+                                <span class="image cover-image ratio-square" data-src="{{ asset('images/instagram/06.jpg') }}" data-uk-img="" title="Post Title"></span>
+                                <a class="cover-link" href="{{ asset('images/instagram/01.jpg') }}">
                                     <span class="likes">
                                         <i class="icon flo_heart"></i>
                                         <span>782</span>
@@ -20,7 +20,7 @@
                         </li>
                         <li>
                             <div class="thumbnail">
-                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/02.jpg" data-uk-img="" title="Post Title"></span>
+                                <span class="image cover-image ratio-square" data-src="{{ asset('/images/instagram/07.jpg') }}" data-uk-img="" title="Post Title"></span>
                                 <a class="cover-link" href="#">
                                     <span class="likes">
                                         <i class="icon flo_heart"></i>
@@ -31,7 +31,7 @@
                         </li>
                         <li>
                             <div class="thumbnail">
-                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/03.jpg" data-uk-img="" title="Post Title"></span>
+                                <span class="image cover-image ratio-square" data-src="{{ asset('/images/instagram/06.jpg') }}" data-uk-img="" title="Post Title"></span>
                                 <a class="cover-link" href="#">
                                     <span class="likes">
                                         <i class="icon flo_heart"></i>
@@ -42,7 +42,7 @@
                         </li>
                         <li>
                             <div class="thumbnail">
-                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/04.jpg" data-uk-img="" title="Post Title"></span>
+                                <span class="image cover-image ratio-square" data-src="{{ asset('/images/instagram/07.jpg') }}" data-uk-img="" title="Post Title"></span>
                                 <a class="cover-link" href="#">
                                     <span class="likes">
                                         <i class="icon flo_heart"></i>
@@ -53,7 +53,7 @@
                         </li>
                         <li>
                             <div class="thumbnail">
-                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/05.jpg" data-uk-img="" title="Post Title"></span>
+                                <span class="image cover-image ratio-square" data-src="{{ asset('/images/instagram/06.jpg') }}" data-uk-img="" title="Post Title"></span>
                                 <a class="cover-link" href="#">
                                     <span class="likes">
                                         <i class="icon flo_heart"></i>
@@ -64,7 +64,7 @@
                         </li>
                         <li>
                             <div class="thumbnail">
-                                <span class="image cover-image ratio-square" data-src="assets/images/instagram/06.jpg" data-uk-img="" title="Post Title"></span>
+                                <span class="image cover-image ratio-square" data-src="{{ asset('/images/instagram/07.jpg') }}" data-uk-img="" title="Post Title"></span>
                                 <a class="cover-link" href="#">
                                     <span class="likes">
                                         <i class="icon flo_heart"></i>

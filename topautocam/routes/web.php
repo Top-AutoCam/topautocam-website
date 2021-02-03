@@ -27,5 +27,6 @@ Route::middleware('locale')->group(function () {
     Route::post('/locale', [SiteController::class, 'locale'])->name('set-locale');
 
     Route::get('/blog', [BlogController::class, 'index'])->name('blog-index');
+    Route::get('/blog/{slug}', [BlogController::class, 'detail'])->name('blog-detail');
 
 });

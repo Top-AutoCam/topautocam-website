@@ -4,7 +4,7 @@
             <div class="inner uk-position-relative">
 
                 <div class="result-ordering">
-                    <p class="woocommerce-result-count">FOUND {{ $total }} MOTORBIKES</p>
+                    <p class="woocommerce-result-count">FOUND {{ $total }} PARTS</p>
                     <form class="woocommerce-ordering" method="get">
                         <select name="orderby" class="orderby">
                             <option value="popularity" selected="selected">Sort by popularity</option>
@@ -79,15 +79,15 @@
 
                     <div class="uk-width-4-5@m">
                         <ul class="products columns-4">
-                            @foreach($motorbikes as $motorbike)
+                            @foreach($parts as $part)
                             <li class="product type-product has-post-thumbnail">
                                 <a href="shop-product.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                    <img src={{ asset('/storage/'.$motorbike->image)}} width="250" height="250">
-                                    <h2 class="woocommerce-loop-product__title">{{ $motorbike->title }}</h2>
+                                    <img src={{ asset('/storage/'.$part->image)}} width="250" height="250">
+                                    <h2 class="woocommerce-loop-product__title">{{ $part->title }}</h2>
 
                                     <span class="price">
                                         <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">{{ $motorbike->make }} | {{ $motorbike->model }}</span>
+                                            <span class="woocommerce-Price-currencySymbol">{{ $part->make }} | {{ $part->model }}</span>
                                         </span>
                                     </span>
                                 </a>
@@ -99,7 +99,7 @@
 
             </div>
 
-            {{ $motorbikes->links() }}
+            {{ $parts->links() }}
         
         </main>
     </div>

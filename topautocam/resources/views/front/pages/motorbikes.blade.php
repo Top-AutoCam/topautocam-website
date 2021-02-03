@@ -5,25 +5,31 @@
 @include('front/partials/slider')
 
 <div id="primary" class="site-primary">
-
     <div class="uk-container">
 
-        <div class="uk-grid" data-uk-grid="">
-
-            <div class="uk-width-expand">
-
-                <main id="main" class="site-main">
-
-                    @include('front/partials/recents')
-
-                </main>
-
+        <div class="page-heading">
+            <div class="uk-container">
+                <div class="inner uk-position-relative">
+                    <div>
+                        <h4 class="title uk-h2">Motorbikes</h4>
+                    </div>
+                    <div>
+                        <ul class="uk-breadcrumb">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/cars">Motorbikes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </div>
 
+        <livewire:motorbike-listing/>
     </div>
-    
+
 </div>
 
 @endsection

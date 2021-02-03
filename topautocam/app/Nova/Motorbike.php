@@ -51,6 +51,8 @@ class Motorbike extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Image::make('image')->disableDownload()->rules('required'),
+            Text::make('title'),
+            Text::make('detail')->hideFromIndex(),
             Text::make('code')->readonly()->hideFromIndex()->hideWhenCreating(),
             Currency::make('price')->currency('USD')->sortable()->rules('required'),
             Select::make('make')->options(config('enums.MAKE_BIKE'))->sortable()->rules('required'),

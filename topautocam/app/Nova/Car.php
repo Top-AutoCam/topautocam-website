@@ -39,7 +39,7 @@ class Car extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'price', 'code', 'vin', 'make', 'model', 'color', 'drive', 'fuel', 'grade', 'status',
+        'id', 'title', 'detail', 'price', 'code', 'vin', 'make', 'model', 'color', 'drive', 'fuel', 'grade', 'status',
     ];
 
     public function subtitle()
@@ -58,6 +58,8 @@ class Car extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Image::make('image')->disableDownload()->rules('required'),
+            Text::make('title'),
+            Text::make('detail')->hideFromIndex(),
             Text::make('code')->readonly()->hideFromIndex()->hideWhenCreating(),
             Text::make('vin')->hideFromIndex()->rules('required'),
             Currency::make('price')->currency('USD')->sortable()->rules('required'),

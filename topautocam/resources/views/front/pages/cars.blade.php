@@ -26,13 +26,10 @@
                 </div>
             </div>
         </div>
-        <!-- End Page Heading -->
 
         <livewire:car-listing/>
     </div>
 
 </div>
-</div>
-<!-- End Primary -->
 
 @endsection

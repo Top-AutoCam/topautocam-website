@@ -4,7 +4,7 @@
             <div class="inner uk-position-relative">
 
                 <div class="result-ordering">
-                    <p class="woocommerce-result-count">FOUND {{ $total }} CARS</p>
+                    <p class="woocommerce-result-count">FOUND {{ $total }} MOTORBIKES</p>
                     <form class="woocommerce-ordering" method="get">
                         <select name="orderby" class="orderby">
                             <option value="popularity" selected="selected">Sort by popularity</option>
@@ -58,26 +58,6 @@
                                     </select>
                                 </div>
 
-                                <div class="uk-margin">
-                                    <label class="label">Drive</label>
-                                    <select class="uk-select" wire:model="drive1">
-                                        <option value="">ALL</option>
-                                        @foreach($drives as $drive)
-                                        <option value="{{ $drive }}">{{ $drive }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-
-                                <div class="uk-margin">
-                                    <label class="label">Fuel</label>
-                                    <select class="uk-select" wire:model="fuel1">
-                                        <option value="">ALL</option>
-                                        @foreach($fuels as $fuel)
-                                        <option value="{{ $fuel }}">{{ $fuel }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-
                                 <!--
                                 <div class="uk-margin">
                                     <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
@@ -92,22 +72,22 @@
                                     <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
                                 </div>
                                 -->
-
+                                
                             </fieldset>
                         </form>
                     </div>
 
                     <div class="uk-width-4-5@m">
                         <ul class="products columns-4">
-                            @foreach($cars as $car)
+                            @foreach($motorbikes as $motorbike)
                             <li class="product type-product has-post-thumbnail">
                                 <a href="shop-product.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                    <img src={{ asset($car->image)}} width="250" height="250">
-                                    <h2 class="woocommerce-loop-product__title">{{ $car->title }}</h2>
+                                    <img src={{ asset($motorbike->image)}} width="250" height="250">
+                                    <h2 class="woocommerce-loop-product__title">{{ $motorbike->title }}</h2>
 
                                     <span class="price">
                                         <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">{{ $car->make }} | {{ $car->model }}</span>
+                                            <span class="woocommerce-Price-currencySymbol">{{ $motorbike->make }} | {{ $motorbike->model }}</span>
                                         </span>
                                     </span>
                                 </a>
@@ -119,8 +99,8 @@
 
             </div>
 
-            {{ $cars->links() }}
-
+            {{ $motorbikes->links() }}
+        
         </main>
     </div>
 </div>

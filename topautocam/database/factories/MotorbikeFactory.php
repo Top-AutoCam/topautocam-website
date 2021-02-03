@@ -27,7 +27,8 @@ class MotorbikeFactory extends Factory
         $orders = Order::pluck('id');
 
         return [
-            'image' => $this->faker->randomElement(array('b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg', 'b5.jpg', 'b6.jpg')),
+            'image' => $this->faker->randomElement(array('b1.jpg', 'b2.jpg', 
+            'b3.jpg', 'b4.jpg', 'b5.jpg', 'b6.jpg')),
             'price' => $this->faker->randomNumber($nbDigits = 6, $strict = false),
             'code' => Str::random(10),
             'make' => $this->faker->randomElement(config('enums.MAKE_BIKE')),

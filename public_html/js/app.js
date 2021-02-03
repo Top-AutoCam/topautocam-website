@@ -19343,6 +19343,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./car-listing */ "./resources/js/car-listing.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19374,6 +19376,31 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/car-listing.js":
+/*!*************************************!*\
+  !*** ./resources/js/car-listing.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function update(e) {
+  console.log(e.target.value);
+}
+
+var radioMakes = document.getElementsByName("make-radio");
+console.debug(radioMakes.length);
+
+if (radioMakes != null && radioMakes.length > 0) {
+  console.debug('add event listener1111');
+
+  for (var i = 0; i < radioMakes.length; i++) {
+    console.debug('add event listener');
+    radioMakes[i].addEventListener('change', update);
+  }
+}
 
 /***/ }),
 

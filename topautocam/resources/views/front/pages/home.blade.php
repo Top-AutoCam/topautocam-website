@@ -46,8 +46,6 @@
             </div>
         </div>
     </div>
-    
-    @include('front/partials/newsletter')
 
 </div>
 

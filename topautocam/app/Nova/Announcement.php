@@ -32,7 +32,7 @@ class Announcement extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'title'
+        'id', 'title_en', 'top_title_en', 'bottom_title_en'
     ];
 
     /**
@@ -46,7 +46,9 @@ class Announcement extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Image::make('image')->disableDownload()->rules('required'),
-            Text::make('title')->rules('required')->sortable(),
+            Text::make('title_en')->rules('required')->sortable(),
+            Text::make('top_title_en')->rules('required'),
+            Text::make('bottom_title_en')->rules('required')
         ];
     }
 

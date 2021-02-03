@@ -17,17 +17,17 @@ class CarServiceSeeder extends Seeder
         //
         CarService::create([
             'name' => 'Car Dealership',
-            'image' => 'storage/service_dealership.png',
+            'image' => 'service_dealership.png',
             'detail' => 'cars are imported from Japan'
         ]);
         CarService::create([
             'name' => 'Sell Car',
-            'image' => 'storage/service_car_sale.png',
+            'image' => 'service_car_sale.png',
             'detail' => 'cars on sale here'
         ]);
         CarService::create([
             'name' => 'Sell Part',
-            'image' => 'storage/service_part.png',
+            'image' => 'service_part.png',
             'detail' => 'parts on sale here'
         ]);
     }

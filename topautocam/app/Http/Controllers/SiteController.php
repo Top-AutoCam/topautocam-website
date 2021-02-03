@@ -12,7 +12,6 @@ use App\Models\Testimonial;
 use App\Util\UTIL;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Session;
 
 class SiteController extends Controller {
 
@@ -77,21 +76,25 @@ class SiteController extends Controller {
 
     public function cars() {
 
-        $cars = Car::where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
-            ->orderBy('id', UTIL::DESC)->get();
-
         $announcements = Announcement::latest()
             ->take(12)->get();
 
         return view('front/pages/cars', [
-            'announcements' => $announcements,
-            'cars' => $cars
+            'announcements' => $announcements
         ]);
     }
 
     public function motorbikes() {
 
-        return view('front/pages/motorbikes');
+        $recents = Motorbike::recents(8);
+
+        $announcements = Announcement::latest()
+            ->take(12)->get();
+
+        return view('front/pages/motorbikes', [
+            'announcements' => $announcements,
+            'recents' => $recents
+        ]);
     }
     
     /**
@@ -100,7 +103,20 @@ class SiteController extends Controller {
      */
     public function parts() {
         
-        return view('front/pages/parts');
+        $recents = Part::recents(8);
+
+        $announcements = Announcement::latest()
+            ->take(12)->get();
+
+        return view('front/pages/motorbikes', [
+            'announcements' => $announcements,
+            'recents' => $recents
+        ]);
+
+        return view('front/pages/parts', [
+            'announcements' => $announcements,
+            'recents' => $recents
+        ]);
     }
 
     public function contact() {
@@ -126,7 +142,7 @@ class SiteController extends Controller {
 
         Log::debug("previous locale = ${locale}");
 
-        $session->put('locale', $locale == 'en' ? 'km' : 'en');
+        $session->put('locale', $locale == 'en' ? 'kh' : 'en');
 
         return back();
     }

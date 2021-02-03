@@ -16,9 +16,14 @@ class CreateAnnouncementTable extends Migration
         Schema::create('announcement', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('top_title', 64)->unique();
-            $table->string('title', 64)->unique();
-            $table->string('bottom_title', 64)->unique();
+            $table->string('top_title_en', 32)->unique();
+            $table->string('top_title_kh', 64)->unique();
+
+            $table->string('title_en', 64)->unique();
+            $table->string('title_kh', 128)->unique();
+
+            $table->string('bottom_title_en', 32)->unique();
+            $table->string('bottom_title_kh', 64)->unique();
             
             $table->string('image', 64);
             $table->softDeletes();

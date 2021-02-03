@@ -20,9 +20,11 @@
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
+
+    @livewireStyles
 </head>
 
-<body class="index page">
+<body class="archive woocommerce woocommerce-page">
 
     <div id="loader">
         <div class="loading">
@@ -40,6 +42,8 @@
             <div id="content" class="site-content">
 
             @yield('content')
+
+            @include('front/partials/newsletter')
             
             </div>
             
@@ -149,6 +153,7 @@
     </div>
     <!-- End Wrapper -->
 
+    @livewireScripts
 </body>
 
 </html>

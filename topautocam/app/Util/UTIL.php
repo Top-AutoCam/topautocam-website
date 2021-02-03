@@ -14,11 +14,13 @@ use App\Exceptions\RemainingDigitException;
 
 class UTIL {
 
+
     const PROJECT_NAME = "TOP AUTO";
 
     const DESC = "desc";
-
     const ASC = "asc";
+
+    const RESULTS_PER_PAGE = 12;
 
     const CATEGORY = [
         "CAR" => "Car",

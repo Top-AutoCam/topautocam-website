@@ -16,19 +16,19 @@ class TestimonialSeeder extends Seeder
     {
         Testimonial::create([
             'name' => 'Mr. X',
-            'image' => 'storage/mr.x.jpg',
+            'image' => 'mr.x.jpg',
             'detail' => 'I bought a car from TOP AUTO; I am happy until now.',
         ]);
 
         Testimonial::create([
             'name' => 'Mr. Y',
-            'image' => 'storage/mr.y.jpg',
+            'image' => 'mr.y.jpg',
             'detail' => 'I bought a car from TOP AUTO; I am happy until now.',
         ]);
 
         Testimonial::create([
             'name' => 'Mr. Z',
-            'image' => 'storage/mr.z.jpg',
+            'image' => 'mr.z.jpg',
             'detail' => 'I bought a car from TOP AUTO; I am happy until now.',
         ]);
     }

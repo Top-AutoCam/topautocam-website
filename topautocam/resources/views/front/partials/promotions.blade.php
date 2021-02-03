@@ -19,7 +19,7 @@
                     <article class="post type-post">
                         <div class="entry-outer">
                             <div class="entry-thumb">
-                                <div class="image cover-image" data-src={{ asset("$promotion->image")}} data-uk-img="" title="Post Title"></div>
+                                <div class="image cover-image" data-src={{ asset('storage/'.$promotion->image)}} data-uk-img="" title="Post Title"></div>
                                 <a class="link-overlay uk-position-cover" href="single.html"></a>
                             </div>
                             <div class="entry-inner">

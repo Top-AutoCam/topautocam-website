@@ -20,7 +20,7 @@ class SetLocale
     {
         $locale = $request->session()->get('locale', 'en');
         
-        Log::debug("curent locale = ${locale}");
+        //Log::debug("curent locale = ${locale}");
 
         App::setLocale($locale);
 

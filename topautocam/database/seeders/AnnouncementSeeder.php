@@ -18,27 +18,36 @@ class AnnouncementSeeder extends Seeder
     {
         $list = [
             [
-                'top_title' => 'quality first',
-                'title' => UTIL::PROJECT_NAME . ' is one of the best car sellers',
-                'bottom_title' => 'quality forever',
+                'top_title_en' => 'quality first',
+                'top_title_kh' => 'គុណភាពជាចំបង',
+                'title_en' => UTIL::PROJECT_NAME . ' is one of the best car sellers',
+                'title_kh' => UTIL::PROJECT_NAME . ' ជាហ្គារាស់លក់ឡានល្អបំផុត',
+                'bottom_title_en' => 'quality forever',
+                'bottom_title_kh' => 'គុណភាពជានិរន្ត',
                 'image' => 'd1.jpg'
             ],
             [
-                'top_title' => 'acceptable price',
-                'title' => UTIL::PROJECT_NAME . ' is awesome',
-                'bottom_title' => 'price for everyone',
+                'top_title_en' => 'acceptable price',
+                'top_title_kh' => 'តម្លៃសមរម្យ',
+                'title_en' => UTIL::PROJECT_NAME . ' is awesome',
+                'title_kh' => UTIL::PROJECT_NAME . ' លក់យកចំនេញតិចបំផុត',
+                'bottom_title_en' => 'price for everyone',
+                'bottom_title_kh' => 'តម្លៃសម្រាប់គ្រប់គ្នា',
                 'image' => 'd2.jpg'
             ],
             [
-                'top_title' => 'trustability',
-                'title' => 'customers are being taken care of',
-                'bottom_title' => 'trustability',
+                'top_title_en' => 'trustability',
+                'top_title_kh' => 'កសាងទំនុកចិត្ត',
+                'title_en' => 'customers are being taken care of',
+                'title_kh' => 'បំរើអតិថិជនដោយភាពស្មោះត្រង់',
+                'bottom_title_en' => 'trustability',
+                'bottom_title_kh' => 'មានទំនុកចិត្ត',
                 'image' => 'd3.jpg'
             ],
         ];
 
         foreach ($list as $data) {
-            if (Announcement::where('title', $data['title'])->exists()) return;
+            if (Announcement::where('title_en', $data['title_en'])->exists()) return;
             Announcement::create($data);
         }
     }

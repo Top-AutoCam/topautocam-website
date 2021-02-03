@@ -47,4 +47,13 @@ class Car extends Model
             ->latest()->take($size)->get();
     }
 
+    public static function search($sort, $order, $make, $model, $color, $drive, $fuel) 
+    {
+        return Car::when($make, function ($query, $make) {
+                        return $query->where('make', $make);
+                    })
+                  ->orderBy($sort, $order)
+                  ->paginate(UTIL::RESULTS_PER_PAGE);
+    }
+
 }

@@ -17,12 +17,12 @@ class PromotionSeeder extends Seeder
         //
         Promotion::create([
             'name' => 'Chrismas Promotion',
-            'image' => 'storage/promotion_christmas.png',
+            'image' => 'promotion_christmas.png',
             'detail' => 'Discount 10%'
         ]);
         Promotion::create([
             'name' => 'New Year Promotion',
-            'image' => 'storage/promotion_new_year.png',
+            'image' => 'promotion_new_year.png',
             'detail' => 'Discount 10%'
         ]);
     }

@@ -1,4 +1,4 @@
-
+/*
 function update(e) {
     console.log(e.target.value);
 }
@@ -13,3 +13,20 @@ if(radioMakes != null && radioMakes.length > 0) {
         radioMakes[i].addEventListener('change', update);
     }
 }
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  
+    var filterByMake = document.getElementById("filter-by-make");
+    if(!filterByMake) return;
+    filterByMake.addEventListener("change", onFilterByMake);
+
+    var inputFilterByMake = document.getElementById("input-filter-by-make");
+    if(!inputFilterByMake) return;
+    
+    function onFilterByMake() {
+        //alert(filterByMake.value);
+        inputFilterByMake.value = filterByMake.value;
+    }
+});
+  

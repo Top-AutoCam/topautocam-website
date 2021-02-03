@@ -52,6 +52,18 @@ class Car extends Model
         return Car::when($make, function ($query, $make) {
                         return $query->where('make', $make);
                     })
+                    ->when($model, function($query, $model) {
+                        return $query->where('model', $model);
+                   })
+                   ->when($color, function($query, $color) {
+                        return $query->where('color', $color);
+                   })
+                   ->when($drive, function($query, $drive) {
+                        return $query->where('drive', $drive);
+                    })
+                   ->when($fuel, function($query, $fuel) {
+                        return $query->where('fuel', $fuel);
+                   })
                   ->orderBy($sort, $order)
                   ->paginate(UTIL::RESULTS_PER_PAGE);
     }

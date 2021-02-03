@@ -15,10 +15,17 @@ class CarListing extends Component
     public $makes;
     public $make1;
 
-    public $model;
-    public $color;
-    public $drive;
-    public $fuel;
+    public $models;
+    public $model1;
+
+    public $colors;
+    public $color1;
+  
+    public $drives;
+    public $drive1;
+
+    public $fuels;
+    public $fuel1;
 
     public $sort;
     public $order;
@@ -27,17 +34,30 @@ class CarListing extends Component
         $this->sort = 'title';
         $this->order = UTIL::ASC;
         $this->makes = UTIL::MAKE;
-        $this->make1 = 'Toyota';
-    }
+        $this->models = UTIL::MODEL;
+        $this->colors = UTIL::COLOR;
+        $this->drives = UTIL::DRIVE;
+        $this->fuels = UTIL::FUEL;
+    }   
 
     public function render()
     {
-        Log::info($this->make1);
+        $cars = Car::search($this->sort, $this->order, 
+        $this->make1, $this->model1, $this->color1, $this->drive1, $this->fuel1);
         return view('livewire.car-listing', [
-            'total' => Car::count(),
-            'cars' => Car::search($this->sort, $this->order, 
-            $this->make1, $this->model, $this->color, $this->drive, $this->fuel)
+            'total' => sizeof($cars),
+            'cars' => $cars
         ]);
+    }
+
+    public function updatingSearch()
+    {
+        $this->resetPage();
+    }
+    
+    public function paginationView()
+    {
+        return 'custom-pagination-links';
     }
 
 }

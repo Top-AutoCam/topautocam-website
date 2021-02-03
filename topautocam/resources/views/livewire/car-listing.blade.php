@@ -4,7 +4,7 @@
             <div class="inner uk-position-relative">
 
                 <div class="result-ordering">
-                    <p class="woocommerce-result-count">Showing</p>
+                    <p class="woocommerce-result-count">FOUND {{ $total }} CARS</p>
                     <form class="woocommerce-ordering" method="get">
                         <select name="orderby" class="orderby">
                             <option value="popularity" selected="selected">Sort by popularity</option>
@@ -17,38 +17,70 @@
                     </form>
                 </div>
 
-                <div class="uk-grid-match" uk-grid>
-                    <div class="uk-width-auto@m">
+                <div class="uk-grid uk-grid-stack">
+                    <div class="uk-width-1-5@m">
                         <form>
                             <fieldset class="uk-fieldset">
 
                                 <legend class="uk-legend">Filter</legend>
 
                                 <div class="uk-margin">
-                                    <input type="text" wire:model="make1">
+                                    <input type="text" />
                                 </div>
 
-                                {{ $make1 }}
-
-                                
-
                                 <div class="uk-margin">
-                                    <select class="uk-select">
-                                        <option>Option 01</option>
-                                        <option>Option 02</option>
+                                    <label class="label">Make</label>
+                                    <select class="uk-select" wire:model="make1">
+                                        <option value="">ALL</option>
+                                        @foreach($makes as $make)
+                                        <option value="{{ $make }}">{{ $make }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 
                                 <div class="uk-margin">
-                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                    <label class="label">Model</label>
+                                    <select class="uk-select" wire:model="model1">
+                                        <option value="">ALL</option>
+                                        @foreach($models as $model)
+                                        <option value="{{ $model }}">{{ $model }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
 
-                                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                                    @foreach($makes as $make)
-                                    <label>
-                                        <input class="uk-radio" type="radio" name="make" value="{{$make}}"/>&nbsp;{{$make}}
-                                    </label>
-                                    @endforeach
+                                <div class="uk-margin">
+                                    <label class="label">Color</label>
+                                    <select class="uk-select" wire:model="color1">
+                                        <option value="">ALL</option>
+                                        @foreach($colors as $color)
+                                        <option value="{{ $color }}">{{ $color }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label class="label">Drive</label>
+                                    <select class="uk-select" wire:model="drive1">
+                                        <option value="">ALL</option>
+                                        @foreach($drives as $drive)
+                                        <option value="{{ $drive }}">{{ $drive }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label class="label">Fuel</label>
+                                    <select class="uk-select" wire:model="fuel1">
+                                        <option value="">ALL</option>
+                                        @foreach($fuels as $fuel)
+                                        <option value="{{ $fuel }}">{{ $fuel }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <!--
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
                                 </div>
 
                                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
@@ -59,21 +91,23 @@
                                 <div class="uk-margin">
                                     <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
                                 </div>
-
+                                -->
+                                
                             </fieldset>
                         </form>
                     </div>
 
-                    <div class="uk-width-expand@m">
+                    <div class="uk-width-4-5@m">
                         <ul class="products columns-4">
                             @foreach($cars as $car)
                             <li class="product type-product has-post-thumbnail">
                                 <a href="shop-product.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                    <img src={{ asset('storage/'.$car->image)}} width="250" height="250">
-                                    <h2 class="woocommerce-loop-product__title">Striped T-Shirt</h2>
+                                    <img src={{ asset($car->image)}} width="250" height="250">
+                                    <h2 class="woocommerce-loop-product__title">{{ $car->title }}</h2>
+
                                     <span class="price">
                                         <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">{{ $car->make }}</span>
+                                            <span class="woocommerce-Price-currencySymbol">{{ $car->make }} | {{ $car->model }}</span>
                                         </span>
                                     </span>
                                 </a>
@@ -85,19 +119,10 @@
 
             </div>
 
-            <nav class="woocommerce-pagination">
-                <ul class="page-numbers">
-                    <li>
-                        <span aria-current="page" class="page-numbers current">1</span>
-                    </li>
-                    <li>
-                        <a class="page-numbers" href="#page2">2</a>
-                    </li>
-                    <li>
-                        <a class="next page-numbers" href="#page2">→</a>
-                    </li>
-                </ul>
-            </nav>
+
+            {{ $cars->links() }}
+
+        
         </main>
     </div>
 </div>

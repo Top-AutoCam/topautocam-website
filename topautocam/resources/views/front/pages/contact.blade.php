@@ -11,7 +11,7 @@
                     <div class="inner">
                         <article class="post type-page single">
                             <header class="entry-header uk-text-center">
-                                <h1 class="entry-title uk-h1 khmer-title-font">{{ __("Contact") }}</h1>
+                                <h1 class="entry-title uk-h1 title-font">{{ __("Contact") }}</h1>
                                 <div class="entry-meta">
                                     <!--
                                     <div>

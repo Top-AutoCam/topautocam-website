@@ -4,7 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 khmer-title-font" style="padding-top: 4px;">
+                    <h4 class="title uk-h2 title-font" style="padding-top: 4px;">
                         {{ __("Testimonials") }}
                     </h4>
                 </div>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="entry-inner">
                                 <div class="entry-content">
-                                    <h3 class="entry-title">
+                                    <h3 class="entry-title khmer-title-font">
                                         <a href="single.html">{{ $testimonial->name }}</a>
                                     </h3>
                                     <p>

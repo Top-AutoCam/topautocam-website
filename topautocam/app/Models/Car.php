@@ -69,6 +69,7 @@ class Car extends Model
             ->when($fuel, function ($query, $fuel) {
                 return $query->where('fuel', $fuel);
             })
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->orderBy($sort, $order)
             ->paginate(UTIL::RESULTS_PER_PAGE);
     }

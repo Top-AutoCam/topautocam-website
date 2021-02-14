@@ -4,7 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 khmer-title-font">
+                    <h4 class="title uk-h2 title-font">
                         {{ __("Promotions") }}
                     </h4>
                 </div>
@@ -24,7 +24,7 @@
                             </div>
                             <div class="entry-inner">
                                 <div class="entry-content">
-                                    <h3 class="entry-title">
+                                    <h3 class="entry-title khmer-title-font">
                                         <a href="single.html">{{ $promotion->name }}</a>
                                     </h3>
                                 </div>

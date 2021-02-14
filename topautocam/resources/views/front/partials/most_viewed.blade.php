@@ -4,7 +4,7 @@
 
             <div class="heading center">
                 <div>
-                    <h4 class="title uk-h2 khmer-title-font" style="padding-top: 5px;">{{ __("Most Viewed")}}</h4>
+                    <h4 class="title uk-h2 title-font" style="padding-top: 5px;">{{ __("Most Viewed")}}</h4>
                     <span class="text uk-text-small khmer-content-font">{{ __("Come to see what everyone is seeing")}}</span>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <h3 class="entry-title">
+                                        <h3 class="entry-title khmer-title-font">
                                             <a href="single.html">5 Ways to stay motivated after January</a>
                                         </h3>
                                         <div class="entry-snippet">
@@ -63,7 +63,7 @@
                                         <div class="entry-category">
                                             <a href="page-category.html">Summer</a>
                                         </div>
-                                        <h3 class="entry-title uk-h5">
+                                        <h3 class="entry-title uk-h5 khmer-title-font">
                                             <a href="single.html">5 Ways to stay motivated after January</a>
                                         </h3>
                                     </div>
@@ -81,7 +81,7 @@
                                         <div class="entry-category">
                                             <a href="page-category.html">Holiday</a>
                                         </div>
-                                        <h3 class="entry-title uk-h5">
+                                        <h3 class="entry-title uk-h5 khmer-title-font">
                                             <a href="single.html">5 Tips to Use Coconut Water</a>
                                         </h3>
                                     </div>
@@ -101,7 +101,7 @@
                                         <div class="entry-category">
                                             <a href="page-category.html">Travel</a>
                                         </div>
-                                        <h3 class="entry-title uk-h5">
+                                        <h3 class="entry-title uk-h5 khmer-title-font">
                                             <a href="single.html">Traveling alone on the road</a>
                                         </h3>
                                     </div>
@@ -119,7 +119,7 @@
                                         <div class="entry-category">
                                             <a href="page-category.html">Beach</a>
                                         </div>
-                                        <h3 class="entry-title uk-h5">
+                                        <h3 class="entry-title uk-h5 khmer-title-font">
                                             <a href="single.html">A list of tips for fashion bloggers</a>
                                         </h3>
                                     </div>

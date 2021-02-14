@@ -9,7 +9,7 @@
             <div class="uk-container">
             <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 khmer-title-font">{!! __("Articles") !!}</h4>
+                        <h4 class="title uk-h2 title-font">{!! __("Articles") !!}</h4>
                     </div>
                     <div>
                         <ul class="uk-breadcrumb">
@@ -47,14 +47,14 @@
                                                         <div class="entry-meta">
                                                             <div>
                                                                 <span class="meta-category">
-                                                                    <a href="page-category.html">{{ $post->category->title }}</a>
+                                                                    <a href="page-category.html khmer-title-font">{{ $post->category->title }}</a>
                                                                 </span>
                                                                 <span class="meta-date">
                                                                     {{ $post->created_at }}
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <h3 class="entry-title">
+                                                        <h3 class="entry-title khmer-title-font">
                                                             <a href="single.html">{{ $post->title }}</a>
                                                         </h3>
                                                         <div class="entry-snippet">

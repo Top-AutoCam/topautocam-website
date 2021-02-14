@@ -56,6 +56,7 @@ class Part extends Model
             ->when($color, function ($query, $color) {
                 return $query->where('color', $color);
             })
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->orderBy($sort, $order)
             ->paginate(UTIL::RESULTS_PER_PAGE);
     }

@@ -4,7 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 khmer-title-font" style="padding-top: 5px;">
+                    <h4 class="title uk-h2 title-font" style="padding-top: 5px;">
                         {{ __("Recent") }}
                     </h4>
                 </div>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="entry-inner">
                                 <div class="entry-content">
-                                    <h3 class="uk-text-small">
+                                    <h3 class="uk-text-small khmer-title-font">
                                         <a href="single.html">{{ $recent->title }}</a>
                                     </h3>
                                 </div>

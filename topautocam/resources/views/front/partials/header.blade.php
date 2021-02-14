@@ -3,7 +3,7 @@
     <div class="uk-container uk-container-expand">
         <div class="uk-flex uk-flex-between uk-flex-middle">
             <h1 class="site-logo">
-                <a class="navbar-brand site-title" href="index.html">
+                <a class="navbar-brand site-title" href="/">
                     @include('front/partials/logo')
                 </a>
             </h1>

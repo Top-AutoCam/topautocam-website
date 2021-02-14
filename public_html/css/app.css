@@ -624,6 +624,24 @@ i {
 .flo_behance:before {
   content: "\E008";
 }
+@font-face {
+  font-family: 'Angtasom';
+  src : url(/fonts/AngTasom.ttf?5da0dc430ec2a983d5fc0b4a6b497462) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bauhaus';
+  src : url("/fonts/Bauhaus 93 Regular.ttf?3066b11123e63381b8e2aa554b18bf32") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Trajan';
+  src : url(/fonts/trajan-pro-3.otf?a27290abb781581445319d23e28522c7) format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 /* Table of content  
 ---------------------------------------------------
 01. Body
@@ -665,8 +683,12 @@ a {
 /* malinka
 -----------*/
 
+.title-font {
+  font-family: "Trajan" !important;
+}
+
 .khmer-title-font {
-  font-family: "Moul", cursive !important;
+  font-family: "Angtasom" !important;
 }
 
 .khmer-content-font {
@@ -740,7 +762,8 @@ h6,
     .site-header.uk-active .primary-menu {
       line-height: 70px !important; }
   .site-header .site-logo {
-    font-family: "Montserrat", sans-serif;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-family: "Bauhaus", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: -.04rem;

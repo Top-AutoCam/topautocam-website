@@ -1,6 +1,6 @@
 @foreach ($recentCars as $car)
 <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-    <a href="#">
+    <a href="{{ route('car-detail', $car->id) }}">
         <img class="h-48 w-full object-cover object-center rounded-lg hover:grow hover:shadow-lg" src="storage/{{ $car->image }}">
         <div class="pt-3 flex items-center justify-between">
             <p class="font-semibold text-xs tracking-wider uppercase">{{$car->make}} - {{$car->model}}</p>

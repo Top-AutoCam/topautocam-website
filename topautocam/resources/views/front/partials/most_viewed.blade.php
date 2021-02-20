@@ -31,7 +31,7 @@
                                             </div>
                                         </div>
                                         <h3 class="entry-title khmer-title-font">
-                                            <a href="single.html">5 Ways to stay motivated after January</a>
+                                            <a href="#">5 Ways to stay motivated after January</a>
                                         </h3>
                                         <div class="entry-snippet">
                                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolore quo deleniti repellendus optio

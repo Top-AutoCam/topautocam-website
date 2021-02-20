@@ -37,7 +37,7 @@
 
         <div class="uk-offcanvas-content">
 
-            @include('front/partials/header')
+            @include('front.partials.header')
             
             <div id="content" class="site-content">
 
@@ -45,12 +45,12 @@
 
             </div>
             
-            @include('front/partials/footer')
+            @include('front.partials.footer')
 
             <div id="mobile-menu" data-uk-offcanvas="overlay: true">
                 <div class="inner uk-offcanvas-bar">
 
-                    @include('front/partials/mobile_header')
+                    @include('front.partials.mobile_header')
 
                     <div class="content">
                         <ul class="mobile-nav uk-nav-default uk-nav-parent-icon" data-uk-nav="">

@@ -4,7 +4,7 @@
         <div class="uk-flex uk-flex-between uk-flex-middle">
             <h1 class="site-logo">
                 <a class="navbar-brand site-title" href="/">
-                    @include('front/partials/logo')
+                    @include('front.partials.logo')
                 </a>
             </h1>
             <nav class="primary-menu uk-visible@l">
@@ -22,7 +22,7 @@
                         <a href="/parts" class="{{ Route::currentRouteName() == 'part-index' ? 'selected-menu' : '' }}">Part</a>
                     </li>
                     <li>
-                        <a href="/blog" class="{{ Route::currentRouteName() == 'blog-index' ? 'selected-menu' : '' }}">Blog</a>
+                        <a href="/blog" class="{{ Route::currentRouteName() == 'blog' ? 'selected-menu' : '' }}">Blog</a>
                     </li>
                     <li>
                         <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">Contact</a>

@@ -55,7 +55,7 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
 
-        return view('front/pages/home', [
+        return view('front.pages.home', [
             'announcements' => $announcements,
             'mainFeaturedCar' => $mainFeaturedCar,
             'topLeftFeaturedCar' => $topLeftFeaturedCar,
@@ -74,49 +74,9 @@ class SiteController extends Controller {
         ]);
     }
 
-    public function cars() {
-
-        $announcements = Announcement::latest()
-            ->take(12)->get();
-
-        return view('front/pages/cars', [
-            'announcements' => $announcements
-        ]);
-    }
-
-    public function motorbikes() {
-
-        $recents = Motorbike::recents(8);
-
-        $announcements = Announcement::latest()
-            ->take(12)->get();
-
-        return view('front/pages/motorbikes', [
-            'announcements' => $announcements,
-            'recents' => $recents
-        ]);
-    }
-    
-    /**
-     * parts menu
-     *
-     */
-    public function parts() {
-        
-        $recents = Part::recents(8);
-
-        $announcements = Announcement::latest()
-            ->take(12)->get();
-
-        return view('front/pages/parts', [
-            'announcements' => $announcements,
-            'recents' => $recents
-        ]);
-    }
-
     public function contact() {
 
-        return view('front/pages/contact');   
+        return view('front.pages.contact');   
     }
 
     public function login() {
@@ -124,7 +84,7 @@ class SiteController extends Controller {
         $announcements = Announcement::latest()
             ->take(12)->get();
             
-        return view('front/pages/login', [
+        return view('front.pages.login', [
             'announcements' => $announcements
         ]);   
     }

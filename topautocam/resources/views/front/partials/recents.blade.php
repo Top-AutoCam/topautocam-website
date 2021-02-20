@@ -21,7 +21,7 @@
                         <div class="entry-outer">
                             <div class="entry-thumb">
                                 <div class="image cover-image" data-src={{ asset('storage/'.$recent->image) }} data-uk-img="" title="Post Title"></div>
-                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $recent->id) }}"></a>
                             </div>
                             <div class="entry-inner">
                                 <div class="entry-content">

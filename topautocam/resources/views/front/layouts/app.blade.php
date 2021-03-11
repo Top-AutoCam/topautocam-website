@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/app.css')}}" />
 
-    <script src="{{asset('js/jquery.min.js')}}" />
+    <script src="{{asset('js/jquery.min.js')}}">
     </script>
     <script src="{{asset('js/uikit.min.js')}}"></script>
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
@@ -25,7 +25,6 @@
 </head>
 
 <body class="archive woocommerce woocommerce-page">
-
     <div id="loader">
         <div class="loading">
             <div></div>

@@ -28,29 +28,29 @@
                                     -->
                                 </div>
                                 <div class="entry-share">
-                                    <a class="facebook" href="#"><i class="icon flo_facebook"></i></a>
-                                    <a class="twitter" href="#"><i class="icon flo_twitter"></i></a>
+                                    <a class="facebook" href="https://www.facebook.com/topauto.kh"><i class="icon flo_facebook"></i></a>
+                                    <a class="twitter" href="https://twitter.com/Topautocam1?s=09"><i class="icon flo_twitter"></i></a>
                                     <a class="gplus" href="#"><i class="icon flo_google_plus"></i></a>
                                 </div>
                             </header>
                             <div class="entry-content">
                                 <div class="entry-body uk-container uk-container-small">
                                     <div style="width: 100%">
-                                        <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=173%20Beech%20Street%20%20Pleasanton%2C%20California%20%20United%20States+(Notera)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2358.088501151008!2d104.87612493439391!3d11.554789383891372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951bfaa821311%3A0x808a33e8c6c0308d!2sTOP%20AUTOSHOP!5e0!3m2!1sen!2skh!4v1615080085546!5m2!1sen!2skh" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                                             <a href="https://www.maps.ie/create-google-map/">Create Google Map</a>
                                         </iframe>
                                     </div>
                                     <br />
                                     <br />
                                     <div class="uk-column-1-3 uk-column-divider">
-                                        <p>contact@notera.com <br /> Tel : +31 1 58 12 12 86 <br /> Tel : +31 1 58 12 12 87</p>
-                                        <p>173 Beech Street <br /> Pleasanton, California <br /> United States</p>
-                                        <p>Working Hours: <br /> 7am – 12pm <br /> 1pm – 6pm</p>
+                                        <p>topautocam@gmail.com <br /> Tel : +885 17 238 008 <br /> Tel : +885 15 238 008 <br /> Tel : +885 67 238 008</p>
+                                        <p>Street 13B<br /> 2004, Phnom Penh <br /> Cambodia</p>
+                                        <p>Working Hours: <br /> 8am – 12pm <br /> 1pm – 5pm</p>
                                     </div>
                                     <br />
                                     <p class="uk-text-lead">If you would like to join us on our journey around the world and beyond, then you can follow us on a social media channels.</p>
                                     <p>We’d love for you to be a part of the adventure! Want to drop us an email?</p>
-                                    <form class="uk-form-stacked uk-form-horizontal uk-margin-large-top khmer-content-font">
+                                    <form class="uk-form-stackaed uk-form-horizontal uk-margin-large-top khmer-content-font">
                                         <div class="uk-margin">
                                             <label class="uk-form-label uk-text-lead" for="email">{{ __("Email") }}</label>
                                             <div class="uk-form-controls uk-width-1-2@s">

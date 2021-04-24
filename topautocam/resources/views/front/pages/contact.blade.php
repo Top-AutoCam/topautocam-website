@@ -28,8 +28,8 @@
                                     -->
                                 </div>
                                 <div class="entry-share">
-                                    <a class="facebook" href="https://www.facebook.com/topauto.kh"><i class="icon flo_facebook"></i></a>
-                                    <a class="twitter" href="https://twitter.com/Topautocam1?s=09"><i class="icon flo_twitter"></i></a>
+                                    <a class="facebook" href="https://www.facebook.com/topauto.kh"  target="_blank"><i class="icon flo_facebook"></i></a>
+                                    <a class="twitter" href="https://twitter.com/Topautocam1?s=09"  target="_blank"><i class="icon flo_twitter"></i></a>
                                     <a class="gplus" href="#"><i class="icon flo_google_plus"></i></a>
                                 </div>
                             </header>

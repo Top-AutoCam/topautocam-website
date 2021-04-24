@@ -61,7 +61,7 @@ class Car extends Model
                 return $query->where('model', $model);
             })
             ->when($color, function ($query, $color) {
-                return $query->where('color', $color);
+                return $query->where('color', "Black");
             })
             ->when($drive, function ($query, $drive) {
                 return $query->where('drive', $drive);
@@ -70,6 +70,22 @@ class Car extends Model
                 return $query->where('fuel', $fuel);
             })
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy($sort, $order)
+            ->paginate(UTIL::RESULTS_PER_PAGE);
+    }
+
+    public static function searchAny($search, $sort, $order, $make, $model, $color, $drive, $fuel)
+    {
+        return
+            Car::when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('detail', 'like', '%' . $search . '%')
+                    ->orWhere('make', 'like', '%' . $search . '%')
+                    ->orWhere('model', 'like', '%' . $search . '%')
+                    ->orWhere('color', 'like', '%' . $search . '%')
+                    ->orWhere('drive', 'like', '%' . $search . '%')
+                    ->orWhere('fuel', 'like', '%' . $search . '%');
+            })
             ->orderBy($sort, $order)
             ->paginate(UTIL::RESULTS_PER_PAGE);
     }

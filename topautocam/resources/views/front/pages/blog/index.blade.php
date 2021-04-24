@@ -71,9 +71,9 @@
                                                         </div>
                                                         <div>
                                                             <div class="entry-share mini-share">
-                                                                <a href="#"><i class="icon flo_facebook"></i></a>
-                                                                <a href="#"><i class="icon flo_twitter"></i></a>
-                                                                <a href="#"><i class="icon flo_pinterest"></i></a>
+                                                                <a href="https://www.facebook.com/topauto.kh"  target="_blank" ><i class="icon flo_facebook"></i></a>
+                                                                <a href="https://twitter.com/Topautocam1?s=09" target="_blank"><i class="icon flo_twitter"></i></a>
+                                                                <a href="https://www.pinterest.com/topautocam/" target="_blank"><i class="icon flo_pinterest"></i></a>
                                                                 <a href="#"><i class="icon flo_google_plus"></i></a>
                                                             </div>
                                                             <div class="entry-comments">

@@ -7,7 +7,6 @@
 <div id="primary" class="site-primary">
 
     <div class="uk-container">
-    
         <div class="page-heading">
             <div class="uk-container">
                 <div class="inner uk-position-relative">
@@ -16,9 +15,7 @@
                             {!! __('Featured') !!}
                         </h4>
                     </div>
-    
-                    @include('front.partials.breadcrumb')
-    
+                    @include('front/partials/breadcrumb')
                 </div>
             </div>
         </div>

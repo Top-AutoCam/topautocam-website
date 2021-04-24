@@ -39,4 +39,7 @@ Route::middleware('locale')->group(function () {
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');
 
+    Route::get('/search',[BlogController::class, 'globalSearch']);
+    // ->name('global-search');
+
 });

@@ -48,28 +48,9 @@
                                         <p>Working Hours: <br /> 7am – 12pm <br /> 1pm – 6pm</p>
                                     </div>
                                     <br />
-                                    <p class="uk-text-lead">If you would like to join us on our journey around the world and beyond, then you can follow us on a social media channels.</p>
-                                    <p>We’d love for you to be a part of the adventure! Want to drop us an email?</p>
-                                    <form class="uk-form-stacked uk-form-horizontal uk-margin-large-top khmer-content-font">
-                                        <div class="uk-margin">
-                                            <label class="uk-form-label uk-text-lead" for="email">{{ __("Email") }}</label>
-                                            <div class="uk-form-controls uk-width-1-2@s">
-                                                <input class="uk-input" id="email" type="text" />
-                                            </div>
-                                        </div>
-                                        <div class="uk-margin-medium">
-                                            <label class="uk-form-label uk-text-lead" for="message">{{ __("Your Message") }}</label>
-                                            <div class="uk-form-controls">
-                                                <textarea class="uk-textarea" id="message" rows="7"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="uk-margin">
-                                            <div class="uk-form-controls">
-                                                <input class="uk-button uk-button-secondary uk-text-lead uk-text-uppercase" 
-                                                    id="submit" value="{{__("Send Message")}}" style="color: white"/>
-                                            </div>
-                                        </div>
-                                    </form>
+
+                                    <livewire:contact-form />
+
                                 </div>
                             </div>
                         </article>

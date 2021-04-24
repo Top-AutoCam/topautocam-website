@@ -19424,8 +19424,8 @@ document.addEventListener("DOMContentLoaded", function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/malinka/development/projects/topautocam-cpanel/topautocam/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/malinka/development/projects/topautocam-cpanel/topautocam/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /Users/malinka/Projects/topautocam-cpanel/topautocam/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/malinka/Projects/topautocam-cpanel/topautocam/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

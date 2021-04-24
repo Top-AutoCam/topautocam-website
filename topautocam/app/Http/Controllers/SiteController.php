@@ -13,9 +13,11 @@ use App\Util\UTIL;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
-class SiteController extends Controller {
+class SiteController extends Controller
+{
 
-    public function index() { 
+    public function index()
+    {
 
         // featured
         $featuredCars = Car::featureds(5);
@@ -43,8 +45,8 @@ class SiteController extends Controller {
         $recentCars = Car::latest()
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->take(12)->get();
-	
-	    $recentMotorbikes = Motorbike::latest()
+
+        $recentMotorbikes = Motorbike::latest()
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->take(12)->get();
 
@@ -74,22 +76,25 @@ class SiteController extends Controller {
         ]);
     }
 
-    public function contact() {
+    public function contact()
+    {
 
-        return view('front.pages.contact');   
+        return view('front.pages.contact');
     }
 
-    public function login() {
+    public function login()
+    {
 
         $announcements = Announcement::latest()
             ->take(12)->get();
-            
+
         return view('front.pages.login', [
             'announcements' => $announcements
-        ]);   
+        ]);
     }
 
-    public function locale(Request $request) {
+    public function locale(Request $request)
+    {
 
         $session = $request->session();
 

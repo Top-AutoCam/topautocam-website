@@ -34,22 +34,22 @@
                                 </div>
                             </header>
                             <div class="entry-content">
-                                
+
                                 @if($content[0]->attributes->image)
                                 <div class="entry-thumb">
                                     <img src="{{ asset('storage/'.$content[0]->attributes->image) }}" alt="image" />
                                 </div>
                                 @endif
-                                
+
                                 <div class="entry-body uk-container uk-container-small">
                                     <p class="uk-text-lead">
-                                    {{ $post->post_introduction }}
+                                        {{ $post->post_introduction }}
                                     </p>
-                                    
+
                                     <div>
                                         @if($content[1]->attributes->text_content)
                                         {!!
-                                            $content[1]->attributes->text_content
+                                        $content[1]->attributes->text_content
                                         !!}
                                         @endif
                                     </div>
@@ -79,6 +79,7 @@
                             </div>
                         </article>
                         <!-- End Article -->
+                        <!--
                         <section class="float-pagination">
                             <div class="inner">
                                 <a class="prev" href="single.html#prev">
@@ -91,6 +92,7 @@
                                 </a>
                             </div>
                         </section>
+                        -->
                         <!-- End Pagination -->
                         <!--
                         <section class="author-box">

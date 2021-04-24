@@ -15,15 +15,28 @@
                                         <img src="{{ asset('storage/'.$car->image) }}" alt="Black and White Striped T-shirt">
                                     </a>
                                 </div>
+
+                                <!--
+                                <div style="display: flex; margin-top: 10px;">
+                                    @foreach($car->images as $image)
+                                    <div class="woocommerce-product-gallery__image">
+                                        <a href="{{ asset('storage/'.$image->name) }}">
+                                            <img src="{{ asset('storage/'.$image->name) }}" alt="Black and White Striped T-shirt">
+                                        </a>
+                                    </div>
+                                    @endforeach
+                                </div>
+                                -->
+
                                 <p class="price">
                                     <span class="woocommerce-Price-amount amount">
-                                    <span class="woocommerce-Price-currencySymbol">$</span>{{ $car->price }}</span>
+                                        <span class="woocommerce-Price-currencySymbol">$</span>{{ $car->price }}</span>
                                 </p>
                             </figure>
-                            
+
                             <div class="summary entry-summary">
                                 <h1 class="product_title entry-title">{{ $car->title }}</h1>
-                                
+
                                 <div class="woocommerce-product-details__short-description">
                                     <table cellspacing="0" class="shop_table shop_table_responsive">
 
@@ -64,8 +77,6 @@
                                                     {{ $car->drive }}
                                                 </td>
                                             </tr>
-                                            
-                                            
 
                                         </tbody>
                                     </table>

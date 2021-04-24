@@ -10,7 +10,7 @@
                             <div class="entry-outer">
                                 <div class="entry-thumb">
                                     <div class="image cover-image" data-src={{ asset('storage/'.$mainFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
-                                    <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $mainFeaturedCar->id) }}"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -26,14 +26,15 @@
                                             </div>
                                         </div>
                                         -->
-                                        <h3 class="entry-title">
-                                            <a href="single.html">{{ $mainFeaturedCar->title }}</a>
+                                        <h3 class="entry-title khmer-title-font">
+                                            <a href="{{ route('car-detail', $mainFeaturedCar->id) }}">{{ $mainFeaturedCar->title }}</a>
                                         </h3>
                                         <div class="entry-snippet uk-text-small">
                                             <p>
                                                 {{ $mainFeaturedCar->detail }}
                                             </p>
                                         </div>
+                                        <!--
                                         <div class="entry-footer">
                                             <div>
                                                 <div class="entry-more">
@@ -43,6 +44,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +56,7 @@
                             <div class="entry-outer">
                                 <div class="entry-thumb">
                                     <div class="image cover-image ratio-square" data-src={{ asset('storage/'.$topLeftFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
-                                    <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $topLeftFeaturedCar->id) }}""></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -63,8 +65,8 @@
                                             <a href="page-category.html">{{$topLeftFeaturedCar->title}}</a>
                                         </div>
                                         -->
-                                        <h3 class="uk-h5 uk-text-small">
-                                            <a href="single.html">{{$topLeftFeaturedCar->title}}</a>
+                                        <h3 class="uk-h5 uk-text-small khmer-title-font">
+                                            <a href="{{ route('car-detail', $topLeftFeaturedCar->id) }}">{{$topLeftFeaturedCar->title}}</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -74,7 +76,7 @@
                             <div class="entry-outer">
                                 <div class="entry-thumb">
                                     <div class="image cover-image ratio-square" data-src={{ asset('storage/'.$topRightFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
-                                    <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $topRightFeaturedCar->id) }}"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -83,8 +85,8 @@
                                             <a href="page-category.html">{{$topRightFeaturedCar->title}}</a>
                                         </div>
                                         -->
-                                        <h3 class="uk-h5 uk-text-small">
-                                            <a href="single.html">{{$topRightFeaturedCar->title}}</a>
+                                        <h3 class="uk-h5 uk-text-small khmer-title-font">
+                                            <a href="{{ route('car-detail', $topRightFeaturedCar->id) }}"">{{$topRightFeaturedCar->title}}</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -97,7 +99,7 @@
                             <div class="entry-outer">
                                 <div class="entry-thumb">
                                     <div class="image cover-image ratio-square" data-src={{ asset('storage/'.$bottomLeftFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
-                                    <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <a class="link-overlay uk-position-cover" href={{ route('car-detail', $bottomLeftFeaturedCar->id) }}></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -106,8 +108,8 @@
                                             <a href="page-category.html">{{$bottomLeftFeaturedCar->title}}</a>
                                         </div>
                                         -->
-                                        <h3 class="uk-h5 uk-text-small">
-                                            <a href="single.html">{{$bottomLeftFeaturedCar->title}}</a>
+                                        <h3 class="uk-h5 uk-text-small khmer-title-font">
+                                            <a href="{{ route('car-detail', $bottomLeftFeaturedCar->id) }}">{{$bottomLeftFeaturedCar->title}}</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -117,7 +119,7 @@
                             <div class="entry-outer">
                                 <div class="entry-thumb">
                                     <div class="image cover-image ratio-square" data-src={{ asset('storage/'.$bottomRightFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
-                                    <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $bottomRightFeaturedCar->id) }}"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -126,8 +128,8 @@
                                             <a href="page-category.html">{{ $bottomRightFeaturedCar->title }}</a>
                                         </div>
                                         -->
-                                        <h3 class="uk-h5 uk-text-small">
-                                            <a href="single.html">{{ $bottomRightFeaturedCar->title }}</a>
+                                        <h3 class="uk-h5 uk-text-small khmer-title-font">
+                                            <a href="{{ route('car-detail', $bottomRightFeaturedCar->id) }}">{{ $bottomRightFeaturedCar->title }}</a>
                                         </h3>
                                     </div>
                                 </div>

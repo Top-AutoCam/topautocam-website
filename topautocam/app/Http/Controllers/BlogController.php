@@ -9,16 +9,22 @@ class BlogController extends Controller
 {
     public function index() {
         $posts = Post::orderBy('updated_at', 'desc')->get();
-        return view('front.pages.blog', [
+        return view('front.pages.blog.index', [
             'posts' => $posts
         ]);
     }
 
     public function detail($slug) {
-        //$post = Post::where('slug', $slug)->first();
-        $posts = Post::orderBy('updated_at', 'desc')->get();
-        return view('front.pages.blog', [
-            'posts' => $posts
+        $post = Post::where('slug', $slug)->first();
+        if($post == null) {
+            abort(404);
+        }
+
+        $content = json_decode($post->post_content);
+
+        return view('front.pages.blog.post', [
+            'post' => $post,
+            'content' => $content
         ]);
     }
 }

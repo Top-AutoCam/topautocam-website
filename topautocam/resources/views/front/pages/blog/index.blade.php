@@ -9,7 +9,7 @@
             <div class="uk-container">
             <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 khmer-title-font">{!! __("Articles") !!}</h4>
+                        <h4 class="title uk-h2 title-font">{!! __("Articles") !!}</h4>
                     </div>
                     <div>
                         <ul class="uk-breadcrumb">
@@ -40,22 +40,22 @@
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
                                                     <div class="image cover-image" data-src="{{ asset('images/posts/21.jpg') }}" data-uk-img="" title="Post Title"></div>
-                                                    <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                                    <a class="link-overlay uk-position-cover" href="{{ route('post', $post->slug) }}"></a>
                                                 </div>
                                                 <div class="entry-inner">
                                                     <div class="entry-content">
                                                         <div class="entry-meta">
                                                             <div>
                                                                 <span class="meta-category">
-                                                                    <a href="page-category.html">{{ $post->category->title }}</a>
+                                                                    <span class="khmer-title-font">{{ $post->category->title }}</span>
                                                                 </span>
                                                                 <span class="meta-date">
-                                                                    {{ $post->created_at }}
+                                                                {{ $post->created_at->format('d F, Y') }}
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <h3 class="entry-title">
-                                                            <a href="single.html">{{ $post->title }}</a>
+                                                        <h3 class="entry-title khmer-title-font">
+                                                            <a href="{{ route('post', $post->slug) }}">{{ $post->title }}</a>
                                                         </h3>
                                                         <div class="entry-snippet">
                                                             <p>
@@ -66,7 +66,7 @@
                                                     <div class="entry-footer">
                                                         <div>
                                                             <div class="entry-more">
-                                                                <a href="{{ route('blog-detail', $post->slug)}}">Continue Reading <i class="icon flo_arrow_right"></i></a>
+                                                                <a href="{{ route('post', $post->slug)}}">Continue Reading <i class="icon flo_arrow_right"></i></a>
                                                             </div>
                                                         </div>
                                                         <div>

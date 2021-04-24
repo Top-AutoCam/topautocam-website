@@ -17,15 +17,15 @@
 
                             <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                 <div class="entry-content">
-                                    <div class="entry-category khmer-content-font">
+                                    <div class="entry-category khmer-title-font">
                                         <a href="page-category.html">{{$announcement['top_title_'.session()->get('locale')]}}</a>
                                     </div>
-                                    <h2 class="entry-title khmer-title-font">
+                                    <h2 class="entry-title title-font">
                                         <a href="single.html">{{$announcement['title_'.session()->get('locale')]}}</a>
                                     </h2>
                                     <div class="entry-meta">
                                         <div>
-                                            <span class="meta-date khmer-content-font">
+                                            <span class="meta-date khmer-title-font">
                                                 {{$announcement['bottom_title_'.session()->get('locale')]}}
                                             </span>
                                         </div>

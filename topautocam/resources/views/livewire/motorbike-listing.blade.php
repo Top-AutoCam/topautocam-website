@@ -81,9 +81,9 @@
                         <ul class="products columns-4">
                             @foreach($motorbikes as $motorbike)
                             <li class="product type-product has-post-thumbnail">
-                                <a href="shop-product.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                <a href="{{ route('motorbike-detail', $motorbike->id) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                     <img src={{ asset('/storage/'.$motorbike->image)}} width="250" height="250">
-                                    <h2 class="woocommerce-loop-product__title">{{ $motorbike->title }}</h2>
+                                    <h2 class="woocommerce-loop-product__title khmer-title-font">{{ $motorbike->title }}</h2>
 
                                     <span class="price">
                                         <span class="woocommerce-Price-amount amount">

@@ -11,7 +11,7 @@
             <div class="uk-container">
                 <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2">Cars</h4>
+                        <h4 class="title uk-h2 title-font">Parts</h4>
                     </div>
                     <div>
                         <ul class="uk-breadcrumb">
@@ -19,7 +19,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="/cars">Cars</a>
+                                <a href="/parts">Parts</a>
                             </li>
                         </ul>
                     </div>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <livewire:car-listing/>
+        <livewire:part-listing/>
     </div>
 
 </div>

@@ -11,7 +11,7 @@
             <div class="uk-container">
                 <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2">Motorbikes</h4>
+                        <h4 class="title uk-h2 title-font">Motorbikes</h4>
                     </div>
                     <div>
                         <ul class="uk-breadcrumb">

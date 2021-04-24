@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\MotorbikeController;
+use App\Http\Controllers\PartController;
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
@@ -18,15 +21,22 @@ use App\Http\Controllers\SiteController;
 Route::middleware('locale')->group(function () {
 
     Route::get('/', [SiteController::class, 'index'])->name('home');
-    Route::get('/cars', [SiteController::class, 'cars'])->name('car-index');
-    Route::get('/motorbikes', [SiteController::class, 'motorbikes'])->name('motorbike-index');
-    Route::get('/parts', [SiteController::class, 'parts'])->name('part-index');
+    
+    Route::get('/cars', [CarController::class, 'index'])->name('car-index');
+    Route::get('/cars/{id}', [CarController::class, 'detail'])->name('car-detail');
+
+    Route::get('/motorbikes', [MotorbikeController::class, 'index'])->name('motorbike-index');
+    Route::get('/motorbikes/{id}', [MotorbikeController::class, 'detail'])->name('motorbike-detail');
+
+    Route::get('/parts', [PartController::class, 'index'])->name('part-index');
+    Route::get('/parts/{id}', [PartController::class, 'detail'])->name('part-detail');
+
     Route::get('/loan', [SiteController::class, 'loan'])->name('loan-index');
     Route::get('/login', [SiteController::class, 'login'])->name('login');
     Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
     Route::post('/locale', [SiteController::class, 'locale'])->name('set-locale');
 
-    Route::get('/blog', [BlogController::class, 'index'])->name('blog-index');
-    Route::get('/blog/{slug}', [BlogController::class, 'detail'])->name('blog-detail');
+    Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+    Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');
 
 });

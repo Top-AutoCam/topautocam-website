@@ -36,7 +36,7 @@
                     <a class="toggle" href="#"><i class="icon flo_search"></i></a>
                     <div class="uk-drop" data-uk-drop="mode: click; pos: left-center; offset: 0">
                         <form class="uk-search uk-search-navbar uk-width-1-1" action="/search" method="get">
-                            <input class="uk-search-input" name="title" type="search" placeholder="Search" autofocus="">
+                            <input class="uk-search-input" name="q" type="search" placeholder="Search" autofocus="">
                         </form>
                     </div>
                 </div>

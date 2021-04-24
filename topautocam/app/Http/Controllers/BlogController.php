@@ -40,7 +40,7 @@ class BlogController extends Controller
         $announcements = Announcement::latest()
         ->take(12)->get();
 
-        $q = $request->input('title');
+        $q = $request->input('q');
         $cars = Car::searchAny($q, "id" ,"asc", $q, $q, $q, $q, $q);
         
         $featuredMotorbikes = Motorbike::search($q, "title" ,"asc", null, null, null, null, null);

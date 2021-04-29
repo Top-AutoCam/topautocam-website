@@ -12,13 +12,14 @@ class GlobalSearchController extends Controller
 {
     
     public function globalSearch(Request $request) {
+        
         $announcements = Announcement::latest()
         ->take(12)->get();
 
-        $q = $request->input('title');
-        $cars = Car::search($q, "title" ,"asc", null, null, null, null, null,null);
-        $featuredMotorbikes = Motorbike::search($q, "title" ,"asc", null, null, null, null, null,null);
-        $featuredParts = Part::search($q, "title" ,"asc",null, null, null, null, null,null);
+        $q = $request->input('q');
+        $cars = Car::searchGlobal($q, "id" ,"asc", $q, $q, $q, $q, $q);
+        $featuredMotorbikes = Motorbike::searchGlobal($q, "id" ,"asc", $q, $q, $q, $q, $q);
+        $featuredParts = Part::searchGlobal($q, "id" ,"asc", $q, $q, $q, $q, $q);
         return view('front.layouts.global_search', [
             'announcements' => $announcements,
             'featuredCars'=>$cars,

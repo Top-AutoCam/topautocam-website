@@ -4,7 +4,6 @@
 
             <div class="block-layout featured-layout">
                 <div class="uk-grid-match" data-uk-grid="">
-                    
                     <div class="col-center uk-width-expand@m">
                         <article class="post type-post">
                             <div class="entry-outer">

@@ -6,6 +6,7 @@ use App\Http\Controllers\PartController;
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\GlobalSearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +40,7 @@ Route::middleware('locale')->group(function () {
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');
 
-    Route::get('/search',[BlogController::class, 'globalSearch']);
+    Route::get('/search',[GlobalSearchController::class, 'globalSearch']);
     // ->name('global-search');
 
 });

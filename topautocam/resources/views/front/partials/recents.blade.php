@@ -8,9 +8,9 @@
                         {{ __("Recent") }}
                     </h4>
                 </div>
-                <div>
+                <!-- <div>
                     <a href="page-category.html" class="more-link">{{ __("See all in recent")}}</a>
-                </div>
+                </div> -->
             </div>
 
             <div class="block-layout grid-layout four-cols">

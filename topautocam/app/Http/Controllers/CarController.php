@@ -9,6 +9,9 @@ use OptimistDigital\NovaBlog\Models\Post;
 
 class CarController extends Controller
 {
+
+    public $count; 
+
     public function index()
     {
         $announcements = Announcement::latest()
@@ -25,10 +28,11 @@ class CarController extends Controller
         if($car == null) {
             abort(404);
         }
-
+        $car->increment('view_count',1);
+        $car->save();
         return view('front.pages.cars.detail', [
             'car' => $car
         ]);
     }
-
 }
+

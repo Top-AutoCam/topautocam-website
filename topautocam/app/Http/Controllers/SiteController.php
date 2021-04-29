@@ -12,6 +12,7 @@ use App\Models\Testimonial;
 use App\Util\UTIL;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use DB;
 
 class SiteController extends Controller
 {
@@ -19,13 +20,13 @@ class SiteController extends Controller
     public function index()
     {
 
-        // featured
         $featuredCars = Car::featureds(5);
         $mainFeaturedCar = $featuredCars[0];
         $topLeftFeaturedCar = $featuredCars[1];
         $topRightFeaturedCar = $featuredCars[2];
         $bottomLeftFeaturedCar = $featuredCars[3];
         $bottomRightFeaturedCar = $featuredCars[4];
+
 
         $services = CarService::list(3);
         $promotions = Promotion::list(2);
@@ -57,6 +58,14 @@ class SiteController extends Controller
         $announcements = Announcement::latest()
             ->take(12)->get();
 
+        $mostCarView = Car::OrderBy('view_count', 'DESC')->take(5)->get();
+        $mainMostCarView = $mostCarView[0];
+        $leftTopMostCarView = $mostCarView[1];
+        $leftButtomMostCarView = $mostCarView[2];
+        $rightTopMostCarView = $mostCarView[3];
+        $rightBottomMostCarView = $mostCarView[4];
+      
+
         return view('front.pages.home', [
             'announcements' => $announcements,
             'mainFeaturedCar' => $mainFeaturedCar,
@@ -73,6 +82,11 @@ class SiteController extends Controller
             'recentCars' => $recentCars,
             'recentMotorbikes' => $recentMotorbikes,
             'recentParts' => $recentParts,
+            'mainMostCarView'=> $mainMostCarView,
+            'leftTopMostCarView' => $leftTopMostCarView,
+            'leftButtomMostCarView' => $leftButtomMostCarView,
+            'rightTopMostCarView' => $rightTopMostCarView,
+            'rightBottomMostCarView' => $rightBottomMostCarView,
         ]);
     }
 
@@ -97,7 +111,6 @@ class SiteController extends Controller
     {
 
         $session = $request->session();
-
         $locale = $session->get('locale', 'en');
 
         Log::debug("previous locale = ${locale}");

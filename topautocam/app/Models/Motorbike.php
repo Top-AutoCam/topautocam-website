@@ -60,4 +60,20 @@ class Motorbike extends Model
             ->orderBy($sort, $order)
             ->paginate(UTIL::RESULTS_PER_PAGE);
     }
+
+
+    public static function searchGlobal($search, $sort, $order, $make, $model, $color)
+    {
+        return
+            Motorbike::when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('detail', 'like', '%' . $search . '%')
+                    ->orWhere('make', 'like', '%' . $search . '%')
+                    ->orWhere('model', 'like', '%' . $search . '%')
+                    ->orWhere('color', 'like', '%' . $search . '%');
+            })
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
+            ->orderBy($sort, $order)
+            ->paginate(UTIL::RESULTS_PER_PAGE);
+    }
 }

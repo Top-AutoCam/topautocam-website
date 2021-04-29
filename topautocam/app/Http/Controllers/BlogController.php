@@ -35,21 +35,4 @@ class BlogController extends Controller
         ]);
     }
 
-
-    public function globalSearch(Request $request) {
-        $announcements = Announcement::latest()
-        ->take(12)->get();
-
-        $q = $request->input('q');
-        $cars = Car::searchAny($q, "id" ,"asc", $q, $q, $q, $q, $q);
-        
-        $featuredMotorbikes = Motorbike::search($q, "title" ,"asc", null, null, null, null, null);
-        $featuredParts = Part::search($q, "title" ,"asc", null, null, null, null, null);
-        return view('front.layouts.global_search', [
-            'announcements' => $announcements,
-            'featuredCars'=>$cars,
-            'featuredMotorbikes' => $featuredMotorbikes,
-            'featuredParts' => $featuredParts,
-        ]);
-    }
 }

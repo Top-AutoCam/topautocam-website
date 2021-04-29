@@ -8,9 +8,9 @@
                         {{ __("Promotions") }}
                     </h4>
                 </div>
-                <div>
+                <!-- <div>
                     <a href="/promotions" class="more-link">{{ __("See all in promotions") }}</a>
-                </div>
+                </div> -->
             </div>
 
             <div class="block-layout grid-layout two-cols">

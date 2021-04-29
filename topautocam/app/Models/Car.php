@@ -11,6 +11,7 @@ class Car extends Model
     use HasFactory;
 
     protected $table = 'car';
+    protected $fillable = ['view_count'];
 
     public function images()
     {
@@ -74,7 +75,7 @@ class Car extends Model
             ->paginate(UTIL::RESULTS_PER_PAGE);
     }
 
-    public static function searchAny($search, $sort, $order, $make, $model, $color, $drive, $fuel)
+    public static function searchGlobal($search, $sort, $order, $make, $model, $color, $drive, $fuel)
     {
         return
             Car::when($search, function ($query, $search) {
@@ -86,6 +87,7 @@ class Car extends Model
                     ->orWhere('drive', 'like', '%' . $search . '%')
                     ->orWhere('fuel', 'like', '%' . $search . '%');
             })
+            ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->orderBy($sort, $order)
             ->paginate(UTIL::RESULTS_PER_PAGE);
     }

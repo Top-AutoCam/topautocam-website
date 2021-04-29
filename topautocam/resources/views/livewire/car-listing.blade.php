@@ -97,7 +97,7 @@
                         </form>
                     </div>
 
-                    <div class="uk-width-4-5@m">
+                    <div class="uk-width-4-5@m">0
                         <ul class="products columns-4">
                             @foreach($cars as $car)
                             <li class="product type-product has-post-thumbnail">

@@ -67,8 +67,8 @@
                                         </div>
                                     </div>
                                 </article> 
-                            @else       
-                            @endif    
+                            @else  
+                            @endif  
                         @endforeach
                     
                     </div>

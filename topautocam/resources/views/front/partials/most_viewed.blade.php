@@ -11,11 +11,12 @@
 
             <div class="block-layout featured-layout">
                 <div class="uk-grid-match" data-uk-grid="">
+                    
                     <div class="col-center uk-width-expand@m">
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb">
-                                    <div class="image cover-image" data-src="assets/images/posts/35.jpg" data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image" data-src="{{ asset('storage/'.$mainMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                 </div>
                                 <div class="entry-inner">
@@ -23,19 +24,18 @@
                                         <div class="entry-meta">
                                             <div>
                                                 <span class="meta-category">
-                                                    <a href="page-category.html">Trips</a>
+                                                    <a href="page-category.html"> {{ $mainMostCarView->make }} {{ $mainMostCarView->model }}</a>
                                                 </span>
                                                 <span class="meta-date">
-                                                    15 January, 2018
+                                                {{ $mainMostCarView->created_at->format('d-m-Y') }}
                                                 </span>
                                             </div>
                                         </div>
                                         <h3 class="entry-title khmer-title-font">
-                                            <a href="#">5 Ways to stay motivated after January</a>
+                                            <a href="#">{{ $mainMostCarView->title }}</a>
                                         </h3>
                                         <div class="entry-snippet">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolore quo deleniti repellendus optio
-                                                illo aperiam excepturi accusantium assumenda doloremque!</p>
+                                            <p>{{ $mainMostCarView->detail }}</p>
                                         </div>
                                         <div class="entry-footer">
                                             <div>
@@ -51,38 +51,43 @@
                             </div>
                         </article>
                     </div>
+                    
+         
+
                     <div class="col-left col-grid uk-width-1-5@m uk-flex-first@m">
+                    <!-- Left Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb">
-                                    <div class="image cover-image ratio-square" data-src="assets/images/posts/10.jpg" data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftTopMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
                                         <div class="entry-category">
-                                            <a href="page-category.html">Summer</a>
+                                            <a href="page-category.html">{{ $leftTopMostCarView->make }} {{ $leftTopMostCarView->model }}</a>
                                         </div>
                                         <h3 class="entry-title uk-h5 khmer-title-font">
-                                            <a href="single.html">5 Ways to stay motivated after January</a>
+                                            <a href="single.html">{{ $leftTopMostCarView->title }}</a>
                                         </h3>
                                     </div>
                                 </div>
                             </div>
                         </article>
+                        <!-- Left Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb">
-                                    <div class="image cover-image ratio-square" data-src="assets/images/posts/09.jpg" data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftButtomMostCarView->image)}}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
                                         <div class="entry-category">
-                                            <a href="page-category.html">Holiday</a>
+                                            <a href="page-category.html">{{ $leftButtomMostCarView->make }} {{ $leftButtomMostCarView->model }}</a>
                                         </div>
                                         <h3 class="entry-title uk-h5 khmer-title-font">
-                                            <a href="single.html">5 Tips to Use Coconut Water</a>
+                                            <a href="single.html">{{ $leftButtomMostCarView->title }}</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -90,42 +95,47 @@
                         </article>
                     </div>
                     <div class="col-right col-grid uk-width-1-5@m">
+
+                        <!-- Right Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb">
-                                    <div class="image cover-image ratio-square" data-src="assets/images/posts/13.jpg" data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$rightTopMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
                                         <div class="entry-category">
-                                            <a href="page-category.html">Travel</a>
+                                            <a href="page-category.html">{{ $rightTopMostCarView->make }} {{ $rightTopMostCarView->model }}</a>
                                         </div>
                                         <h3 class="entry-title uk-h5 khmer-title-font">
-                                            <a href="single.html">Traveling alone on the road</a>
+                                            <a href="single.html">{{ $rightTopMostCarView->title }}</a>
                                         </h3>
                                     </div>
                                 </div>
                             </div>
                         </article>
+                        <!-- Right Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb">
-                                    <div class="image cover-image ratio-square" data-src="assets/images/posts/08.jpg" data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftButtomMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
                                         <div class="entry-category">
-                                            <a href="page-category.html">Beach</a>
+                                            <a href="page-category.html">{{ $rightBottomMostCarView->make }} {{ $rightBottomMostCarView->model }}</a>
                                         </div>
                                         <h3 class="entry-title uk-h5 khmer-title-font">
-                                            <a href="single.html">A list of tips for fashion bloggers</a>
+                                            <a href="single.html">{{ $rightBottomMostCarView->title }}</a>
                                         </h3>
                                     </div>
                                 </div>
                             </div>
                         </article>
+
+
                     </div>
                 </div>
             </div>

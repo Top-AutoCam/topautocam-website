@@ -1,5 +1,4 @@
 <div>
-
     <form wire:submit.prevent="submit" class="uk-form-stacked uk-form-horizontal uk-margin-large-top khmer-content-font">
 
         @if($successMessage)

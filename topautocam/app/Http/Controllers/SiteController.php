@@ -19,7 +19,6 @@ class SiteController extends Controller
 
     public function index()
     {
-
         $featuredCars = Car::featureds(5);
         $mainFeaturedCar = $featuredCars[0];
         $topLeftFeaturedCar = $featuredCars[1];
@@ -27,11 +26,9 @@ class SiteController extends Controller
         $bottomLeftFeaturedCar = $featuredCars[3];
         $bottomRightFeaturedCar = $featuredCars[4];
 
-
         $services = CarService::list(3);
         $promotions = Promotion::list(2);
         $testimonials = Testimonial::list(3);
-
         $recents = Car::recents(8);
 
         $featuredMotorbikes = Motorbike::where('selected', UTIL::SELECTED['FEATURED'])

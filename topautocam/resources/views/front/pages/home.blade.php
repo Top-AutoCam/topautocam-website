@@ -46,6 +46,7 @@
 
 </div>
 
-@include('front.partials.newsletter')
+<livewire:subscribe/>
+
 
 @endsection

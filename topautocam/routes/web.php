@@ -36,6 +36,8 @@ Route::middleware('locale')->group(function () {
     Route::get('/login', [SiteController::class, 'login'])->name('login');
     Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
     Route::post('/locale', [SiteController::class, 'locale'])->name('set-locale');
+    //----
+    Route::get('/about-us', [SiteController::class, 'aboutUs'])->name('about-us');
 
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');

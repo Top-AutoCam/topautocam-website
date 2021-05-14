@@ -8,7 +8,7 @@
             </h1>
             <nav class="primary-menu uk-visible@l">
 
-                <ul class="menu">
+                <ul class="menu uk-text-small">
                     <li>
                         <a href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">Home</a>
                     </li>
@@ -23,6 +23,9 @@
                     </li>
                     <li>
                         <a href="/blog" class="{{ Route::currentRouteName() == 'blog' ? 'selected-menu' : '' }}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/about-us" class="{{ Route::currentRouteName() == 'about-us' ? 'selected-menu' : '' }}">About Us</a>
                     </li>
                     <li>
                         <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">Contact</a>
@@ -44,6 +47,7 @@
                 <div class="membership">
                     <a href="/login" class="login">Log In</a>
                 </div>
+
                 <div class="locale">
                     <form method="POST" action="/locale">
                         @csrf

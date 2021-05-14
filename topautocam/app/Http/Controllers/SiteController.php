@@ -93,6 +93,11 @@ class SiteController extends Controller
         return view('front.pages.contact');
     }
 
+    public function aboutUs()
+    {
+        return view('front.pages.about-us');
+    }
+
     public function login()
     {
 

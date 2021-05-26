@@ -9,6 +9,11 @@ use App\Models\Motorbike;
 use App\Models\Part;
 use App\Models\Promotion;
 use App\Models\Testimonial;
+use App\Models\About;
+use App\Models\Video;
+use App\Models\Gallery;
+use App\Models\FQA;
+use App\Models\Team;
 use App\Util\UTIL;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -52,8 +57,7 @@ class SiteController extends Controller
             ->where('status', UTIL::INVENTORY_STATUS['IN_STOCK'])
             ->take(12)->get();
 
-        $announcements = Announcement::latest()
-            ->take(12)->get();
+        $announcements = Announcement::latest()->take(12)->get();
 
         $mostCarView = Car::OrderBy('view_count', 'DESC')->take(5)->get();
         $mainMostCarView = $mostCarView[0];
@@ -89,13 +93,29 @@ class SiteController extends Controller
 
     public function contact()
     {
-
         return view('front.pages.contact');
     }
 
     public function aboutUs()
     {
-        return view('front.pages.about-us');
+        $aboutus = About::latest()->get();
+        $teams = Team::latest()->get();
+        $videos = Video::latest()->take(2)->get();
+        $galleries = Gallery::latest()->get();
+
+        return view('front.pages.about-us',[
+            'aboutus' => $aboutus,
+            'teams' => $teams,
+            'videos' => $videos,
+            'galleries' => $galleries,
+        ]);
+    }
+
+    public function FQAs(){
+        $fqas = FQA::latest()->get();
+        return view('front.pages.fqas',[
+            'fqas' => $fqas,
+        ]);
     }
 
     public function login()

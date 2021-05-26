@@ -27,6 +27,9 @@ class DatabaseSeeder extends Seeder
         $this->call(PartImageSeeder::class);
         $this->call(AnnouncementSeeder::class);
 
+        $this->call(CreateAdminUserSeeder::class);
+        $this->call(PermissionTableSeeder::class);
+
         // update 
     }
 }

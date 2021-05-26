@@ -21,10 +21,37 @@
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
 
+<!--     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <style>
+        img {
+            pointer-events: none;
+        }
+    </style>
+
     @livewireStyles
 </head>
 
+<!-- <script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+
+</script> -->
+
+
+
+<script>
+$(document).ready(function(){
+    UIkit.modal('#modal-example').show();
+});
+       
+</script>
+
 <body class="archive woocommerce woocommerce-page">
+   
     <div id="loader">
         <div class="loading">
             <div></div>
@@ -74,5 +101,10 @@
 
     @livewireScripts
 </body>
+
+
+<script>
+
+</script>
 
 </html>

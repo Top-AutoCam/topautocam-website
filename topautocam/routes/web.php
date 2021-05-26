@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\GlobalSearchController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,11 +34,12 @@ Route::middleware('locale')->group(function () {
     Route::get('/parts/{id}', [PartController::class, 'detail'])->name('part-detail');
 
     Route::get('/loan', [SiteController::class, 'loan'])->name('loan-index');
-    Route::get('/login', [SiteController::class, 'login'])->name('login');
+    Route::get('/logins', [SiteController::class, 'login'])->name('login');
     Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
     Route::post('/locale', [SiteController::class, 'locale'])->name('set-locale');
     //----
     Route::get('/about-us', [SiteController::class, 'aboutUs'])->name('about-us');
+    Route::get('/fqas',[SiteController::class, 'FQAs'])->name('fqas');
 
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');
@@ -45,4 +47,13 @@ Route::middleware('locale')->group(function () {
     Route::get('/search',[GlobalSearchController::class, 'globalSearch']);
     // ->name('global-search');
 
+});
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/admins', [HomeController::class, 'admin']);
+    Route::get('/user', [HomeController::class, 'user']);
 });

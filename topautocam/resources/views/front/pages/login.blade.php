@@ -14,18 +14,23 @@
                                     <div class="u-columns col2-set" id="customer_login">
                                         <div class="u-column1 col-1">
                                             <h2>Login</h2>
-                                            <form class="woocommerce-form woocommerce-form-login login" method="post">
+                                            <form class="woocommerce-form woocommerce-form-login login" method="post" method="POST" action="{{ route('login') }}">
+                                            
                                                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-                                                    <label for="username">Username&nbsp;
+                                                    <label for="email">Email&nbsp;
                                                         <span class="required">*</span>
                                                     </label>
-                                                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value=""> </p>
+                                                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value=""> 
+                                                </p>
+
+
                                                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                                                     <label for="password">Password&nbsp;
                                                         <span class="required">*</span>
                                                     </label>
                                                     <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password">
                                                 </p>
+
                                                 <p class="form-row">
                                                     <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce">
                                                     <input type="hidden" name="_wp_http_referer" value="/wordpress/my-account/">

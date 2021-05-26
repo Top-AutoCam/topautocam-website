@@ -1,17 +1,19 @@
-// Brand Colors
-$mainClr: #222222;
-$secClr: #505050;
+// Body
+$body-bg: #f8fafc;
 
-// Global Colors
-$bodyBgClr: #ffffff;
-$bodyClr: #505050;
-$linkClr: #222222;
-$linkClrHr: #7c7c7c;
-$headingClr: #222222;
-$borderClr: rgba(0, 0, 0, 0.07);
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
 
-// Typography 
-$mainFnt: 'Montserrat', sans-serif;
-$serifFnt: 'PT Serif', sans-serif;
-$bodyFnt: $mainFnt;
-$headingFnt: $mainFnt;
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;

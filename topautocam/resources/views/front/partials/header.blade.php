@@ -6,9 +6,8 @@
                     <img src="{{ asset('images/logo.jpeg') }}" style="width: 50px;" />
                 </a>
             </h1>
-            <nav class="primary-menu uk-visible@l">
-
-                <ul class="menu uk-text-small">
+            <nav class=" primary-menu uk-visible@l">
+                <ul class="menu uk-text">
                     <li>
                         <a href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">Home</a>
                     </li>
@@ -30,11 +29,13 @@
                     <li>
                         <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">Contact</a>
                     </li>
-
+                    <li>
+                        <a href="/fqas" class="{{ Route::currentRouteName() == 'fqas' ? 'selected-menu' : '' }}">FQAs</a>
+                    </li> 
                 </ul>
             </nav>
+
             <div class="secondary-menu uk-visible@s">
-            
                 <div class="search">
                     <a class="toggle" href="#"><i class="icon flo_search"></i></a>
                     <div class="uk-drop" data-uk-drop="mode: click; pos: left-center; offset: 0">
@@ -45,7 +46,57 @@
                 </div>
 
                 <div class="membership">
-                    <a href="/login" class="login">Log In</a>
+                    <!-- <a href="/login" class="login">Log In</a> -->
+                    @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item uk-list">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+                            <!-- 
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>s
+                            @endif -->
+                    @else
+
+                            <button class="uk-button uk-button-default" type="button" role="button" >{{ Auth::user()->name }}</button>
+                            <div uk-dropdown>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active">
+                                        <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" >{{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                    <!-- <li class="uk-nav-divider"></li> -->
+                                </ul>
+                            </div>
+
+                            <!-- <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+
+                                </div>
+                            </li> -->
+
+                        @endguest
                 </div>
 
                 <div class="locale">
@@ -61,6 +112,7 @@
                     </form>
                 </div>
             </div>
+            
             <div class="mobile-menu uk-hidden@s">
                 <!--
                 <div class="cart">
@@ -79,6 +131,8 @@
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </div>
 </header>

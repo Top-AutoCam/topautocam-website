@@ -82,7 +82,7 @@
                             @foreach($parts as $part)
                             <li class="product type-product has-post-thumbnail">
                                 <a href="{{ route('part-detail', $part->id) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                    <img src={{ asset('/storage/'.$part->image)}} width="250" height="250">
+                                    <img class ="uk-height-max-small uk-child-width-1-4 uk-cover-container" src={{ asset('/storage/'.$part->image)}} width="250" height="250">
                                     <h2 class="woocommerce-loop-product__title khmer-title-font">{{ $part->title }}</h2>
 
                                     <span class="price">

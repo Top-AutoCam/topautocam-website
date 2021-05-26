@@ -14,9 +14,7 @@ use App\Exceptions\RemainingDigitException;
 
 class UTIL {
 
-
     const PROJECT_NAME = "TOP AUTO";
-
     const DESC = "desc";
     const ASC = "asc";
 
@@ -48,7 +46,8 @@ class UTIL {
     const DRIVE = [
         "4WD" => "4WD",
         "FWD" => "FWD",
-        "AWD" => "AWD"
+        "AWD" => "AWD",
+        "TWD" => "TWD"
     ];
 
     const MAKE = [
@@ -62,10 +61,23 @@ class UTIL {
         "SUZUKI" => "Suzuki",
     ];
 
+    // add one more field into table model
+
+    // make_id
+    
+    // data will be like this
+    
+    // model, make_id
+    // q7, audi
+    // q5, audi
+    
+    // this tells that if make = audi, then there are two models: q5 and q7
+    // in front end, when user select audi, you query for what models belong to audi from this table
+
     const MODEL = [
         "ALPHARD" => "Alphard",
         "BMW" => "E90",
-        "Q7" => "Q7"
+        "Q7" => "Q7",
     ];
 
     const MODEL_BIKE = [

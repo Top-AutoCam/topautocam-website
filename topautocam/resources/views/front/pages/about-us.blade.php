@@ -3,38 +3,41 @@
 @section('content')
 
     <div class="uk-container" >
-
-        <div class="uk-section-default">
-            <div class="uk-section uk-light uk-background-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSgv-ImQ58rAuV3AxM4UwmxP2tMPA6DiebqOfVw_UF-9ZKsxDxqGRSW5N0hivG_AbRjI&usqp=CAU)">
-                <div class="uk-container">
-                    <h1 class="uk-text-center">ABOUT US</h1>
-
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <h2 style="color:gray;" class="uk-text-center">ABOUT US</h2>
+                <!-- <hr class="uk-divider-small  uk-align-center"> -->
+                <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+                    <div class="uk-text-center">
+                        <p>
+                        <a href="/contact" class="uk-text-primary">Contact us</a>
+                        anytime if you need further assistance.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
-
+    @foreach($aboutus as $aboutus)    
         <div>
             <div class="uk-card uk-align-center uk-card-default uk-card-body uk-width-3-4 uk-margin-top">
                 <h3 class="uk-card-title">TOP AUTO</h3>
-                <p uk-text-center>Choose the plan that fits your needs. Joining takes less than a minute, and, if your peers are correct, is the best decision you'll make all day. If you're still on the fence, we have a plan called “monthly” - and it’s not like the gym. Seriously, you can cancel it in five seconds if this isn't for you.</p>
+                <p uk-text-center>{{$aboutus->overview}}</p>
             </div>
         </div>
-
 
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
             <div>
                 <div class="uk-background-muted uk-padding">
                 <img data-src="https://www.phimc.org/wp-content/uploads/2016/09/about-mission-icon.png" width="100" height="100" alt="" uk-img>
                     <h2>Mission</h2>
-                    <p>Choose the plan that fits your needs. Joining takes less than a minute, and, if your peers are correct, is the best decision you'll make all day. If you're still on the fence, we have a plan called “monthly” - and it’s not like the gym.</p>
-                </div>
-                
+                    <p>{{$aboutus->mission}}</p>
+                </div> 
             </div>
             <div>
                 <div class="uk-background-muted uk-padding">
                 <img data-src="https://webstockreview.net/images/vision-clipart-11.png" width="100" height="100" alt="" uk-img>
                 <h2>Vission</h2>
-                    <p>Choose the plan that fits your needs. Joining takes less than a minute, and, if your peers are correct, is the best decision you'll make all day. If you're still on the fence, we have a plan called “monthly” - and it’s not like the gym. </p>
+                    <p>{{$aboutus->vision}}</p>
                 </div>
                 
             </div>
@@ -42,11 +45,14 @@
                 <div class="uk-background-muted uk-padding">
                 <img data-src="https://cdn2.iconfinder.com/data/icons/fintech-duotone-41px-1/45/history_transaction_record_track-512.png" width="100" height="100" alt="" uk-img>
                 <h2>History</h2>
-                    <p>Choose the plan that fits your needs. Joining takes less than a minute, and, if your peers are correct, is the best decision you'll make all day. If you're still on the fence, we have a plan called “monthly” - and it’s not like the gym..</p>
+                    <p>{{$aboutus->history}}</p>
                 </div>
                 
             </div>
         </div>
+
+    @endforeach    
+
 
         <div class="inner uk-position-relative uk-padding">
             <div class="uk-container uk-width-1-2">
@@ -59,68 +65,18 @@
         </div>
 
         <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-match uk-grid-small" uk-grid>
+        @foreach($teams as $team)
 
             <div class="uk-text-center">
                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-51Utmw56FMBsmHRdRVn8awPHOdTeu0Qsiw&usqp=CAU" alt="">
                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p class="uk-h4 uk-margin-remove">Repairer</p>
+                        <p class="uk-h4 uk-margin-remove">{{$team->role}}</p>
                     </div>
                 </div>
-                <p class="uk-margin-small-top">Sok Ruos</p>
+                <p class="uk-margin-small-top">{{$team->name}}</p>
             </div>
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-51Utmw56FMBsmHRdRVn8awPHOdTeu0Qsiw&usqp=CAU" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p class="uk-h4 uk-margin-remove">Repairer</p>
-                    </div>
-                </div>
-                <p class="uk-margin-small-top">Sok Ruos</p>
-            </div>
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-51Utmw56FMBsmHRdRVn8awPHOdTeu0Qsiw&usqp=CAU" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p class="uk-h4 uk-margin-remove">Repairer</p>
-                    </div>
-                </div>
-                <p class="uk-margin-small-top">Sok Ruos</p>
-            </div>
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-51Utmw56FMBsmHRdRVn8awPHOdTeu0Qsiw&usqp=CAU" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p class="uk-h4 uk-margin-remove">Repairer</p>
-                    </div>
-                </div>
-                <p class="uk-margin-small-top">Sok Ruos</p>
-            </div>
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-51Utmw56FMBsmHRdRVn8awPHOdTeu0Qsiw&usqp=CAU" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p class="uk-h4 uk-margin-remove">Repairer</p>
-                    </div>
-                </div>
-                <p class="uk-margin-small-top">Sok Ruos</p>
-            </div>
-
-
-            <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-51Utmw56FMBsmHRdRVn8awPHOdTeu0Qsiw&usqp=CAU" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p class="uk-h4 uk-margin-remove">Repairer</p>
-                    </div>
-                </div>
-                <p class="uk-margin-small-top">Sok Ruos</p>
-            </div>
-
+        @endforeach   
         </div>
 
     </div>
@@ -136,68 +92,26 @@
     </div>
 
     <div class="block-layout grid-layout two-cols uk-width-3-4 uk-align-center ">
-                <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid="">
+            <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid="">
+                @foreach($videos as $video)
                     <article class="post type-post">
                         <div class="entry-outer">
-                            <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                            <iframe src="{{$video->urlFrame}}"  width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
                         </div>
                     </article>
-
-                    <article class="post type-post">
-                        <div class="entry-outer">
-                            <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-                        </div>
-                    </article>
-                </div>
+                @endforeach    
             </div>
+    </div>
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m" >
+    @foreach($galleries as $key => $gallerie)
         <li>
             <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            <div class="uk-position-center uk-panel"><h1>{{$key+1}}</h1></div>
         </li>
-
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        
-
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        
-
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        <li>
-            <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>1</h1></div>
-        </li>
-        
-        
+    @endforeach    
     </ul>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>

@@ -31,7 +31,6 @@ class CarListing extends Component
 
     public $fuels;
     public $fuel1;
-
     
     public function mount() {
         $this->sort = 'title';

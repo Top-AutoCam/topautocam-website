@@ -55,7 +55,7 @@
                             <div class="entry-outer">
                                 <div class="entry-thumb">
                                     <div class="image cover-image ratio-square" data-src={{ asset('storage/'.$topLeftFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
-                                    <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $topLeftFeaturedCar->id) }}""></a>
+                                    <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $topLeftFeaturedCar->id) }}"></a>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">

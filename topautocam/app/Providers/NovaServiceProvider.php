@@ -10,6 +10,9 @@ use App\Nova\Metrics\NewCars;
 use App\Nova\Metrics\NewMotorbikes;
 use App\Nova\Metrics\NewParts;
 
+use App\Models\Promotion;
+use App\Observers\PromotionObserver;
+
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
     /**
@@ -17,9 +20,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot() 
     {
         parent::boot();
+        Nova::serving(function () {
+            Promotion::observe(PromotionObserver::class);
+        });
     }
 
     /**

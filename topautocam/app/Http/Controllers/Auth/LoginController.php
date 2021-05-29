@@ -31,10 +31,10 @@ class LoginController extends Controller
     protected $redirectTo = '/details';
     protected function authenticated(Request $request, $user)
     {
-        if($user->hasRole('Admin')){
+        if($user->hasRole('Admin') || $user->hasRole('Manager') || $user->hasRole('Webmaster') ){
             return redirect('/admin');
         }
-        if($user->hasRole('CAR DEALER')){
+        if($user->hasRole('Sales')  || $user->hasRole('') ){
             return redirect('/');
         }
         return redirect('/');

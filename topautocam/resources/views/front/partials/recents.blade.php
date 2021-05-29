@@ -27,7 +27,7 @@
                                         <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
                                     </a>
                                 </div>
-                                <div class="uk-position-bottom-left" style="font-size: 12px; color:#FCC201;">
+                                <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
                                     017 238 008 | 015 238 008
                                 </div>
                             </div>

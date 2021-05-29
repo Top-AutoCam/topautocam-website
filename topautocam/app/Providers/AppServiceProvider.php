@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Promotion;
+use App\Observers\PromotionObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -22,7 +24,8 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+    { 
+      Promotion::observe(PromotionObserver::class);      
        $this->app->bind('path.public', function () {
          return base_path() . '/../public_html';
        }); 

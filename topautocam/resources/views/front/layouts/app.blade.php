@@ -38,16 +38,16 @@
     $(document).ready(function(){
         $("#myModal").modal('show');
     });
-
 </script> -->
-
-
 
 <script>
 $(document).ready(function(){
-    UIkit.modal('#modal-example').show();
+    if (localStorage.getItem("isdisclaimerloaded") === null) {
+        UIkit.modal('#modal-example').show();
+    }
+    localStorage.setItem('isdisclaimerloaded', 1);
+    // localStorage.removeItem('isdisclaimerloaded');
 });
-       
 </script>
 
 <body class="archive woocommerce woocommerce-page">

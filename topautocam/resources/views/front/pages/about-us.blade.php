@@ -9,7 +9,7 @@
                 <!-- <hr class="uk-divider-small  uk-align-center"> -->
                 <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
                     <div class="uk-text-center">
-                        <p>
+                    <p>
                         <a href="/contact" class="uk-text-primary">Contact us</a>
                         anytime if you need further assistance.</p>
                     </div>
@@ -107,9 +107,17 @@
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m" >
     @foreach($galleries as $key => $gallerie)
-        <li>
+        <li class="uk-inline">
             <img src="https://electricvehicleweb.in/wp-content/uploads/2020/12/Next-gen-Toyota-Alphard-2021-front-quarters-rendering-1024x688.jpg" alt="">
             <div class="uk-position-center uk-panel"><h1>{{$key+1}}</h1></div>
+            <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                <a class="navbar-brand site-title" href="/">
+                    <img src="{{ asset('images/logo.jpeg') }}" style="width: 50px;" />
+                </a>
+            </div>
+            <div class="uk-position-bottom-left" style="font-size: 15px; color:#FCC201;">
+                017 238 008 | 015 238 008
+            </div>
         </li>
     @endforeach    
     </ul>

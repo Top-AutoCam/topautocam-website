@@ -15,9 +15,17 @@
                     <div class="col-center uk-width-expand@m">
                         <article class="post type-post">
                             <div class="entry-outer">
-                                <div class="entry-thumb">
+                                <div class="entry-thumb uk-inline">
                                     <div class="image cover-image" data-src="{{ asset('storage/'.$mainMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <div class="uk-position-top-right" >
+                                        <a class="navbar-brand site-title" href="/">
+                                            <img src="{{ asset('images/logo.jpeg') }}" style="width: 70px;" />
+                                        </a>
+                                    </div>
+                                    <div class="uk-position-bottom-left" style="font-size: 17px; color:#FCC201;">
+                                        017 238 008 | 015 238 008
+                                    </div>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -58,9 +66,17 @@
                     <!-- Left Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
-                                <div class="entry-thumb">
+                                <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftTopMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                        <a class="navbar-brand site-title" href="/">
+                                            <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
+                                        </a>
+                                    </div>
+                                    <div class="uk-position-bottom-left" style="font-size: 12px; color:#FCC201;">
+                                        017 238 008 | 015 238 008
+                                    </div>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -77,9 +93,17 @@
                         <!-- Left Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
-                                <div class="entry-thumb">
+                                <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftButtomMostCarView->image)}}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                        <a class="navbar-brand site-title" href="/">
+                                            <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
+                                        </a>
+                                    </div>
+                                    <div class="uk-position-bottom-left" style="font-size: 12px; color:#FCC201;">
+                                        017 238 008 | 015 238 008
+                                    </div>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -99,9 +123,17 @@
                         <!-- Right Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
-                                <div class="entry-thumb">
+                                <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$rightTopMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                        <a class="navbar-brand site-title" href="/">
+                                            <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
+                                        </a>
+                                    </div>
+                                    <div class="uk-position-bottom-left" style="font-size: 12px; color:#FCC201;">
+                                        017 238 008 | 015 238 008
+                                    </div>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -118,9 +150,17 @@
                         <!-- Right Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
-                                <div class="entry-thumb">
+                                <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftButtomMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                        <a class="navbar-brand site-title" href="/">
+                                            <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
+                                        </a>
+                                    </div>
+                                    <div class="uk-position-bottom-left" style="font-size: 12px; color:#FCC201;">
+                                        017 238 008 | 015 238 008
+                                    </div>
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">

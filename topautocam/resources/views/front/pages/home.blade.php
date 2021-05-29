@@ -27,6 +27,7 @@
     </div> -->
 
      <!-- This is the modal -->
+     <button class="md-btn md-btn-success" id="openmodal" data-uk-modal="{target:'modal-example'}">Open Dialogue</button>
      <div id="modal-example" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <h2 class="uk-modal-title">Headline</h2>
@@ -34,8 +35,7 @@
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
             <p class="uk-text-right">
-                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                <button class="uk-button uk-button-primary uk-modal-close" type="button">Save</button>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">OK</button>
             </p>
         </div>
     </div>

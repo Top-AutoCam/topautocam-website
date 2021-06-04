@@ -1,7 +1,6 @@
 <div class="block-listing">
     <div class="uk-container">
         <div class="inner uk-position-relative">
-
             <div class="block-layout featured-layout">
                 <div class="uk-grid-match" data-uk-grid="">
                     <div class="col-center uk-width-expand@m">

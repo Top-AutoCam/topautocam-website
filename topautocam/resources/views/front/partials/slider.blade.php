@@ -1,10 +1,7 @@
 <div id="slider" class="site-slider background-style boxed-layout">
-
     <div class="uk-container uk-container-no">
         <div class="inner uk-position-relative uk-visible-toggle">
-
             <div class="owl-carousel">
-
                 @foreach($announcements as $announcement)
                 <div class="item">
                     <article class="post type-post">

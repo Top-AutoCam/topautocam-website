@@ -1,7 +1,6 @@
 @extends('front.layouts.app')
 
 @section('content')
-
     <div class="uk-container" >
         <div class="uk-section uk-section-default">
             <div class="uk-container">

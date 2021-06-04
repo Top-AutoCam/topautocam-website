@@ -21,7 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-        
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -36,7 +35,6 @@
                     @endif
                 </div>
             @endif
-
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
@@ -45,7 +43,6 @@
                         </g>
                     </svg>
                 </div>
-
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
@@ -53,27 +50,23 @@
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
                                 <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
                             </div>
-
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
                                 </div>
                             </div>
                         </div>
-
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                 <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
                             </div>
-
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
                                 </div>
                             </div>
                         </div>
-
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
@@ -86,7 +79,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -131,3 +123,124 @@
         </div>
     </body>
 </html>
+
+
+public function getProvince(){
+        $label = $this->session->userdata('language');
+        $province="en_province";
+        if ($label == "kh") {
+              $province="kh_province";
+        } 
+        return $this->db->query("SELECT province_id,country_id,postal_code,$province as province FROM tbl_kh_province")->result();
+    }
+    //get district
+    public function get_district($id){
+       
+        $label = $this->session->userdata('language');
+        $district="en_district";
+        if ($label == "kh") {
+              $district="kh_district";
+        } 
+        return $this->db->query("SELECT district_id,postal_code,$district as district FROM tbl_kh_district WHERE province_id=$id")->result();
+
+       
+    }
+    public function get_commune($id)
+    {
+        $label    = $this->session->userdata('language');
+        $communce = "en_communce";
+        if($label == "kh") {
+            $communce = "kh_communce";
+        } 
+        return $this->db->query("SELECT communce_id, postal_code, $communce AS communce FROM tbl_kh_communce WHERE district_id = $id")->result();
+    }
+    
+    //==============function use for get_village by id to dropdown==============
+    public function get_village($id){
+        $label = $this->session->userdata('language');
+        $village="en_village";
+        if ($label == "kh") {
+              $village="kh_village";
+        } 
+        return $this->db->query("SELECT village_id,postal_code,$village as village FROM tbl_kh_village WHERE communce_id=$id")->result();
+    }
+    
+    public function get_district_load(){
+        $id = $_POST['province']; // $id = $_POST['province'];
+        $data['dis'] = $this->company_model->get_district($id);
+        header('Content-Type: application/json');
+        echo json_encode($data['dis']);
+    }
+
+    public function get_village_load(){
+        $id = $_POST['village']; // $id = $_POST['province'];
+        $data['vill'] = $this->company_model->get_village($id);
+        header('Content-Type: application/json');
+        echo json_encode($data['vill']);
+    }
+
+    public function get_commune_load(){
+        $id = $_POST['commune']; // $id = $_POST['province'];
+        $data['com'] = $this->company_model->get_commune($id);
+        header('Content-Type: application/json');
+        echo json_encode($data['com']);
+    }
+
+    public function get_commune_by_id()
+    {
+        $id = $_POST['commune'];
+        $data['com'] = $this->company_model->get_commune($id);
+        echo "<option value = '' selected>-- Select --</option>";
+        foreach($data['com'] as $c) {
+            echo "<option value='$c->postal_code'>$c->en_communce</option>";
+        }
+    }
+
+    //====================get dropdown of village===============================
+    public function get_village()
+    {
+        $id = $_POST['village'];
+        $data['vill'] = $this->company_model->get_village($id);
+        echo "<option value = '' selected>-- Select --</option>";
+        foreach($data['vill'] as $r) {
+            echo '<option value='.$r->postal_code. set_select('select_village', $r->postal_code).'>'.$r->en_village.'</option>';
+        }
+        echo "<option value = 'other' >Other..</option>";
+    }
+
+
+    <div id="show_hide_province">
+              <div class="form-group">
+                <label class="col-md-3 control-label"><?php echo get_language('province'); ?></label>
+                <div class="col-md-9">
+                  <select class="form-control province select2" name="province" id="province">
+                    <option value=""><?php echo get_language('select_'); ?></option>
+                    <?php foreach ($province as $key) { ?>
+                        <option value="<?php echo $key->province_id; ?>"><?php echo $key->province; ?></option>
+                    <?php } ?>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label"><?php echo get_language('district'); ?></label>
+                <div class="col-md-9">
+                  <select name="district" class="form-control district select2" id="district">
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label"><?php echo get_language('commune'); ?></label>
+                <div class="col-md-9">
+                  <select name="commune" class="form-control commune select2" id="commune">
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label"><?php echo get_language('village'); ?></label>
+                <div class="col-md-9">
+                  <select name="village" class="form-control village select2" id="village">
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">

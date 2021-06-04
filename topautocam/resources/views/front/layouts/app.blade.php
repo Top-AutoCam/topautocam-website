@@ -21,24 +21,13 @@
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
 
-<!--     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
-
     <style>
         img {
             pointer-events: none;
         }
     </style>
-
     @livewireStyles
 </head>
-
-<!-- <script>
-    $(document).ready(function(){
-        $("#myModal").modal('show');
-    });
-</script> -->
 
 <script>
 $(document).ready(function(){
@@ -46,20 +35,7 @@ $(document).ready(function(){
         UIkit.modal('#modal-example').show();
     }
     sessionStorage.setItem('isdisclaimerloaded', 'true');
-
-    // if (sessionStorage.getItem('#modal-example') !== 'true') {
-    //     $("#modal-example").modal('show');
-    //     //then the modal will be set true in the current session due to which the modal won't 
-    //     //reappear on the refresh, we need to reload the page in a new tab to make the modal 
-    //     //reappear.
-
-    //     sessionStorage.setItem('#modal-example', 'true');
-    // }
-// $("#modal").css("display", "none")
-    // localStorage.removeItem('isdisclaimerloaded');
 });
-
-
 
 </script>
 
@@ -88,20 +64,18 @@ $(document).ready(function(){
 
             <div id="mobile-menu" data-uk-offcanvas="overlay: true">
                 <div class="inner uk-offcanvas-bar">
-
                     @include('front.partials.mobile_header')
-
                     <div class="content">
                         <ul class="mobile-nav uk-nav-default uk-nav-parent-icon" data-uk-nav="">
                             <li><a href="{{ route('car-index') }}">Car</a></li>
                             <li><a href="{{ route('motorbike-index') }}">Motorbike</a></li>
                             <li><a href="{{ route('part-index') }}">Part</a></li>
                             <li><a href="{{ route('blog') }}">Blog</a></li>
+                            <li><a href="{{ route('about-us') }}">About Us</a></li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>
+                            <li><a href="{{ route('fqas') }}">FQAs</a></li>
                         </ul>
                     </div>
-
-
                 </div>
             </div>
             <!-- End Off Canvas Sidebar -->

@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -59,7 +60,7 @@ class Car extends Resource
             ID::make(__('ID'), 'id')->sortable(),
             Image::make('image')->disableDownload()->rules('required'),
             Text::make('title'),
-            Text::make('detail')->hideFromIndex(),
+            Trix::make('detail')->hideFromIndex(),
             Text::make('code')->readonly()->hideFromIndex()->hideWhenCreating(),
             Text::make('vin')->hideFromIndex()->rules('required'),
             Currency::make('price')->currency('USD')->sortable()->rules('required'),

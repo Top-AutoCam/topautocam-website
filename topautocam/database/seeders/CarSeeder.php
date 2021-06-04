@@ -30,6 +30,7 @@ class CarSeeder extends Seeder
             'detail' => 'This car is amazing, even though it runs for 10 thousand miles; it\'s still kicking',
             'image' => $faker->randomElement($array = array('a6.jpg', 'a7.jpg', 'a8.jpg', 'a9.jpg', 'a10.jpg')),
             'price' => $faker->randomNumber($nbDigits = 6, $strict = false),
+            'price_partner' => $faker->randomNumber($nbDigits = 5, $strict = false),
             'code' => Str::random(10),
             'vin' => Str::uuid(),
             'make' => $faker->randomElement(UTIL::MAKE),

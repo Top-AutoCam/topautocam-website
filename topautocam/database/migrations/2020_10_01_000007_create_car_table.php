@@ -25,6 +25,7 @@ class CreateCarTable extends Migration
             $table->text('detail', 102400);
             $table->string('image', 64)->nullable();
             $table->decimal('price', 15, 2)->unsigned()->nullable();
+            $table->decimal('price_partner', 15, 2)->unsigned()->nullable();
             $table->string('code', 32)->unique()->nullable();
             $table->string('vin', 64)->unique()->nullable();
             $table->string('make', 32)->nullable();

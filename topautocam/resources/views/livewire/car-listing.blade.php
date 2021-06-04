@@ -125,7 +125,7 @@
                                 @guest
                                 @else
                                     <p uk-margin>
-                                        <button class="uk-button uk-button-primary">{{ $car->price }}$</button>
+                                        <button class="uk-button uk-button-primary">{{ $car->price_partner }}$</button>
                                     </p>
                                 @endguest
                             </li>

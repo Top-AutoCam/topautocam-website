@@ -22,7 +22,6 @@ class PromotionObserver
         if ($to == null) {
             $to = "webmaster@topautocam.com";
         }
-
         foreach($subscribes as $subscribe){
             Mail::to($subscribe->email)->send(
                 new ThankYouMailable($subscribe)

@@ -42,12 +42,25 @@
 
 <script>
 $(document).ready(function(){
-    if (localStorage.getItem("isdisclaimerloaded") === null) {
+    if (sessionStorage.getItem("isdisclaimerloaded") !== 'true') {
         UIkit.modal('#modal-example').show();
     }
-    localStorage.setItem('isdisclaimerloaded', 1);
+    sessionStorage.setItem('isdisclaimerloaded', 'true');
+
+    // if (sessionStorage.getItem('#modal-example') !== 'true') {
+    //     $("#modal-example").modal('show');
+    //     //then the modal will be set true in the current session due to which the modal won't 
+    //     //reappear on the refresh, we need to reload the page in a new tab to make the modal 
+    //     //reappear.
+
+    //     sessionStorage.setItem('#modal-example', 'true');
+    // }
+// $("#modal").css("display", "none")
     // localStorage.removeItem('isdisclaimerloaded');
 });
+
+
+
 </script>
 
 <body class="archive woocommerce woocommerce-page">

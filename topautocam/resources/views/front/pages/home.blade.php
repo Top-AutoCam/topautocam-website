@@ -27,7 +27,7 @@
     </div> -->
 
      <!-- This is the modal -->
-     <button class="md-btn md-btn-success" id="openmodal" data-uk-modal="{target:'modal-example'}">Open Dialogue</button>
+     <!-- <button class="md-btn md-btn-success" id="openmodal" data-uk-modal="{target:'modal-example'}">Open Dialogue</button> -->
      <div id="modal-example" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <h2 class="uk-modal-title">Headline</h2>

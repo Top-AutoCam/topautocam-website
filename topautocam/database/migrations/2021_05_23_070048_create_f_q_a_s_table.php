@@ -14,7 +14,7 @@ class CreateFQASTable extends Migration
     public function up()
     {
         Schema::create('f_q_a_s', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->text('question', 102400)->unique();
             $table->text('answer', 102400)->unique();
             $table->timestamps();

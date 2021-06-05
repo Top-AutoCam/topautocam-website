@@ -34,40 +34,34 @@
                                 </div>
                             </header>
                             <div class="entry-content">
-
                                 @if($content[0]->attributes->image)
-                                <div class="entry-thumb">
-                                    <img src="{{ asset('storage/'.$content[0]->attributes->image) }}" alt="image" />
-                                </div>
+                                    <div class="entry-thumb">
+                                        <img src="{{ asset('storage/'.$content[0]->attributes->image) }}" alt="image" />
+                                    </div>
                                 @endif
-
                                 <div class="entry-body uk-container uk-container-small">
                                     <p class="uk-text-lead">
                                         {{ $post->post_introduction }}
                                     </p>
-
                                     <div>
                                         @if($content[1]->attributes->text_content)
-                                        {!!
-                                        $content[1]->attributes->text_content
-                                        !!}
+                                            {!! $content[1]->attributes->text_content !!}
                                         @endif
                                     </div>
                                 </div>
                             </div>
                             <div class="entry-footer">
                                 <!--
-                                <div>
-                                    <div class="entry-tags">
-                                        <span>Tags:</span>
-                                        <a href="#">Women</a>
-                                        <a href="#">Fashion</a>
-                                        <a href="#">Model</a>
+                                    <div>
+                                        <div class="entry-tags">
+                                            <span>Tags:</span>
+                                            <a href="#">Women</a>
+                                            <a href="#">Fashion</a>
+                                            <a href="#">Model</a>
+                                        </div>
                                     </div>
-                                </div>
                                 -->
                                 <div></div>
-
                                 <div>
                                     <div class="entry-share mini-share">
                                         <span>Share Article:</span>

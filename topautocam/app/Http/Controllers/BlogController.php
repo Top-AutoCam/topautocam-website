@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use OptimistDigital\NovaBlog\Models\Post;
-
 use App\Models\Announcement;
 use App\Models\Car;
 use App\Models\Motorbike;
@@ -26,9 +25,7 @@ class BlogController extends Controller
         if($post == null) {
             abort(404);
         }
-
         $content = json_decode($post->post_content);
-
         return view('front.pages.blog.post', [
             'post' => $post,
             'content' => $content

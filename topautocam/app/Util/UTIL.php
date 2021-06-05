@@ -78,6 +78,8 @@ class UTIL {
         "ALPHARD" => "Alphard",
         "BMW" => "E90",
         "Q7" => "Q7",
+        "Q8" => "audi",
+        "Q9" => "audi",
     ];
 
     const MODEL_BIKE = [

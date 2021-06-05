@@ -40,8 +40,7 @@ class CarListing extends Component
         $this->colors = UTIL::COLOR;
         $this->drives = UTIL::DRIVE;
         $this->fuels = UTIL::FUEL;
-    }   
-
+    }  
     public function render()
     {
         $cars = Car::search($this->search, $this->sort, $this->order, 

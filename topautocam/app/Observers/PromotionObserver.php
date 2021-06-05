@@ -6,6 +6,7 @@ use App\Models\Promotion;
 use App\Models\Subscribe;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ThankYouMailable;
+use App\Mail\InvitationEmail;
 
 class PromotionObserver
 {
@@ -18,13 +19,14 @@ class PromotionObserver
     public function created(Promotion $promotion)
     {
         $subscribes = Subscribe::all();
+        $promotion = Promotion::latest()->take(1)->get();
         $to = config("MAIL_FROM_ADDRESS");
         if ($to == null) {
             $to = "webmaster@topautocam.com";
         }
         foreach($subscribes as $subscribe){
             Mail::to($subscribe->email)->send(
-                new ThankYouMailable($subscribe)
+                new InvitationEmail($promotion)
             );
             
         } 

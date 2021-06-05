@@ -1,16 +1,17 @@
 @extends('front.layouts.app')
 @section('content')
+
 <div id="modal-example" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+        <p>New Promotion: <strong> New Year Promotion 10% </strong></p>
+        <p><strong>Stock New Updated.</strong></p>
+        <hp><strong>Blog New Updated.</strong></p>
         <p class="uk-text-right">
             <button class="uk-button uk-button-default uk-modal-close" type="button">OK</button>
         </p>
     </div>
 </div>
+
 @include('front.partials.slider')
 <div id="primary" class="site-primary">
     <div class="uk-container">

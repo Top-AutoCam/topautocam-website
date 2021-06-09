@@ -47,7 +47,8 @@ class UTIL {
         "4WD" => "4WD",
         "FWD" => "FWD",
         "AWD" => "AWD",
-        "TWD" => "TWD"
+        "TWD" => "TWD",
+        "2WD" => "2WD",
     ];
 
     const MAKE = [
@@ -78,8 +79,6 @@ class UTIL {
         "ALPHARD" => "Alphard",
         "BMW" => "E90",
         "Q7" => "Q7",
-        "Q8" => "audi",
-        "Q9" => "audi",
     ];
 
     const MODEL_BIKE = [

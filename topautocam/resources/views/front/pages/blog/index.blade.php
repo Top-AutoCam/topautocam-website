@@ -22,26 +22,31 @@
                 </div>
             </div>
         </div>
-        <!-- End Page Heading -->
 
+        <!-- End Page Heading -->
         <div class="uk-grid" data-uk-grid="">
             <div class="uk-width-expand">
                 <main id="main" class="site-main">
-
                     <div class="block-listing">
                         <div class="uk-container">
                             <div class="inner uk-position-relative">
-
                                 <div class="block-layout classic-layout">
                                     <div class="uk-grid-large uk-child-width-1-1" data-uk-grid="">
-                                        
-                                        @foreach($posts as $post)
+                                        @foreach($posts as $key => $post)
                                         <article class="post type-post">
                                             <div class="entry-outer">
+                                                <!-- @if($content[0]->attributes->image)
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="{{ asset('images/posts/21.jpg') }}" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('storage/'.$content[0]->attributes->image) }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="{{ route('post', $post->slug) }}"></a>
                                                 </div>
+                                                @endif
+                                                 -->
+                                                @if($content[0]->attributes->image)
+                                                    <div class="entry-thumb image cover-image">
+                                                        <img src="{{ asset('storage/'.$content[0]->attributes->image) }}" alt="image" />
+                                                    </div>
+                                                @endif
                                                 <div class="entry-inner">
                                                     <div class="entry-content">
                                                         <div class="entry-meta">
@@ -58,7 +63,7 @@
                                                             <a href="{{ route('post', $post->slug) }}">{{ $post->title }}</a>
                                                         </h3>
                                                         <div class="entry-snippet">
-                                                            <p>
+                                                            <p class="uk-panel uk-text-truncate">
                                                                 {!! $post->post_introduction !!}
                                                             </p>
                                                         </div>
@@ -87,12 +92,9 @@
                                                 </div>
                                             </div>
                                         </article>
-                                    
                                     @endforeach
-
                                   </div>
                                 </div><!-- End Layout -->
-
                             </div>
                         </div>
                     </div>
@@ -109,6 +111,7 @@
 
                 </main>
             </div>
+
             <div class="uk-width-1-4@m">
                 <aside id="sidebar" class="site-sidebar" data-uk-sticky="offset: 70; media: @m; bottom: #primary">
                     <div class="widget post-listing popular" id="popular-posts">
@@ -218,6 +221,7 @@
                         </div>
                     </div>
                     -->
+
                     <div class="widget post-listing" id="recent-posts">
                         <h2 class="title uk-h4"><span>Recent Posts</span></h2>
                         <div class="widget-content">

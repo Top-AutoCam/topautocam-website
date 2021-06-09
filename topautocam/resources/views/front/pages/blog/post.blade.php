@@ -40,14 +40,10 @@
                                     </div>
                                 @endif
                                 <div class="entry-body uk-container uk-container-small">
-                                    <p class="uk-text-lead">
+                                    <p class=" uk-panel uk-text-break" style="text-align: justify;">
                                         {{ $post->post_introduction }}
                                     </p>
-                                    <div>
-                                        @if($content[1]->attributes->text_content)
-                                            {!! $content[1]->attributes->text_content !!}
-                                        @endif
-                                    </div>
+                                   <!-- /----- -->
                                 </div>
                             </div>
                             <div class="entry-footer">

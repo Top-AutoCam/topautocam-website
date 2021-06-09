@@ -14,6 +14,7 @@ use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use App\Nova\Filters;
+use App\Util\UTIL;
 
 class Car extends Resource
 {
@@ -64,11 +65,13 @@ class Car extends Resource
             Text::make('code')->readonly()->hideFromIndex()->hideWhenCreating(),
             Text::make('vin')->hideFromIndex()->rules('required'),
             Currency::make('price')->currency('USD')->sortable()->rules('required'),
+            Currency::make('price_partner')->currency('USD')->sortable()->rules('required'),
+            Text::make('year'),
             Select::make('make')->options(config('enums.MAKE'))
                 ->hideFromIndex()->sortable()->rules('required'),
             Select::make('model')->options(config('enums.MODEL'))->sortable()->rules('required'),
             Select::make('color')->options(config('enums.COLOR'))->rules('required'),
-            Select::make('drive')->options(config('enums.DRIVE'))->hideFromIndex()->rules('required'),
+            Select::make('drive')->options(UTIL::DRIVE)->hideFromIndex()->rules('required'),
             Select::make('fuel')->options(config('enums.FUEL'))->hideFromIndex()->rules('required'),
             Select::make('grade')->options(config('enums.GRADE'))->hideFromIndex()->rules('required'),
             BelongsTo::make('Order')->hideFromIndex(),
@@ -76,7 +79,6 @@ class Car extends Resource
                 config('enums.INVENTORY_STATUS.IN_STOCK') => 'success',
                 config('enums.INVENTORY_STATUS.SOLD') => 'danger',
             ])->sortable()->rules('required'),
-
             Badge::make('selected')->map([
                 config('enums.SELECTED.NORMAL') => 'info',
                 config('enums.SELECTED.FEATURED') => 'success',

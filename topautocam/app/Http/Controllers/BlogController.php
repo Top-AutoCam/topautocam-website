@@ -15,8 +15,10 @@ class BlogController extends Controller
 {
     public function index() {
         $posts = Post::orderBy('updated_at', 'desc')->get();
+        $content = json_decode($posts[0]->post_content);
         return view('front.pages.blog.index', [
-            'posts' => $posts
+            'posts' => $posts,
+            'content' => $content
         ]);
     }
 

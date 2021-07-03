@@ -34,16 +34,16 @@
                                 </div>
                             </header>
                             <div class="entry-content">
-                                @if($content[0]->attributes->image)
-                                    <div class="entry-thumb">
-                                        <img src="{{ asset('storage/'.$content[0]->attributes->image) }}" alt="image" />
-                                    </div>
-                                @endif
+                                
+                                <div class="entry-thumb">
+                                    <div class="image cover-image" data-src="{{ $images->image}}" data-uk-img="" title="Post detail"></div>
+                                    <!-- asset('storage/'. -->
+                                </div>
                                 <div class="entry-body uk-container uk-container-small">
                                     <p class=" uk-panel uk-text-break" style="text-align: justify;">
                                         {{ $post->post_introduction }}
                                     </p>
-                                   <!-- /----- -->
+                                   <!--/----- -->
                                 </div>
                             </div>
                             <div class="entry-footer">

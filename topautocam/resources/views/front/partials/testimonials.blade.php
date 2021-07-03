@@ -4,7 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 title-font" style="padding-top: 4px;">
+                    <h4 class="title uk-h2 title-font khmer-title-font" style="padding-top: 4px;">
                         {{ __("Testimonials") }}
                     </h4>
                 </div>

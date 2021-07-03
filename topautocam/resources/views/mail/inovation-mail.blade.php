@@ -1,12 +1,9 @@
-<h2>New promotion for you now.</h2>
-<br>sss
+<h2>Now, We have new promotion for you. <a href="https://topautocam.com/">click here!</a></h2>
+<br>
 @foreach($data as $data)
     <h4>{{$data['name']}}</h4></br>
     <p>
-        {{$data['deail']}}
+        {{$data['detail']}}
     </p>
-    <div>
-        <img data-src="{{ asset('storage/'.$data->image) }}" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-    </div>
 @endforeach
 Thanks!!!<br>

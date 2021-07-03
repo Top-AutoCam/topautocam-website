@@ -104,7 +104,7 @@
                                 <a href="{{ route('car-detail', $car->id) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link " >
                                     <div class ="uk-inline">
                                         <img  class ="uk-height-max-small uk-child-width-1-4 uk-cover-container" src="{{ asset('/storage/'.$car->image)}}" width="250" height="250">
-                                        <div>   
+                                        <!-- <div>   
                                             <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
                                                 <a class="navbar-brand site-title" href="/">
                                                     <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
@@ -113,7 +113,7 @@
                                             <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
                                                 017 238 008 | 015 238 008
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div> 
                                     <h2 class="woocommerce-loop-product__title khmer-title-font" style="font-size: 15px;">{{ $car->title }}</h2>
                                     <span class="price">

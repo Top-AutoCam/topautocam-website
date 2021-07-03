@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Nova;
+use Ajmariduena\DynamicField\DynamicField;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Badge;
@@ -15,6 +16,7 @@ use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use App\Nova\Filters;
 use App\Util\UTIL;
+// use Laravel\Nova\Fields\DynamicSelect;
 
 class Car extends Resource
 {
@@ -67,13 +69,13 @@ class Car extends Resource
             Currency::make('price')->currency('USD')->sortable()->rules('required'),
             Currency::make('price_partner')->currency('USD')->sortable()->rules('required'),
             Text::make('year'),
-            Select::make('make')->options(config('enums.MAKE'))
-                ->hideFromIndex()->sortable()->rules('required'),
-            Select::make('model')->options(config('enums.MODEL'))->sortable()->rules('required'),
-            Select::make('color')->options(config('enums.COLOR'))->rules('required'),
+            Select::make('make')->options(UTIL::MAKE)->hideFromIndex()->sortable()->rules('required'),
+            Select::make('model')->options(UTIL::MODEL)->sortable()->rules('required'),
+            Select::make('color')->options(UTIL::COLOR)->rules('required'),
             Select::make('drive')->options(UTIL::DRIVE)->hideFromIndex()->rules('required'),
             Select::make('fuel')->options(config('enums.FUEL'))->hideFromIndex()->rules('required'),
             Select::make('grade')->options(config('enums.GRADE'))->hideFromIndex()->rules('required'),
+            
             BelongsTo::make('Order')->hideFromIndex(),
             Badge::make('status')->map([
                 config('enums.INVENTORY_STATUS.IN_STOCK') => 'success',

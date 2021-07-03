@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -13,12 +12,23 @@ use DB;
 
 class BlogController extends Controller
 {
+
+    public $contents;
+    public $images;
+
+
     public function index() {
-        $posts = Post::orderBy('updated_at', 'desc')->get();
-        $content = json_decode($posts[0]->post_content);
+        $posts = Post::orderBy('updated_at', 'desc')->latest()->get();
+        foreach($posts as $post){
+            $this->contents = json_decode($post->post_content);
+            foreach($this->contents as $content){
+                $this->images = $content->attributes;
+            }
+        }
+
         return view('front.pages.blog.index', [
             'posts' => $posts,
-            'content' => $content
+            'images' => $this->images,
         ]);
     }
 
@@ -28,9 +38,12 @@ class BlogController extends Controller
             abort(404);
         }
         $content = json_decode($post->post_content);
+        foreach($content as $content){
+            $images = $content->attributes;
+        }
         return view('front.pages.blog.post', [
             'post' => $post,
-            'content' => $content
+            'images' => $images,
         ]);
     }
 

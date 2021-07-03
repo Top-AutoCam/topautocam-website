@@ -9,7 +9,7 @@
             <div class="uk-container">
             <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 title-font">{!! __("Articles") !!}</h4>
+                        <h4 class="title uk-h2 title-font khmer-title-font">{!! __("Articles") !!}</h4>
                     </div>
                     <div>
                         <ul class="uk-breadcrumb">
@@ -35,18 +35,17 @@
                                         @foreach($posts as $key => $post)
                                         <article class="post type-post">
                                             <div class="entry-outer">
-                                                <!-- @if($content[0]->attributes->image)
+                                            <?php
+                                                $contents = json_decode($post->post_content);
+                                                foreach($contents as $content){
+                                                    $images = $content->attributes;
+                                                } 
+                                            ?>
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="{{ asset('storage/'.$content[0]->attributes->image) }}" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{$images->image}}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="{{ route('post', $post->slug) }}"></a>
                                                 </div>
-                                                @endif
-                                                 -->
-                                                @if($content[0]->attributes->image)
-                                                    <div class="entry-thumb image cover-image">
-                                                        <img src="{{ asset('storage/'.$content[0]->attributes->image) }}" alt="image" />
-                                                    </div>
-                                                @endif
+
                                                 <div class="entry-inner">
                                                     <div class="entry-content">
                                                         <div class="entry-meta">
@@ -122,8 +121,8 @@
                             <article class="post type-post has-post-thumbnail">
                                 <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
                                     <div class="entry-thumb">
-                                        <span class="image cover-image" data-src="{{ asset('images/posts/50.jpg') }}" data-uk-img="" title="Post Title"></span>
-                                        <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                        <span class="image cover-image" data-src="https://www.digitalvidya.com/wp-content/uploads/2019/03/personal-blog.jpg" data-uk-img="" title="Post Title"></span>
+                                        <a class="link-overlay uk-position-cover" href="#"></a>
                                     </div>
                                     <div class="entry-inner">
                                         <div class="entry-content">
@@ -144,8 +143,8 @@
                             <article class="post type-post has-post-thumbnail">
                                 <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
                                     <div class="entry-thumb">
-                                        <span class="image cover-image" data-src="{{ asset('images/posts/39.jpg') }}" data-uk-img="" title="Post Title"></span>
-                                        <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                        <span class="image cover-image" data-src="https://www.wpbeginner.com/wp-content/uploads/2018/07/whatisblog.png" data-uk-img="" title="Post Title"></span>
+                                        <a class="link-overlay uk-position-cover" href="#"></a>
                                     </div>
                                     <div class="entry-inner">
                                         <div class="entry-content">
@@ -166,8 +165,8 @@
                             <article class="post type-post has-post-thumbnail">
                                 <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
                                     <div class="entry-thumb">
-                                        <span class="image cover-image" data-src="{{ asset('images/posts/37.jpg') }}" data-uk-img="" title="Post Title"></span>
-                                        <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                        <span class="image cover-image" data-src="https://mirroredsouls.com/wp-content/uploads/2021/04/how-to-start-a-blog-featured-image.jpg" data-uk-img="" title="Post Title"></span>
+                                        <a class="link-overlay uk-position-cover" href="#"></a>
                                     </div>
                                     <div class="entry-inner">
                                         <div class="entry-content">
@@ -229,8 +228,8 @@
                                 <div class="entry-outer uk-grid uk-grid-small">
                                     <div class="uk-width-1-3">
                                         <div class="entry-thumb">
-                                            <div class="image cover-image ratio-square" data-src="{{ asset('images/posts/21.jpg') }}" data-uk-img="" title="Post Title"></div>
-                                            <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                            <div class="image cover-image ratio-square" data-src="https://fiorecommunications.com/wp-content/uploads/2014/07/shutterstock_381746308-3.jpg" data-uk-img="" title="Post Title"></div>
+                                            <a class="link-overlay uk-position-cover" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="uk-width-expand">
@@ -255,8 +254,8 @@
                                 <div class="entry-outer uk-grid uk-grid-small">
                                     <div class="uk-width-1-3">
                                         <div class="entry-thumb">
-                                            <div class="image cover-image ratio-square" data-src="{{ asset('images/posts/01.jpg') }}" data-uk-img="" title="Post Title"></div>
-                                            <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                            <div class="image cover-image ratio-square" data-src="https://www.teknopk.com/wp-content/uploads/2018/03/blogging.jpg" data-uk-img="" title="Post Title"></div>
+                                            <a class="link-overlay uk-position-cover" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="uk-width-expand">
@@ -281,8 +280,8 @@
                                 <div class="entry-outer uk-grid uk-grid-small">
                                     <div class="uk-width-1-3">
                                         <div class="entry-thumb">
-                                            <div class="image cover-image ratio-square" data-src="{{ asset('images/posts/50.jpg') }}" data-uk-img="" title="Post Title"></div>
-                                            <a class="link-overlay uk-position-cover" href="single.html"></a>
+                                            <div class="image cover-image ratio-square" data-src="https://static1.gensler.com/uploads/hero_element/15971/thumb_mobile/thumbs/blog-automotive-retail-200605-1024x576_1591395265_508x286.jpg" data-uk-img="" title="Post Title"></div>
+                                            <a class="link-overlay uk-position-cover" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="uk-width-expand">

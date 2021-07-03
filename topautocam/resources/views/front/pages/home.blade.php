@@ -3,9 +3,15 @@
 
 <div id="modal-example" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
+    <a href="/">
         <p>New Promotion: <strong> New Year Promotion 10% </strong></p>
-        <p><strong>Stock New Updated.</strong></p>
+    </a>
+    <a href="/cars">
+         <p><strong>Stock New Updated.</strong></p>
+    </a>
+    <a href="/blog">
         <hp><strong>Blog New Updated.</strong></p>
+    </a>
         <p class="uk-text-right">
             <button class="uk-button uk-button-default uk-modal-close" type="button">OK</button>
         </p>
@@ -19,7 +25,7 @@
             <div class="uk-container">
                 <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 title-font">
+                        <h4 class="title uk-h2 title-font khmer-title-font">
                             {!! __('Featured') !!}
                         </h4>
                     </div>

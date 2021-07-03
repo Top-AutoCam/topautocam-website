@@ -9,11 +9,13 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
+        "ajmariduena/dynamic-field": "^0.0.1",
         "ebess/advanced-nova-media-library": "^3.3",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "gregoriohc/laravel-nova-theme-responsive": "^0.8.1",
         "guzzlehttp/guzzle": "^7.0.1",
+        "hubertnnn/laravel-nova-field-dynamic-select": "^0.2.0",
         "laracademy/generators": "^2.3",
         "laravel/framework": "^8.0",
         "laravel/nova": "*",
@@ -21,8 +23,10 @@
         "laravel/ui": "^3.2",
         "laravelcollective/html": "^6.2",
         "livewire/livewire": "^2.3",
+        "lynndigital/select-or-custom": "dev-master",
         "optimistdigital/nova-blog": "^9.4",
         "optimistdigital/nova-drafts": "^1.1",
+        "royduin/laravel-nova-field-dynamic-select": "^1.8",
         "spatie/laravel-permission": "^4.0"
     },
     "require-dev": {

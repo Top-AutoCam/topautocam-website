@@ -1,3 +1,13 @@
+<div id="modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <p class="uk-text-bold" style="font-size:20px;">Under Construction</p>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">OK</button>
+        </p>
+    </div>
+</div>
+
+
 <div class="uk-grid uk-grid-stack" data-uk-grid="">
     <div class="uk-width-expand uk-first-column">
         <main id="main" class="site-main">

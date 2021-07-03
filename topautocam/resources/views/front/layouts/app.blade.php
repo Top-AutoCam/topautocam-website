@@ -35,6 +35,10 @@ $(document).ready(function(){
         UIkit.modal('#modal-example').show();
     }
     sessionStorage.setItem('isdisclaimerloaded', 'true');
+
+    
+    UIkit.modal('#modal-motobike').show();
+    UIkit.modal('#modal').show();
 });
 
 </script>

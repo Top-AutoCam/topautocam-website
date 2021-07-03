@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc55ce2d1341955e40ecddd5e93ff080",
+    "content-hash": "72c5df4977915828d04318a7777a188c",
     "packages": [
+        {
+            "name": "ajmariduena/dynamic-field",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ajmariduena/nova-dynamic-field.git",
+                "reference": "6aa580bc39e9b9e47eccefc9ac7503f3fa6fa5b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ajmariduena/nova-dynamic-field/zipball/6aa580bc39e9b9e47eccefc9ac7503f3fa6fa5b6",
+                "reference": "6aa580bc39e9b9e47eccefc9ac7503f3fa6fa5b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ajmariduena\\DynamicField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ajmariduena\\DynamicField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/ajmariduena/nova-dynamic-field/issues",
+                "source": "https://github.com/ajmariduena/nova-dynamic-field/tree/0.0.1"
+            },
+            "time": "2018-12-08T20:45:44+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.1",
@@ -1327,6 +1372,51 @@
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
+            "name": "hubertnnn/laravel-nova-field-dynamic-select",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hubertnnn/laravel-nova-field-dynamic-select.git",
+                "reference": "5deb4142725fe7be7947d45a6fb4d70b64c7f660"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hubertnnn/laravel-nova-field-dynamic-select/zipball/5deb4142725fe7be7947d45a6fb4d70b64c7f660",
+                "reference": "5deb4142725fe7be7947d45a6fb4d70b64c7f660",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hubertnnn\\LaravelNova\\Fields\\DynamicSelect\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hubertnnn\\LaravelNova\\Fields\\DynamicSelect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/hubertnnn/laravel-nova-field-dynamic-select/issues",
+                "source": "https://github.com/hubertnnn/laravel-nova-field-dynamic-select/tree/0.2.0"
+            },
+            "time": "2019-03-14T12:01:21+00:00"
+        },
+        {
             "name": "intervention/image",
             "version": "2.5.1",
             "source": {
@@ -2232,6 +2322,52 @@
                 }
             ],
             "time": "2020-12-01T20:51:29+00:00"
+        },
+        {
+            "name": "lynndigital/select-or-custom",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/0x15f/select-or-text.git",
+                "reference": "bd074df5520588be7d3a045ca6f1852d91a25a02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/0x15f/select-or-text/zipball/bd074df5520588be7d3a045ca6f1852d91a25a02",
+                "reference": "bd074df5520588be7d3a045ca6f1852d91a25a02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lynndigital\\SelectOrCustom\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lynndigital\\SelectOrCustom\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/0x15f/select-or-text/issues",
+                "source": "https://github.com/0x15f/select-or-text/tree/master"
+            },
+            "time": "2021-01-15T14:32:18+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -3813,6 +3949,51 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "royduin/laravel-nova-field-dynamic-select",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/royduin/laravel-nova-field-dynamic-select.git",
+                "reference": "f22d38d0442786eefebdb12f7ea1e9d2a620af12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/royduin/laravel-nova-field-dynamic-select/zipball/f22d38d0442786eefebdb12f7ea1e9d2a620af12",
+                "reference": "f22d38d0442786eefebdb12f7ea1e9d2a620af12",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hubertnnn\\LaravelNova\\Fields\\DynamicSelect\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hubertnnn\\LaravelNova\\Fields\\DynamicSelect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/royduin/laravel-nova-field-dynamic-select/issues",
+                "source": "https://github.com/royduin/laravel-nova-field-dynamic-select/tree/1.8.2"
+            },
+            "time": "2021-06-01T12:20:14+00:00"
         },
         {
             "name": "spatie/image",
@@ -9298,7 +9479,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lynndigital/select-or-custom": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

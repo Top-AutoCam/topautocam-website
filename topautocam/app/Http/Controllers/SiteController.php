@@ -31,9 +31,9 @@ class SiteController extends Controller
         $bottomLeftFeaturedCar = $featuredCars[3];
         $bottomRightFeaturedCar = $featuredCars[4];
 
-        $services = CarService::list(3);
-        $promotions = Promotion::list(2);
-        $testimonials = Testimonial::list(3);
+        $services = CarService::list(6);
+        $promotions = Promotion::latest()->take(2)->get();
+        $testimonials = Testimonial::latest()->take(3)->get();
         $recents = Car::recents(8);
 
         $featuredMotorbikes = Motorbike::where('selected', UTIL::SELECTED['FEATURED'])

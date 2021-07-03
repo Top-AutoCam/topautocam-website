@@ -4,7 +4,7 @@
 
             <div class="heading center">
                 <div>
-                    <h4 class="title uk-h2 title-font" style="padding-top: 5px;">{{ __("Most Viewed")}}</h4>
+                    <h4 class="title uk-h2 title-font khmer-title-font" style="padding-top: 5px;">{{ __("Most Viewed")}}</h4>
                     <span class="text uk-text-small khmer-content-font">{{ __("Come to see what everyone is seeing")}}</span>
                 </div>
             </div>
@@ -15,17 +15,17 @@
                     <div class="col-center uk-width-expand@m">
                         <article class="post type-post">
                             <div class="entry-outer">
-                                <div class="entry-thumb uk-inline">
+                                <div class="entry-thumb ">
                                     <div class="image cover-image" data-src="{{ asset('storage/'.$mainMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
-                                    <div class="uk-position-top-right" >
+                                    <!-- <div class="uk-position-top-right" >
                                         <a class="navbar-brand site-title" href="/">
                                             <img src="{{ asset('images/logo.jpeg') }}" style="width: 70px;" />
                                         </a>
                                     </div>
                                     <div class="uk-position-bottom-left" style="font-size: 15px; color:#FCC201;">
                                         017 238 008 | 015 238 008
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -69,14 +69,14 @@
                                 <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftTopMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
-                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                    <!-- <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
                                         <a class="navbar-brand site-title" href="/">
                                             <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
                                         </a>
                                     </div>
                                     <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
                                         017 238 008 | 015 238 008
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -96,14 +96,14 @@
                                 <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftButtomMostCarView->image)}}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
-                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                    <!-- <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
                                         <a class="navbar-brand site-title" href="/">
                                             <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
                                         </a>
                                     </div>
                                     <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
                                         017 238 008 | 015 238 008
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -126,14 +126,14 @@
                                 <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$rightTopMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
-                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                    <!-- <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
                                         <a class="navbar-brand site-title" href="/">
                                             <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
                                         </a>
                                     </div>
                                     <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
                                         017 238 008 | 015 238 008
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">
@@ -153,14 +153,14 @@
                                 <div class="entry-thumb uk-inline">
                                     <div class="image cover-image ratio-square" data-src="{{ asset('storage/'.$leftButtomMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
-                                    <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                    <!-- <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
                                         <a class="navbar-brand site-title" href="/">
                                             <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
                                         </a>
                                     </div>
                                     <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
                                         017 238 008 | 015 238 008
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="entry-inner">
                                     <div class="entry-content">

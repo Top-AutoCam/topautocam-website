@@ -13,7 +13,6 @@
                         anytime if you need further assistance.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     @foreach($aboutus as $aboutus)    
@@ -25,6 +24,7 @@
         </div>
 
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
+
             <div>
                 <div class="uk-background-muted uk-padding">
                 <img data-src="https://www.phimc.org/wp-content/uploads/2016/09/about-mission-icon.png" width="100" height="100" alt="" uk-img>
@@ -32,27 +32,26 @@
                     <p>{!! $aboutus->mission !!}</p>
                 </div> 
             </div>
+
             <div>
                 <div class="uk-background-muted uk-padding">
                 <img data-src="https://webstockreview.net/images/vision-clipart-11.png" width="100" height="100" alt="" uk-img>
                 <h2>Vission</h2>
                     <p>{!! $aboutus->vision !!}</p>
                 </div>
-                
             </div>
+
             <div>
                 <div class="uk-background-muted uk-padding">
                 <img data-src="https://cdn2.iconfinder.com/data/icons/fintech-duotone-41px-1/45/history_transaction_record_track-512.png" width="100" height="100" alt="" uk-img>
                 <h2>History</h2>
                     <p>{!! $aboutus->history !!}</p>
                 </div>
-                
             </div>
+
         </div>
-
     @endforeach    
-
-
+    
         <div class="inner uk-position-relative uk-padding">
             <div class="uk-container uk-width-1-2">
                 <div class="">
@@ -67,9 +66,7 @@
         @foreach($teams as $team)
             <div class="uk-text-center">
                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    
                     <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$team->image)}}" width="250" height="300" alt="">
-
                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                         <p >{{$team->role}}</p>
                     </div>
@@ -78,7 +75,6 @@
             </div>
         @endforeach   
         </div>
-
     </div>
 
     <div class="inner uk-position-relative uk-padding">
@@ -103,29 +99,18 @@
             </div>
     </div>
 
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
-
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m" >
     @foreach($galleries as $key => $gallerie)
         <li class="uk-inline">
-            <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$gallerie->image)}}" width="500" height="300" alt="">
-            <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
-                <a class="navbar-brand site-title" href="/">
-                    <img src="{{ asset('images/logo.jpeg') }}" style="width: 50px;" />
-                </a>
-            </div>
-            <div class="uk-position-bottom-left" style="font-size: 15px; color:#FCC201;">
-                017 238 008 | 015 238 008
-            </div>
+            <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="https://cars.usnews.com/images/article/202002/128389/1_title_2020_kia_optima.jpg" width="500" height="300" alt="">
         </li>
     @endforeach    
-    </ul>
-
+</ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
 </div>
 
-    </div>
+</div>
 
 @endsection

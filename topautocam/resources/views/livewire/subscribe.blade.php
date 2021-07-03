@@ -16,8 +16,8 @@
         <div class="inner uk-position-relative">
             <div class="uk-grid-large uk-flex uk-flex-middle" data-uk-grid="">
                 <form wire:submit.prevent="submit" class="form-container uk-width-expand@m" action="/">
-                    <div class="uk-width-auto@m khmer-title-font">
-                        <h4>{{ __("JOIN US TODAY") }}</h4>
+                    <div class="uk-width-auto@m khmer-title-font title">
+                        <h4 class="khmer-title-font title title-font">{{ __("JOIN US TODAY") }}</h4>
                         <p>{{ __("Receive the latest posts via email") }}</p>
                     </div>
                     <div class="form-group">

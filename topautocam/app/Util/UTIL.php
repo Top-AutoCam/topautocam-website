@@ -35,7 +35,15 @@ class UTIL {
     const COLOR = [
         "WHITE" => "White",
         "BLACK" => "Black",
-        "SILVER" => "Silver"
+        "SILVER" => "Silver",
+        "GRAY" => "Gray",
+        "BLUE" => "Blue",
+        "RED" => "Red",
+        "BROWN" => "Brown",
+        "GOLD" => "Gold", 
+        "GREEN" => "Green",
+        "TAN" => "Tan",
+        "ORANGE" => "Orange",
     ];
 
     const FUEL = [
@@ -55,6 +63,13 @@ class UTIL {
         "AUDI" => "Audi",
         "BMW" => "BMW",
         "TOYOTA" => "Toyota",
+        "FORD" => "Ford", 
+        "MAZDA" => "Mazda", 
+        "MERCEDES BENZ" => "Mercedes Benz", 
+        "LAND ROVER" => "Land Rover", 
+        "PORSCHE" => "Porsche", 
+        "CHEROLET" => "Chevrolet",  
+        "LEXUS" => "Lexus",
     ];
 
     const MAKE_BIKE = [
@@ -79,6 +94,14 @@ class UTIL {
         "ALPHARD" => "Alphard",
         "BMW" => "E90",
         "Q7" => "Q7",
+        "HIGHLANDER" => "Highlander", 
+        "CAMRY" =>  "Camry", 
+        "COROLLA" =>  "Corolla", 
+        "VITZ" =>  "Vitz", 
+        "GS300" => "GS300", 
+        "RX300" => "RX300", 
+        "RX330" =>  "RX330", 
+        "RX350" =>  "RX350",
     ];
 
     const MODEL_BIKE = [

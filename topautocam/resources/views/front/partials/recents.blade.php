@@ -4,7 +4,7 @@
 
             <div class="heading">
                 <div>
-                    <h4 class="title uk-h2 title-font khmer-title-font" style="padding-top: 5px;">
+                    <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 5px;">
                         {{ __("Recent") }}
                     </h4>
                 </div>
@@ -17,7 +17,7 @@
                 <div class="uk-child-width-1-2@s uk-child-width-1-4@m" data-uk-grid="">
 
                     @foreach($recents as $recent)
-                    <article class="post type-post">
+                    <article class="post type-post" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
                         <div class="entry-outer">
                             <div class="entry-thumb uk-inline">
                                 <div class="image cover-image" data-src={{ asset('storage/'.$recent->image) }} data-uk-img="" title="Post Title"></div>

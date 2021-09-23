@@ -100,7 +100,7 @@
                     <div class="uk-width-4-5@m">
                         <ul class="products columns-4">
                             @foreach($cars as $car)
-                            <li class="product type-product has-post-thumbnail ">
+                            <li class="product type-product has-post-thumbnail " uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                                 <a href="{{ route('car-detail', $car->id) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link " >
                                     <div class ="uk-inline">
                                         <img  class ="uk-height-max-small uk-child-width-1-4 uk-cover-container" src="{{ asset('/storage/'.$car->image)}}" width="250" height="250">
@@ -124,9 +124,7 @@
                                 </a>
                                 @guest
                                 @else
-                                    <p uk-margin>
-                                        <button class="uk-button uk-button-primary">{{ $car->price_partner }}$</button>
-                                    </p>
+                                    <span class="uk-badge uk-margin">${{ $car->price_partner }}</span>
                                 @endguest
                             </li>
                             @endforeach

@@ -90,7 +90,7 @@
                     <div class="uk-width-4-5@m">
                         <ul class="products columns-4">
                             @foreach($parts as $part)
-                            <li class="product type-product has-post-thumbnail">
+                            <li class="product type-product has-post-thumbnail" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                                 <a href="{{ route('part-detail', $part->id) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                     <img class ="uk-height-max-small uk-child-width-1-4 uk-cover-container" src={{ asset('/storage/'.$part->image)}} width="250" height="250">
                                     <h2 class="woocommerce-loop-product__title khmer-title-font">{{ $part->title }}</h2>

@@ -3,7 +3,7 @@
         <div class="uk-flex uk-flex-between uk-flex-middle">
             <h1 class="site-logo">
                 <a class="navbar-brand site-title" href="/">
-                    <img src="{{ asset('images/logo.jpeg') }}" style="width: 50px;" />
+                    <img src="{{ asset('images/new_logo.png') }}" style="width: 130px;" />
                 </a>
             </h1>
             <nav class=" primary-menu uk-visible@l">

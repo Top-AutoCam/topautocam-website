@@ -36,8 +36,8 @@
                             <div class="entry-content">
                                 
                                 <div class="entry-thumb">
-                                    <div class="image cover-image" data-src="{{ $images->image}}" data-uk-img="" title="Post detail"></div>
-                                    <!-- asset('storage/'. -->
+                                    <div class="image cover-image" data-src="{{asset('storage/'.$images->image)}}" data-uk-img="" title="Post detail"></div>
+                                    
                                 </div>
                                 <div class="entry-body uk-container uk-container-small">
                                     <p class=" uk-panel uk-text-break" style="text-align: justify;">

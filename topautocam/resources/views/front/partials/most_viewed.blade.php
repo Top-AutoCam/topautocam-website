@@ -4,7 +4,7 @@
 
             <div class="heading center">
                 <div>
-                    <h4 class="title uk-h2 title-font khmer-title-font" style="padding-top: 5px;">{{ __("Most Viewed")}}</h4>
+                    <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 5px;" >{{ __("Most Viewed")}}</h4>
                     <span class="text uk-text-small khmer-content-font">{{ __("Come to see what everyone is seeing")}}</span>
                 </div>
             </div>
@@ -12,11 +12,11 @@
             <div class="block-layout featured-layout">
                 <div class="uk-grid-match" data-uk-grid="">
                     
-                    <div class="col-center uk-width-expand@m">
+                    <div class="col-center uk-width-expand@m" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb ">
-                                    <div class="image cover-image" data-src="{{ asset('storage/'.$mainMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image" uk-parallax="bgy: -200" data-src="{{ asset('storage/'.$mainMostCarView->image) }}" data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                     <!-- <div class="uk-position-top-right" >
                                         <a class="navbar-brand site-title" href="/">
@@ -62,7 +62,7 @@
                     
          
 
-                    <div class="col-left col-grid uk-width-1-5@m uk-flex-first@m">
+                    <div class="col-left col-grid uk-width-1-5@m uk-flex-first@m" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                     <!-- Left Part -->
                         <article class="post type-post">
                             <div class="entry-outer">
@@ -118,7 +118,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-right col-grid uk-width-1-5@m">
+                    <div class="col-right col-grid uk-width-1-5@m" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
 
                         <!-- Right Part -->
                         <article class="post type-post">

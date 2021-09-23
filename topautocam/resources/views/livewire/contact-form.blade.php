@@ -29,7 +29,7 @@
         </div>
         <div class="uk-margin">
             <div class="uk-form-controls">
-                <button wire:loading.attr="disabled" type="submit" class="uk-button uk-button-secondary uk-text-lead uk-text-uppercase khmer-title-font" id="submit" style="color: white">
+                <button wire:loading.attr="disabled" type="submit" class="uk-button uk-button-secondary uk-text-lead uk-text-uppercase khmer-title-font" style="color:white;font-weight: normal;" id="submit" style="color: white">
                     {{__("Send Message")}}
                 </button>
             </div>

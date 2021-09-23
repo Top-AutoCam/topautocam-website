@@ -4,13 +4,13 @@
     <div class="uk-container" >
         <div class="uk-section uk-section-default">
             <div class="uk-container">
-                <h2 style="color:gray;" class="uk-text-center">ABOUT US</h2>
+                <h2 style="color:gray;" class="title uk-h2 title-font khmer-title-font uk-text-center textNoBold">{{ __("ABOUT US") }}</h2>
                 <!-- <hr class="uk-divider-small  uk-align-center"> -->
                 <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
                     <div class="uk-text-center">
-                    <p>
-                        <a href="/contact" class="uk-text-primary">Contact us</a>
-                        anytime if you need further assistance.</p>
+                    <p class="text uk-text-small khmer-content-font">
+                        <a href="/contact" class="uk-text-primary">{{ __("Contact us") }}</a>
+                        {{ __("anytime if you need further assistance") }}</p>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
+        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
 
             <div>
                 <div class="uk-background-muted uk-padding">
@@ -64,7 +64,7 @@
 
         <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid-medium" uk-grid>
         @foreach($teams as $team)
-            <div class="uk-text-center">
+            <div class="uk-text-center" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                 <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
                     <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$team->image)}}" width="250" height="300" alt="">
                     <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
@@ -89,8 +89,8 @@
 
     <div class="block-layout grid-layout two-cols uk-width-3-4 uk-align-center ">
             <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid="">
-                @foreach($videos as $video)
-                    <article class="post type-post">
+                @foreach($videos as $index => $video)
+                    <article class="post type-post"  @if($index == 0) uk-scrollspy="cls: uk-animation-slide-left; repeat: true" @else uk-scrollspy="cls: uk-animation-slide-right; repeat: true" @endif>
                         <div class="entry-outer">
                             <iframe src="{{$video->urlFrame}}" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
                         </div>
@@ -99,11 +99,11 @@
             </div>
     </div>
 
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m" >
     @foreach($galleries as $key => $gallerie)
         <li class="uk-inline">
-            <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="https://cars.usnews.com/images/article/202002/128389/1_title_2020_kia_optima.jpg" width="500" height="300" alt="">
+            <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$gallerie->image)}}" width="500" height="300" alt="">
         </li>
     @endforeach    
 </ul>

@@ -25,7 +25,7 @@
             <div class="uk-container">
                 <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 title-font khmer-title-font">
+                        <h4 class="title uk-h2 title-font khmer-title-font textNoBold">
                             {!! __('Featured') !!}
                         </h4>
                     </div>
@@ -37,7 +37,7 @@
         <div class="uk-grid" data-uk-grid="">
             
             <div class="uk-width-expand">
-    
+
                 <main id="main" class="site-main">
     
                     @include('front.partials.featured')

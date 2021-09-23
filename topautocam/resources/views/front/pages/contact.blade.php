@@ -4,16 +4,15 @@
 
 <div id="primary" class="site-primary">
     <div class="uk-container">
-
         <div class="uk-grid" data-uk-grid="">
             <div class="uk-width-expand">
                 <main id="main" class="site-main">
                     <div class="inner">
                         <article class="post type-page single">
                             <header class="entry-header uk-text-center">
-                                <h1 class="entry-title uk-h1 title-font khmer-title-font">{{ __("Contact") }}</h1>
+                                <h1 class="entry-title uk-h1 title-font khmer-title-font" style="font-weight: normal;"  >{{ __("Contact") }}</h1>
                                 <div class="entry-meta">
-                                    <!--
+                                    <!-- 
                                     <div>
                                         <span class="meta-author">
                                             By <a href="page-author.html">Sarah Janie</a>
@@ -33,7 +32,7 @@
                                     <a class="gplus" href="#"><i class="icon flo_google_plus"></i></a>
                                 </div>
                             </header>
-                            <div class="entry-content">
+                            <div class="entry-content" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                                 <div class="entry-body uk-container uk-container-small">
                                     <div style="width: 100%">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2358.088501151008!2d104.87612493439391!3d11.554789383891372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951bfaa821311%3A0x808a33e8c6c0308d!2sTOP%20AUTOSHOP!5e0!3m2!1sen!2skh!4v1615080085546!5m2!1sen!2skh" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">

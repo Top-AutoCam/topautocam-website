@@ -9,7 +9,7 @@
             <div class="uk-container">
             <div class="inner uk-position-relative">
                     <div>
-                        <h4 class="title uk-h2 title-font khmer-title-font">{!! __("Articles") !!}</h4>
+                        <h4 class="title uk-h2 title-font khmer-title-font textNoBold">{!! __("Articles") !!}</h4>
                     </div>
                     <div>
                         <ul class="uk-breadcrumb">
@@ -25,13 +25,13 @@
 
         <!-- End Page Heading -->
         <div class="uk-grid" data-uk-grid="">
-            <div class="uk-width-expand">
+            <div class="uk-width-expand" >
                 <main id="main" class="site-main">
                     <div class="block-listing">
                         <div class="uk-container">
                             <div class="inner uk-position-relative">
                                 <div class="block-layout classic-layout">
-                                    <div class="uk-grid-large uk-child-width-1-1" data-uk-grid="">
+                                    <div class="uk-grid-large uk-child-width-1-2" data-uk-grid="">
                                         @foreach($posts as $key => $post)
                                         <article class="post type-post">
                                             <div class="entry-outer">
@@ -42,7 +42,7 @@
                                                 } 
                                             ?>
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="{{$images->image}}" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{asset('storage/'.$images->image)}}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="{{ route('post', $post->slug) }}"></a>
                                                 </div>
 
@@ -162,7 +162,7 @@
                                     </div>
                                 </div>
                             </article>
-                            <article class="post type-post has-post-thumbnail">
+                            <article class="post type-post has-post-thumbnail" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                                 <div class="entry-outer uk-grid uk-grid-small uk-child-width-1-1">
                                     <div class="entry-thumb">
                                         <span class="image cover-image" data-src="https://mirroredsouls.com/wp-content/uploads/2021/04/how-to-start-a-blog-featured-image.jpg" data-uk-img="" title="Post Title"></span>
@@ -221,7 +221,7 @@
                     </div>
                     -->
 
-                    <div class="widget post-listing" id="recent-posts">
+                    <div class="widget post-listing" id="recent-posts" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                         <h2 class="title uk-h4"><span>Recent Posts</span></h2>
                         <div class="widget-content">
                             <article class="post type-post">
@@ -304,7 +304,7 @@
                             </article>
                         </div>
                     </div>
-                    <div class="widget categories-list" id="categories-list">
+                    <div class="widget categories-list" id="categories-list" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                         <h2 class="title uk-h4"><span>Categories</span></h2>
                         <div class="widget-content">
                             <ul class="uk-list uk-list-divider">

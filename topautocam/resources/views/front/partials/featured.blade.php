@@ -1,4 +1,4 @@
-<div class="block-listing">
+<div class="block-listing"  uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
     <div class="uk-container">
         <div class="inner uk-position-relative">
             <div class="block-layout featured-layout">
@@ -7,7 +7,7 @@
                         <article class="post type-post">
                             <div class="entry-outer">
                                 <div class="entry-thumb">
-                                    <div class="image cover-image" data-src={{ asset('storage/'.$mainFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
+                                    <div class="image cover-image" uk-parallax="bgy: -200" data-src={{ asset('storage/'.$mainFeaturedCar->image) }} data-uk-img="" title="Post Title"></div>
                                     <a class="link-overlay uk-position-cover" href="{{ route('car-detail', $mainFeaturedCar->id) }}"></a>
                                     <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
                                     <!-- <a class="navbar-brand site-title" href="/">

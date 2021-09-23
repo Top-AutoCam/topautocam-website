@@ -9,7 +9,7 @@
                 <main id="main" class="site-main">
                     <div class="inner uk-position-relative">
                         <div class="product type-product has-post-thumbnail product-type-simple">
-                            <figure class="woocommerce-product-gallery__wrapper">
+                            <figure class="woocommerce-product-gallery__wrapper"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                                 <div class="woocommerce-product-gallery__image">
                                     <a href="{{ asset('storage/'.$car->image) }}">
                                         <img src="{{ asset('storage/'.$car->image) }}" alt="Black and White Striped T-shirt">
@@ -29,12 +29,11 @@
                                 -->
 
                                 <p class="price">
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>{{ $car->price }}</span>
+                                  <span class="uk-badge uk-margin">${{ $car->price }}</span>
                                 </p>
                             </figure>
 
-                            <div class="summary entry-summary">
+                            <div class="summary entry-summary" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                                 <h1 class="product_title entry-title">{{ $car->title }}</h1>
 
                                 <div class="woocommerce-product-details__short-description">

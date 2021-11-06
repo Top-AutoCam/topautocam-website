@@ -2,7 +2,6 @@
     <div class="uk-width-expand uk-first-column">
         <main id="main" class="site-main">
             <div class="inner uk-position-relative">
-
                 <div class="result-ordering">
                     <p class="woocommerce-result-count">FOUND {{ $total }} CARS</p>
                     <form class="woocommerce-ordering" method="get">
@@ -16,18 +15,14 @@
                         <input type="hidden" name="paged" value="1">
                     </form>
                 </div>
-
                 <div class="uk-grid uk-grid-stack">
                     <div class="uk-width-1-5@m">
                         <form>
                             <fieldset class="uk-fieldset">
-
                                 <legend class="uk-legend">Filter</legend>
-
                                 <div class="uk-margin">
                                     <input type="text" wire:model="search"/>
                                 </div>
-
                                 <div class="uk-margin">
                                     <label class="label">Make</label>
                                     <select class="uk-select" wire:model="make1">
@@ -37,7 +32,6 @@
                                         @endforeach
                                     </select>
                                 </div>
-
                                 <div class="uk-margin">
                                     <label class="label">Model</label>
                                     <select class="uk-select" wire:model="model1">

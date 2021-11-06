@@ -40,6 +40,8 @@ Route::middleware('locale')->group(function () {
     //----
     Route::get('/about-us', [SiteController::class, 'aboutUs'])->name('about-us');
     Route::get('/fqas',[SiteController::class, 'FQAs'])->name('fqas');
+    //---
+    Route::get('/service',[SiteController::class, 'service'])->name('service');
 
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');

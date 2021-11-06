@@ -87,7 +87,7 @@
                         </form>
                     </div>
 
-                    <div class="uk-width-4-5@m">
+                    <!-- <div class="uk-width-4-5@m">
                         <ul class="products columns-4">
                             @foreach($parts as $part)
                             <li class="product type-product has-post-thumbnail" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
@@ -104,7 +104,43 @@
                             </li>
                             @endforeach
                         </ul>
+                    </div> -->
+
+                    <div class="uk-width-4-5@m">
+                        <ul class="products columns-4">
+                            @foreach($parts as $part)
+                            <li class="product type-product has-post-thumbnail " uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
+                                <a href="{{ route('part-detail', $part->id) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link " >
+                                    <div class ="uk-inline">
+                                        <img  class ="uk-height-max-small uk-child-width-1-4 uk-cover-container" src="{{ asset('/storage/'.$part->image)}}" width="250" height="250">
+                                        <!-- <div>   
+                                            <div class="uk-position-top-right" style="font-size: 15px; color:#FCC201;font-weight: 900;">
+                                                <a class="navbar-brand site-title" href="/">
+                                                    <img src="{{ asset('images/logo.jpeg') }}" style="width: 40px;" />
+                                                </a>
+                                            </div>
+                                            <div class="uk-position-bottom-left" style="font-size: 10px; color:#FCC201;">
+                                                017 238 008 | 015 238 008
+                                            </div>
+                                        </div> -->
+                                    </div> 
+                                    <h2 class="woocommerce-loop-product__title khmer-title-font" style="font-size: 15px;">{{  $part->title }}</h2>
+                                    <span class="price">
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">{{ $part->make }} | {{ $part->model }}</span>
+                                        </span>
+                                    </span>
+                                </a>
+                                @guest
+                                @else
+                                    <span class="uk-badge uk-margin">${{ $part->price }}</span>
+                                @endguest
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
+                </div>
+
                 </div>
 
             </div>

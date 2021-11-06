@@ -1,9 +1,8 @@
 <ul class="uk-breadcrumb">
     <li>
-        <a href="index.html">Here</a>
+        <a href="/">Here</a>
     </li>
-
     <li>
-        <a href="shop.html">There</a>
+        <a href="/cars">There</a>
     </li>
 </ul>

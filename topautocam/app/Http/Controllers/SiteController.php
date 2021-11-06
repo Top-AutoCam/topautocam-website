@@ -120,7 +120,6 @@ class SiteController extends Controller
 
     public function login()
     {
-
         $announcements = Announcement::latest()
             ->take(12)->get();
 
@@ -131,7 +130,6 @@ class SiteController extends Controller
 
     public function locale(Request $request)
     {
-
         $session = $request->session();
         $locale = $session->get('locale', 'en');
 
@@ -140,5 +138,10 @@ class SiteController extends Controller
         $session->put('locale', $locale == 'en' ? 'kh' : 'en');
 
         return back();
+    }
+
+
+    public function service(){
+        return view('front.pages.service');
     }
 }

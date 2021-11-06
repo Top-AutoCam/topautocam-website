@@ -29,7 +29,7 @@
                                     <div class="entry-inner">
                                         <div class="entry-content">
                                             <h3 class="entry-title khmer-title-font">
-                                                <a href="single.html">{{ $promotion->name }}</a>
+                                                <a href="https://web.facebook.com/topauto.kh">{{ $promotion->name }}</a>
                                             </h3>
                                         </div>
                                     </div>

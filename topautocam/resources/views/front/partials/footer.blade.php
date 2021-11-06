@@ -80,6 +80,19 @@
                                 </a>
                             </div>
                         </li>
+                        <!-- ------- -->
+                        <li uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
+                            <div class="thumbnail">
+                            <!-- {{ asset('/images/instagram/07.jpg') }}  -->
+                                <span class="image cover-image ratio-square" data-src="https://www.edigitalagency.com.au/wp-content/uploads/Youtube-shorts-icon-png.png" data-uk-img="" title="Post Title"></span>
+                                <a class="cover-link" href="https://www.youtube.com/channel/UCmo1Bm8MYkBUhgCUyzVCnNA" target="_blank">
+                                    <span class="likes">
+                                        <i class="icon flo_heart"></i>
+                                        <span>1.5k</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -120,7 +133,7 @@
     </div>
     <div class="copyrights">
         <div class="uk-container">
-            2018 © All rights reserved. <a href="#">Terms of use</a>, <a href="#">Privacy Policy</a>
+            2015 © All rights reserved. <a href="#">Terms of use</a>, <a href="#">Privacy Policy</a>
         </div>
     </div>
 </footer>

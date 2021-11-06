@@ -56,6 +56,7 @@ class Part extends Resource
             Text::make('name')->sortable(),
             Text::make('code')->readonly()->hideFromIndex()->hideWhenCreating(),
             Currency::make('price')->currency('USD')->sortable()->rules('required'),
+            Text::make('view_count'),
             Select::make('make')->options(config('enums.MAKE'))->sortable()->rules('required'),
             Select::make('model')->options(config('enums.MODEL'))->sortable()->rules('required'),
             Select::make('color')->options(config('enums.COLOR'))->rules('required'),

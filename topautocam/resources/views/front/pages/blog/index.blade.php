@@ -4,7 +4,6 @@
 
 <div id="primary" class="site-primary">
     <div class="uk-container">
-
         <div class="page-heading">
             <div class="uk-container">
             <div class="inner uk-position-relative">
@@ -42,7 +41,7 @@
                                                 } 
                                             ?>
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="{{asset('storage/'.$images->image)}}" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{asset('storage/'.$images->image)}}" data-uk-img=""  height="200" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="{{ route('post', $post->slug) }}"></a>
                                                 </div>
 

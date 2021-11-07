@@ -15,8 +15,8 @@
 
             <div class="block-layout grid-layout three-cols">
                 <div class="uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid="">
-                    
                     @foreach($services as $service)
+                    
                     <article class="post type-post" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
                         <div class="entry-outer">
                             <div class="entry-thumb uk-inline-clip uk-transition-toggle">
@@ -29,14 +29,13 @@
                             <div class="entry-inner">
                                 <div class="entry-content">
                                     <h3 class="entry-title khmer-title-font">
-                                        <a href="single.html">{{ $service->name }}</a>
+                                        <a href="/about-us#service">{{ $service->name }}</a>
                                     </h3>
                                 </div>
                             </div>
                         </div>
                     </article>
                     @endforeach
-
                 </div>
             </div>
             <!-- End Layout -->

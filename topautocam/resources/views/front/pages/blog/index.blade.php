@@ -30,7 +30,7 @@
                         <div class="uk-container">
                             <div class="inner uk-position-relative">
                                 <div class="block-layout classic-layout">
-                                    <div class="uk-grid-large uk-child-width-1-2" data-uk-grid="">
+                                    <div class="uk-grid-large uk-child-width-1-3" data-uk-grid="">
                                         @foreach($posts as $key => $post)
                                         <article class="post type-post">
                                             <div class="entry-outer">
@@ -47,29 +47,22 @@
 
                                                 <div class="entry-inner">
                                                     <div class="entry-content">
-                                                        <div class="entry-meta">
-                                                            <div>
-                                                                <span class="meta-category">
-                                                                    <span class="khmer-title-font">{{ $post->category->title }}</span>
-                                                                </span>
-                                                                <span class="meta-date">
-                                                                {{ $post->created_at->format('d F, Y') }}
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="entry-title khmer-title-font">
+                                                    <h3 class="uk-h4 khmer-title-font textNoBold"  >
                                                             <a href="{{ route('post', $post->slug) }}">{{ $post->title }}</a>
                                                         </h3>
-                                                        <div class="entry-snippet">
-                                                            <p class="uk-panel uk-text-truncate">
-                                                                {!! $post->post_introduction !!}
-                                                            </p>
+                                                    <div class="entry-meta">
+                                                        <div>
+                                                            <span class="meta-date">
+                                                                15 January, 2018
+                                                            </span>
                                                         </div>
                                                     </div>
+
+                                                    
                                                     <div class="entry-footer">
                                                         <div>
-                                                            <div class="entry-more">
-                                                                <a href="{{ route('post', $post->slug)}}">Continue Reading <i class="icon flo_arrow_right"></i></a>
+                                                            <div class="entry-more" >
+                                                                <a href="{{ route('post', $post->slug)}}" class="textBold">Reading <i class="icon flo_arrow_right"></i></a>
                                                             </div>
                                                         </div>
                                                         <div>
@@ -87,6 +80,30 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+
+<!-- 
+                                                    <div class="entry-content">
+                                                        <div class="entry-meta">
+                                                            <div>
+                                                                <span class="meta-category">
+                                                                    <span class="khmer-title-font">{{ $post->category->title }}</span>
+                                                                </span>
+                                                                <span class="meta-date">
+                                                                {{ $post->created_at->format('d F, Y') }}
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <h3 class="uk-h4 khmer-title-font textNoBold"  >
+                                                            <a href="{{ route('post', $post->slug) }}">{{ $post->title }}</a>
+                                                        </h3>
+                                                        <div class="entry-snippet">
+                                                            <p class="uk-panel uk-text-truncate">
+                                                                {!! $post->post_introduction !!}
+                                                            </p>
+                                                        </div>
+                                                    </div> -->
+
                                                 </div>
                                             </div>
                                         </article>

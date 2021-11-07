@@ -7,30 +7,30 @@
                 </a>
             </h1>
             <nav class=" primary-menu uk-visible@l">
-                <ul class="menu uk-text">
+                <ul class=" menu uk-text-uppercase text uk-text-small khmer-content-font" style="font-weight: normal;">
                     <li>
-                        <a href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">Home</a>
+                        <a href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">{{ __("Home") }}</a>
                     </li>
                     <li>
-                        <a href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">Car</a>
+                        <a href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">{{ __("Car") }}</a>
                     </li>
                     <li>
-                        <a href="/motorbikes" class="{{ Route::currentRouteName() == 'motorbike-index' ? 'selected-menu' : '' }}">Motorbike</a>
+                        <a href="/motorbikes" class="{{ Route::currentRouteName() == 'motorbike-index' ? 'selected-menu' : '' }}">{{ __("Motorbike") }}</a>
                     </li>
                     <li>
-                        <a href="/parts" class="{{ Route::currentRouteName() == 'part-index' ? 'selected-menu' : '' }}">Part</a>
+                        <a href="/parts" class="{{ Route::currentRouteName() == 'part-index' ? 'selected-menu' : '' }}">{{ __("Part") }}</a>
                     </li>
                     <li>
-                        <a href="/blog" class="{{ Route::currentRouteName() == 'blog' ? 'selected-menu' : '' }}">Blog</a>
+                        <a href="/blog" class="{{ Route::currentRouteName() == 'blog' ? 'selected-menu' : '' }}">{{ __("Blog") }}</a>
                     </li>
                     <li>
-                        <a href="/about-us" class="{{ Route::currentRouteName() == 'about-us' ? 'selected-menu' : '' }}">About Us</a>
+                        <a href="/about-us" class="{{ Route::currentRouteName() == 'about-us' ? 'selected-menu' : '' }}">{{ __("About Us") }}</a>
                     </li>
                     <li>
-                        <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">Contact</a>
+                        <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">{{ __("CONTACT") }}</a>
                     </li>
                     <li>
-                        <a href="/fqas" class="{{ Route::currentRouteName() == 'fqas' ? 'selected-menu' : '' }}">FQAs</a>
+                        <a href="/fqas" class="{{ Route::currentRouteName() == 'fqas' ? 'selected-menu' : '' }}">{{ __("FQAs") }}</a>
                     </li> 
                 </ul>
             </nav>

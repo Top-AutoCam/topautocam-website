@@ -102,12 +102,14 @@ class SiteController extends Controller
         $teams = Team::latest()->get();
         $videos = Video::latest()->take(2)->get();
         $galleries = Gallery::latest()->get();
+        $services = CarService::latest()->get();
 
         return view('front.pages.about-us',[
             'aboutus' => $aboutus,
             'teams' => $teams,
             'videos' => $videos,
             'galleries' => $galleries,
+            'services' => $services,
         ]);
     }
 

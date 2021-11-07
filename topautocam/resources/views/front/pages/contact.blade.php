@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div id="primary" class="site-primary">
+<div id="primary" class="site-primary uk-padding-remove-top">
     <div class="uk-container">
         <div class="uk-grid" data-uk-grid="">
             <div class="uk-width-expand">
@@ -47,9 +47,9 @@
                                         <p>Working Hours: <br /> 8am – 12pm <br /> 1pm – 5pm</p>
                                     </div>
                                     <br />
-
-                                    <livewire:contact-form />
-
+                                    <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                        <livewire:contact-form />
+                                    </div>
                                 </div>
                             </div>
                         </article>

@@ -1,95 +1,103 @@
 @extends('front.layouts.app')
 
 @section('content')
-    <div class="uk-container" >
-            <div class="uk-section uk-section-default">
-                <div class="uk-container">
-                    <h2 style="color:gray;" class="title uk-h2 title-font khmer-title-font uk-text-center textNoBold">{{ __("ABOUT US") }}</h2>
-                    <!-- <hr class="uk-divider-small  uk-align-center"> -->
-                    <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
-                        <div class="uk-text-center">
-                        <p class="text uk-text-small khmer-content-font">
-                            <a href="/contact" class="uk-text-primary">{{ __("Contact us") }}</a>
-                            {{ __("anytime if you need further assistance") }}</p>
+@foreach($aboutus as $aboutus)         
+<div id="slider" class="site-slider background-style boxed-layout ">
+    <div class="uk-container uk-container-no">
+        <div class="inner uk-position-relative uk-visible-toggle">
+            <div class="owl-carousel ">
+                <div class="item">
+                    <article class="post type-post">
+                        <div class="entry-outer">
+                            <div class="entry-thumb">
+                                <div class="image cover-image" data-src="https://thumbs.dreamstime.com/b/modern-cars-studio-room-d-illustration-render-161029748.jpg" data-uk-img=""  title="title" data-uk-parallax="bgy: -300"></div>
+                                <a class="link-overlay uk-position-cover" href="single.html"></a>
+                            </div>
+                            <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
+                                <div class="entry-content">
+                                    <div>
+                                        <h2 class="title uk-h1 title-font khmer-title-font textNoBold" style="color:white; padding: top 15px;">
+                                        {{ __("ABOUT US") }}
+                                        </h2>
+                                    </div>
+                                    <div>
+                                        <span class="text uk-text-small khmer-content-font" style="color:yellow;"> <p class="text uk-text-small khmer-content-font">
+                                            <a href="/contact" style="color:white;">{{ __("Contact us") }}</a>
+                                            {{ __("anytime if you need further assistance") }}</p></span>
+                                    </div>
+                                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-padding-large " uk-grid> 
+                                           <div class=" uk-animation-toggle">
+                                                <div class="uk-card uk-card-default uk-card-body uk-animation-fade">
+                                                    <h3 class="title uk-h4 title-font khmer-title-font textNoBold">ចក្ខុវិស័យ</h3>
+                                                    <p style="text-align: justify;">{!! $aboutus->vision !!}</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class=" uk-animation-toggle">
+                                                <div class="uk-card uk-card-primary uk-card-body uk-animation-fade">
+                                                    <h3 class="title uk-h4 title-font khmer-title-font textNoBold">បេសកកម្ម</h3>
+                                                    <p style="text-align: justify;">{!! $aboutus->mission !!}.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class=" uk-animation-toggle">
+                                                <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade">
+                                                    <h3 class="title uk-h4 title-font khmer-title-font textNoBold">ប្រវត្តិយើង</h3>
+                                                    <p style="text-align: justify;">{!! $aboutus->history !!}</p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                </div>
+                            
+                            
+                            
+                            
+                            </div>    
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
+            <div class="navigation owl-nav uk-hidden-hover uk-visible@l" id="slider-nav"></div>
+            <div class="owl-dots uk-hidden-hover" id="slider-dots"></div>
+        </div>
+    </div>
+</div>
+@endforeach
 
-    @foreach($aboutus as $aboutus)    
+<div class="heading center" id="service">
+    <div>
+        <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 20px;" >{{ __("Our Services") }}</h4>
+        <span class="text uk-text-small khmer-content-font">{{ __("Good quality with responsibility") }} </span>
+        <hr class="uk-divider-small">
+    </div>
+</div>
+
+<div class="uk-padding-remove-top uk-padding-large" > 
+    @foreach($services as $index => $service)
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div @if($index % 2 == 0) class="uk-card-media-left uk-cover-container"  @else class="uk-flex-last@s uk-card-media-right uk-cover-container" @endif >
+            <img src="{{ asset('storage/'.$service->image) }}" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
         <div>
-            <div class="uk-card uk-align-center uk-card-default uk-card-body uk-width-3-4 uk-margin-top">
-                <h3 class="title uk-h2 title-font khmer-title-font uk-text-center textNoBold">ថប់អូតូ</h3>
-                <p class="text uk-text-small khmer-content-font" style="text-align: justify;" uk-text-center>{!! $aboutus->overview !!}</p>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">{{ $service->name }}</h3>
+                <p style="text-align:justify;">{{$service->detail}}</p>
             </div>
         </div>
+    </div>
+    <!-- <hr class="uk-divider-small" "> -->
+    @endforeach
+</div>
+    <!-- ---------------------------------------------- -->
 
-        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
-            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                <div class="uk-background-muted uk-padding">
-                <img data-src="https://cdn-icons-png.flaticon.com/512/4127/4127786.png" width="100" height="100" alt="" uk-img>
-                    <h2>Mission</h2>
-                    <div style="text-align: justify;">
-                        <p>{!! $aboutus->mission !!}</p>
-                    </div>
-                </div> 
-            </div>
-
-            <div uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
-                <div class="uk-background-muted uk-padding">
-                <img data-src="https://cdn-icons-png.flaticon.com/512/3074/3074336.png" width="100" height="100" alt="" uk-img>
-                <h2>Vission</h2>
-                    <div style="text-align: justify;">
-                        <p>{!! $aboutus->vision !!}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                <div class="uk-background-muted uk-padding">
-                <img data-src="https://cdn-icons-png.flaticon.com/512/2491/2491622.png" width="100" height="100" alt="" uk-img>
-                <h2>History</h2>
-                    <div style="text-align: justify;">
-                        <p>{!! $aboutus->history !!}</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    @endforeach    
-    
-        <!-- <div class="inner uk-position-relative uk-padding" >
-            <div class="uk-container uk-width-1-2">
-                <div class="">
-                    <h4 class="title uk-h2 title-font khmer-title-font uk-text-center textNoBold">    
-                        សមាជិក
-                    </h4 >
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-grid-match uk-grid-medium" uk-grid>
-        @foreach($teams as $team)
-            <div class="uk-text-center" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
-                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                    <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$team->image)}}" width="250" height="300" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                        <p >{{$team->role}}</p>
-                    </div>
-                </div>
-                <p class="uk-margin-small-top">{{$team->name}}</p>
-            </div>
-        @endforeach   
-        </div>
-    </div> -->
-
-    <div class="inner uk-position-relative uk-padding">
+    <div class="inner uk-position-relative ">
         <div class="uk-container uk-width-1-2">
             <div class="">
                 <!-- <h4 class="title uk-h1 title-font uk-align-center uk-text-center uk-text-bolder"> -->
                     <!-- {{ __("Our Activities") }} -->
                 <h4 class="title uk-h2 title-font khmer-title-font uk-text-center textNoBold">        
-                    សកម្មភាពរបស់ពួកយើង
+                {{ __("Our Activities") }}
                 </h4>
             </div>
         </div>

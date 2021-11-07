@@ -41,8 +41,6 @@
             font-size: 20px;
             cursor: pointer;
             border-radius: 5px;
-        }
-        #myBtn:hover {
             background-color:  #ff9900;
         }
     </style>

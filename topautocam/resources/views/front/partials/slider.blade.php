@@ -7,7 +7,7 @@
                     <article class="post type-post">
                         <div class="entry-outer">
                             <div class="entry-thumb">
-                                <div class="image cover-image" data-src="{{asset('storage/' . $announcement->image)}}" data-uk-img=""  title="title" data-uk-parallax="bgy: -300"></div>
+                                <div class="image cover-image" data-src="{{asset('storage/' . $announcement->image)}}" data-uk-img=""  title="title" data-uk-parallax="bgy: -50"></div>
                                 <a class="link-overlay uk-position-cover" href="single.html"></a>
                             </div>
                             

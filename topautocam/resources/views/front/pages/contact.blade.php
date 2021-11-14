@@ -1,7 +1,6 @@
 @extends('front.layouts.app')
 
 @section('content')
-
 <div id="primary" class="site-primary uk-padding-remove-top">
     <div class="uk-container">
         <div class="uk-grid" data-uk-grid="">

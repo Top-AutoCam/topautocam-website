@@ -30,7 +30,7 @@ class AnnouncementSeeder extends Seeder
                 'top_title_en' => 'acceptable price',
                 'top_title_kh' => 'តម្លៃសមរម្យ',
                 'title_en' => UTIL::PROJECT_NAME . ' is awesome',
-                'title_kh' => UTIL::PROJECT_NAME . ' លក់យកចំនេញតិចបំផុត',
+                'title_kh' => UTIL::PROJECT_NAME . ' ជាផ្ដល់ជូនតម្លៃទាបជាងក្រុមហ៊ុនផ្សេងៗ',
                 'bottom_title_en' => 'price for everyone',
                 'bottom_title_kh' => 'តម្លៃសម្រាប់គ្រប់គ្នា',
                 'image' => 'd2.jpg'

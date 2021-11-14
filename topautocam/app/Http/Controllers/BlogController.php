@@ -12,7 +12,9 @@ use DB;
 
 class BlogController extends Controller
 {
-
+    
+    public $contents;
+    public $images;
 
     public function index() {
         $posts = Post::orderBy('updated_at', 'desc')->latest()->get();
@@ -43,5 +45,4 @@ class BlogController extends Controller
             'images' => $images,
         ]);
     }
-
 }

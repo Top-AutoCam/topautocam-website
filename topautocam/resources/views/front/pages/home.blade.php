@@ -19,6 +19,8 @@
 </div>
 
 @include('front.partials.slider')
+
+@include('front.partials.car_model')
 <div id="primary" class="site-primary">
     <div class="uk-container">
         <div class="page-heading">

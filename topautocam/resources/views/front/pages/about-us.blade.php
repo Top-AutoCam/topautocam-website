@@ -10,13 +10,13 @@
                     <article class="post type-post">
                         <div class="entry-outer">
                             <div class="entry-thumb">
-                                <div class="image cover-image" data-src="https://thumbs.dreamstime.com/b/modern-cars-studio-room-d-illustration-render-161029748.jpg" data-uk-img=""  title="title" data-uk-parallax="bgy: -300"></div>
+                                <div class="image cover-image" data-src="https://www.hiewa.com.my/wp-content/uploads/2017/09/alphard.png" data-uk-img=""  title="title" data-uk-parallax="bgy: -300"></div>
                                 <a class="link-overlay uk-position-cover" href="single.html"></a>
                             </div>
                             <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                 <div class="entry-content">
                                     <div>
-                                        <h2 class="title uk-h1 title-font khmer-title-font textNoBold" style="color:white; padding: top 15px;">
+                                        <h2 class="title uk-h1 title-font khmer-title-font textNoBold" style="color:white; padding-top:25px;">
                                         {{ __("ABOUT US") }}
                                         </h2>
                                     </div>
@@ -26,21 +26,21 @@
                                             {{ __("anytime if you need further assistance") }}</p></span>
                                     </div>
                                     <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-padding-large " uk-grid> 
-                                           <div class=" uk-animation-toggle">
+                                           <div class=" uk-animation-toggle" style=" opacity: 0.8;">
                                                 <div class="uk-card uk-card-default uk-card-body uk-animation-fade">
                                                     <h3 class="title uk-h4 title-font khmer-title-font textNoBold">ចក្ខុវិស័យ</h3>
                                                     <p style="text-align: justify;">{!! $aboutus->vision !!}</p>
                                                 </div>
                                             </div>
                                             
-                                            <div class=" uk-animation-toggle">
+                                            <div class=" uk-animation-toggle" style=" opacity: 0.9;">
                                                 <div class="uk-card uk-card-primary uk-card-body uk-animation-fade">
                                                     <h3 class="title uk-h4 title-font khmer-title-font textNoBold">បេសកកម្ម</h3>
                                                     <p style="text-align: justify;">{!! $aboutus->mission !!}.</p>
                                                 </div>
                                             </div>
 
-                                            <div class=" uk-animation-toggle">
+                                            <div class=" uk-animation-toggle" style=" opacity: 0.8;">
                                                 <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade">
                                                     <h3 class="title uk-h4 title-font khmer-title-font textNoBold">ប្រវត្តិយើង</h3>
                                                     <p style="text-align: justify;">{!! $aboutus->history !!}</p>

@@ -15,13 +15,13 @@
 
             <div class="block-layout grid-layout three-cols">
                 <div class="uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid="">
-                    @foreach($services as $service)
+                    @foreach($services as $index => $service)
                     
                     <article class="post type-post" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
                         <div class="entry-outer">
                             <div class="entry-thumb uk-inline-clip uk-transition-toggle">
                                 <div class="image cover-image" data-src={{ asset('storage/'.$service->image) }} data-uk-img="" title="Post Title"></div>
-                                <a class="link-overlay uk-position-cover" ></a>
+                                <a class="link-overlay uk-position-cover" href="/about-us#{{$index}}"></a>
                                 <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
                                     <p >{{$service->detail}}</p>
                                 </div>
@@ -29,7 +29,7 @@
                             <div class="entry-inner">
                                 <div class="entry-content">
                                     <h3 class="entry-title khmer-title-font">
-                                        <a href="/about-us#service">{{ $service->name }}</a>
+                                        {{ $service->name }}
                                     </h3>
                                 </div>
                             </div>

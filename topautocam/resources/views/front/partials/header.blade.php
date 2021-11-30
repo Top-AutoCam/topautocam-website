@@ -9,28 +9,28 @@
             <nav class=" primary-menu uk-visible@l">
                 <ul class=" menu uk-text-uppercase text uk-text-small khmer-content-font" style="font-weight: normal;">
                     <li>
-                        <a href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">{{ __("Home") }}</a>
+                        <a  style=" font-family: Arial, Helvetica, sans-serif;" href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">{{ __("Home") }}</a>
                     </li>
                     <li>
-                        <a href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">{{ __("Car") }}</a>
+                        <a style=" font-family: Arial, Helvetica, sans-serif;" href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">{{ __("Car") }}</a>
                     </li>
                     <li>
-                        <a href="/motorbikes" class="{{ Route::currentRouteName() == 'motorbike-index' ? 'selected-menu' : '' }}">{{ __("Motorbike") }}</a>
+                        <a  style=" font-family: Arial, Helvetica, sans-serif;" href="/motorbikes" class="{{ Route::currentRouteName() == 'motorbike-index' ? 'selected-menu' : '' }}">{{ __("Motorbike") }}</a>
                     </li>
                     <li>
-                        <a href="/parts" class="{{ Route::currentRouteName() == 'part-index' ? 'selected-menu' : '' }}">{{ __("Part") }}</a>
+                        <a style=" font-family: Arial, Helvetica, sans-serif;" href="/parts" class="{{ Route::currentRouteName() == 'part-index' ? 'selected-menu' : '' }}">{{ __("Part") }}</a>
                     </li>
                     <li>
-                        <a href="/blog" class="{{ Route::currentRouteName() == 'blog' ? 'selected-menu' : '' }}">{{ __("Blog") }}</a>
+                        <a style="font-family: Arial, Helvetica, sans-serif;" href="/blog" class="{{ Route::currentRouteName() == 'blog' ? 'selected-menu' : '' }}">{{ __("Blog") }}</a>
                     </li>
                     <li>
-                        <a href="/about-us" class="{{ Route::currentRouteName() == 'about-us' ? 'selected-menu' : '' }}">{{ __("About Us") }}</a>
+                        <a style=" font-family: Arial, Helvetica, sans-serif;" href="/about-us" class="{{ Route::currentRouteName() == 'about-us' ? 'selected-menu' : '' }}">{{ __("About Us") }}</a>
                     </li>
                     <li>
-                        <a href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">{{ __("CONTACT") }}</a>
+                        <a style="font-family: Arial, Helvetica, sans-serif;" href="/contact" class="{{ Route::currentRouteName() == 'contact' ? 'selected-menu' : '' }}">{{ __("CONTACT") }}</a>
                     </li>
                     <li>
-                        <a href="/fqas" class="{{ Route::currentRouteName() == 'fqas' ? 'selected-menu' : '' }}">{{ __("FQAs") }}</a>
+                        <a style=" font-family: Arial, Helvetica, sans-serif;" href="/fqas" class="{{ Route::currentRouteName() == 'fqas' ? 'selected-menu' : '' }}">{{ __("FQAs") }}</a>
                     </li> 
                 </ul>
             </nav>

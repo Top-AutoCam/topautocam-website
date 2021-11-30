@@ -1,5 +1,4 @@
 @extends('front.layouts.app')
-
 @section('content')
 @foreach($aboutus as $aboutus)         
 <div id="slider" class="site-slider background-style boxed-layout ">
@@ -10,7 +9,7 @@
                     <article class="post type-post">
                         <div class="entry-outer">
                             <div class="entry-thumb">
-                                <div class="image cover-image" data-src="https://www.hiewa.com.my/wp-content/uploads/2017/09/alphard.png" data-uk-img=""  title="title" data-uk-parallax="bgy: -300"></div>
+                               <div class="image cover-image" data-src="https://www.hiewa.com.my/wp-content/uploads/2017/09/alphard.png" data-uk-img=""  title="title" data-uk-parallax="bgy: -300"></div>
                                 <a class="link-overlay uk-position-cover" href="single.html"></a>
                             </div>
                             <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
@@ -39,7 +38,6 @@
                                                     <p style="text-align: justify;">{!! $aboutus->mission !!}.</p>
                                                 </div>
                                             </div>
-
                                             <div class=" uk-animation-toggle" style=" opacity: 0.8;">
                                                 <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade">
                                                     <h3 class="title uk-h4 title-font khmer-title-font textNoBold">ប្រវត្តិយើង</h3>
@@ -64,33 +62,32 @@
 </div>
 @endforeach
 
-<div class="heading center" id="service">
-    <div>
-        <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 20px;" >{{ __("Our Services") }}</h4>
-        <span class="text uk-text-small khmer-content-font">{{ __("Good quality with responsibility") }} </span>
-        <hr class="uk-divider-small">
-    </div>
-</div>
-
-<div class="uk-padding-remove-top uk-padding-large" > 
-    @foreach($services as $index => $service)
-    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-        <div @if($index % 2 == 0) class="uk-card-media-left uk-cover-container"  @else class="uk-flex-last@s uk-card-media-right uk-cover-container" @endif >
-            <img src="{{ asset('storage/'.$service->image) }}" alt="" uk-cover>
-            <canvas width="600" height="400"></canvas>
-        </div>
+    <div class="heading center">
         <div>
-            <div class="uk-card-body">
-                <h3 class="uk-card-title">{{ $service->name }}</h3>
-                <p style="text-align:justify;">{{$service->detail}}</p>
+            <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 20px;" >{{ __("Our Services") }}</h4>
+            <span class="text uk-text-small khmer-content-font">{{ __("Good quality with responsibility") }} </span>
+            <hr class="uk-divider-small">
+        </div>
+    </div>
+
+    <div class="uk-padding-remove-top uk-padding-large" > 
+        @foreach($services as $index => $service)
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" id="{{$index}}" uk-grid>
+            <div @if($index % 2 == 0) class="uk-card-media-left uk-cover-container"  @else class="uk-flex-last@s uk-card-media-right uk-cover-container" @endif >
+                <img src="{{ asset('storage/'.$service->image) }}" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">{{ $service->name }}</h3>
+                    <p style="text-align:justify;">{{$service->detail}}</p>
+                </div>
             </div>
         </div>
+        <!-- <hr class="uk-divider-small" "> -->
+        @endforeach
     </div>
-    <!-- <hr class="uk-divider-small" "> -->
-    @endforeach
-</div>
     <!-- ---------------------------------------------- -->
-
     <div class="inner uk-position-relative ">
         <div class="uk-container uk-width-1-2">
             <div class="">
@@ -102,7 +99,6 @@
             </div>
         </div>
     </div>
-
     <div class="block-layout grid-layout two-cols uk-width-3-4 uk-align-center ">
             <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid="">
                 @foreach($videos as $index => $video)
@@ -114,19 +110,16 @@
                 @endforeach    
             </div>
     </div>
-
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m" >
-    @foreach($galleries as $key => $gallerie)
-        <li class="uk-inline">
-            <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$gallerie->image)}}" width="500" height="300" alt="">
-        </li>
-    @endforeach    
-</ul>
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-</div>
-
-</div>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m" >
+            @foreach($galleries as $key => $gallerie)
+                <li class="uk-inline">
+                    <img class ="uk-height-max-medium uk-child-width-1-2 uk-cover-container" src="{{ asset('/storage/'.$gallerie->image)}}" width="500" height="300" alt="">
+                </li>
+            @endforeach    
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
 
 @endsection

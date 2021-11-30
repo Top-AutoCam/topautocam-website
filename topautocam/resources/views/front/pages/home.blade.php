@@ -35,13 +35,9 @@
                 </div>
             </div>
         </div>
-        
         <div class="uk-grid" data-uk-grid="">
-            
             <div class="uk-width-expand">
-
                 <main id="main" class="site-main">
-    
                     @include('front.partials.featured')
     
                     @include('front.partials.promotions')
@@ -53,16 +49,12 @@
                     @include('front.partials.most_viewed')
 
                     @include('front.partials.testimonials')
-    
                 </main>
-    
             </div>
         </div>
     </div>
 </div>
 
-
 <livewire:subscribe/>
-
 
 @endsection

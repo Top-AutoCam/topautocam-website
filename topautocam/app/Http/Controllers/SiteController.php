@@ -146,4 +146,8 @@ class SiteController extends Controller
     public function service(){
         return view('front.pages.service');
     }
+
+    public function catalog(){
+        return view('front.pages.catalog.index');
+    }
 }

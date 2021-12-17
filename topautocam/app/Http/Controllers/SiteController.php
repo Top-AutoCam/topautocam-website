@@ -150,4 +150,12 @@ class SiteController extends Controller
     public function catalog(){
         return view('front.pages.catalog.index');
     }
+
+    public function carcompare(){
+        return view('front.pages.car_compare.index');
+    }
+
+    public function wheelchange(){
+        return view('front.pages.steering_wheel_change.index');
+    }
 }

@@ -1,7 +1,7 @@
 
 @extends('front.layouts.app')
 @section('content')
-
+@include('front.partials.car_model')
 <div class="heading center" id="service">
     <div>
         <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 20px;" >{{ __("Our Services") }}</h4>
@@ -13,8 +13,24 @@
 <div> 
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right" id="1" uk-grid>
         <div class="uk-card-media-left uk-cover-container">
-            <img src="{{ asset('images/vitz06-07.jpg') }}" alt="" uk-cover>
-            <canvas width="600" height="400"></canvas>
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/vitz06-07.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/vitz06-07.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/vitz06-07.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Vitz 2006-2007 </h1>
@@ -59,10 +75,32 @@
     </div>
   <!-- -------------------------------------------------- -->
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right  uk-margin-medium-top  uk-margin-medium-top"id="2" uk-grid>
-        <div class="uk-card-media-left uk-cover-container">
+        <!-- <div class="uk-card-media-left uk-cover-container">
             <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
+        </div> -->
+
+        <div class="uk-card-media-left uk-cover-container">
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
+
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Vitz 2008-2009 </h1>
                 <div class="woocommerce-product-details__short-description">
@@ -106,10 +144,33 @@
     </div>
     <!-- -------------------------------------------------- -->
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right  uk-margin-medium-top" id="3" uk-grid>
-        <div class="uk-card-media-left uk-cover-container">
+        <!-- <div class="uk-card-media-left uk-cover-container">
             <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
+        </div> -->
+
+        <div class="uk-card-media-left uk-cover-container">
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/vitz08-09.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
+
+
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Vitz 2008-2009 </h1>
                 <div class="woocommerce-product-details__short-description">
@@ -153,9 +214,30 @@
     </div>
     <!-- -------------------------------------------------- -->
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right  uk-margin-medium-top" id="4"uk-grid>
-        <div class="uk-card-media-left uk-cover-container">
+        <!-- <div class="uk-card-media-left uk-cover-container">
             <img src="{{ asset('images/alphard06-07.jpg') }}" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
+        </div> -->
+
+        <div class="uk-card-media-left uk-cover-container">
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/alphard06-07.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard06-07.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard06-07.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Alpahrd 2006-2007  </h1>
@@ -195,15 +277,41 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination uk-padding uk-padding-remove-left">
+                    <div class="load-more">
+                        <a href="#" class="uk-button uk-button-default" id="loadMore">Load More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- -------------------------------------------------- -->
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right  uk-margin-medium-top" id="5" uk-grid>
-        <div class="uk-card-media-left uk-cover-container">
+        <!-- <div class="uk-card-media-left uk-cover-container">
             <img src="{{ asset('images/alphard08.jpg') }}" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
+        </div> -->
+        <div class="uk-card-media-left uk-cover-container">
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/alphard08.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard08.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard08.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
+        
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Alpahrd 2008 </h1>
                 <div class="woocommerce-product-details__short-description">
@@ -242,14 +350,42 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination uk-padding uk-padding-remove-left">
+                    <div class="load-more">
+                        <a href="#" class="uk-button uk-button-default" id="loadMore">Load More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- -------------------------------------------------- -->
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right  uk-margin-medium-top" id="6" uk-grid>
-        <div class="uk-card-media-left uk-cover-container">
+        <!-- <div class="uk-card-media-left uk-cover-container">
             <img src="{{ asset('images/alphard15-16.jpg') }}" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
+        </div> -->
+
+
+
+        <div class="uk-card-media-left uk-cover-container">
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/alphard15-16.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard15-16.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard15-16.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Alpahrd 2015-2016 </h1>
@@ -289,15 +425,41 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination uk-padding uk-padding-remove-left">
+                    <div class="load-more">
+                        <a href="#" class="uk-button uk-button-default" id="loadMore">Load More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- -------------------------------------------------- -->
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-left uk-margin-large-right  uk-margin-medium-top" id="7" uk-grid>
-        <div class="uk-card-media-left uk-cover-container">
+        <!-- <div class="uk-card-media-left uk-cover-container">
             <img src="{{ asset('images/alphard19-20.jpg') }}" alt="" uk-cover>
             <canvas width="600" height="400"></canvas>
+        </div> -->
+        <div class="uk-card-media-left uk-cover-container">
+            <div  class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true" >  
+                <ul class="uk-slider-items">
+                    <li>
+                        <img src="{{ asset('images/alphard19-20.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard19-20.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/alphard19-20.jpg') }}" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </li>
+                </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color:black;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover"  style="color:black;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
+
         <div class="summary entry-summary uk-padding " uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <h1 class="entry-title khmer-title-font" style="font-size:25px;">Toyota Alpahrd 2019-2020 </h1>
                 <div class="woocommerce-product-details__short-description">
@@ -335,6 +497,11 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="pagination uk-padding uk-padding-remove-left">
+                    <div class="load-more">
+                        <a href="#" class="uk-button uk-button-default" id="loadMore">Load More</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TOP AUTO CAM</title>
-
     <link rel="stylesheet" href="{{asset('css/floicons.css')}}" />
     <link rel="stylesheet" href="{{asset('css/normalize.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/uikit.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/animate.css')}}" />
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/app.css')}}" />
-
     <script src="{{asset('js/jquery.min.js')}}">
     </script>
     <script src="{{asset('js/uikit.min.js')}}"></script>
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
-
     <style>
         img {
             pointer-events: none;
@@ -46,29 +42,25 @@
     </style>
     @livewireStyles
 </head>
-
 <script>
 $(document).ready(function(){
     if (sessionStorage.getItem("isdisclaimerloaded") !== 'true') {
         UIkit.modal('#modal-example').show();
     }
     sessionStorage.setItem('isdisclaimerloaded', 'true');
-
-    
     UIkit.modal('#modal-motobike').show();
     UIkit.modal('#modal').show();
 });
+
 </script>
 
 <body class="archive woocommerce woocommerce-page">
-   
     <div id="loader">
         <div class="loading">
             <div></div>
         </div>
     </div>
     <!-- End Preloader -->
-
     <div id="wrapper" class="site-wrapper">
 
         <div class="uk-offcanvas-content">
@@ -114,10 +106,8 @@ $(document).ready(function(){
 <script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -125,7 +115,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;

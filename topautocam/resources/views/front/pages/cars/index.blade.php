@@ -2,7 +2,7 @@
 
 @section('content')
 
-@include('front/partials/slider')
+@include('front/partials/slider_catalog')
 
 <div id="primary" class="site-primary">
     <div class="uk-container">

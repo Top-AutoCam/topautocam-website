@@ -18,7 +18,7 @@
                                                         <h2 class="entry-title uk-h3">
                                                             <a href="single.html">5 Ways tsfsadddfaso stay motivated after January</a>
                                                         </h2>
-                                                        <hr class="entry-divider uk-divider-small" />
+                                                        <hr class="entry-divider usk-divider-small" />
                                                         <div class="entry-meta">
                                                             <div>
                                                                 <span class="meta-date">

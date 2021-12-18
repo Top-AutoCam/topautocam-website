@@ -99,6 +99,7 @@
             </div>
         </div>
     </div>
+    
     <div class="block-layout grid-layout two-cols uk-width-3-4 uk-align-center ">
             <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid="">
                 @foreach($videos as $index => $video)

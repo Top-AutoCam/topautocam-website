@@ -11,14 +11,13 @@
                     <li>
                         <a  style=" font-family: Arial, Helvetica, sans-serif;" href="/" class="{{ Route::currentRouteName() == 'home' ? 'selected-menu' : '' }}">{{ __("Home") }}</a>
                     </li>
-
                     <li><a style=" font-family: Arial, Helvetica, sans-serif;" href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">{{ __("Car") }}</a>
-                                        <ul>
-                                            <li><a style=" font-family: Arial, Helvetica, sans-serif;" href="/cars" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">{{ __("Car") }}</a></li>
-                                            <li><a style=" font-family: Arial, Helvetica, sans-serif;" href="/catalog" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">ការកម្មង់រថយន្ត</a></li>
-                                            <li><a style=" font-family: Arial, Helvetica, sans-serif;" href="/wheelchange" class="{{ Route::currentRouteName() == 'car-index' ? 'selected-menu' : '' }}">ការប្ដូរចង្កូត</a></li>
-                                        </ul>
-                                    </li>
+                        <ul class="uk-card">
+                            <li><a style=" font-family: Arial, Helvetica, sans-serif;font-size:15px;" href="/cars">រថយន្តក្នុងស្តុប</a></li>
+                            <li><a style=" font-family: Arial, Helvetica, sans-serif;font-size:15px;" href="/catalog">ការកម្មង់រថយន្ត</a></li>
+                            <li><a style=" font-family: Arial, Helvetica, sans-serif;font-size:15px;" href="/steeringconversion">បច្ចេកទេសការប្ដូរចង្កូត</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a  style=" font-family: Arial, Helvetica, sans-serif;" href="/motorbikes" class="{{ Route::currentRouteName() == 'motorbike-index' ? 'selected-menu' : '' }}">{{ __("Motorbike") }}</a>
                     </li>

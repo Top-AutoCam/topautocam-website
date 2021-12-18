@@ -21,7 +21,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::middleware('locale')->group(function () {
-
     Route::get('/', [SiteController::class, 'index'])->name('home');
     
     Route::get('/cars', [CarController::class, 'index'])->name('car-index');
@@ -37,14 +36,17 @@ Route::middleware('locale')->group(function () {
     Route::get('/logins', [SiteController::class, 'login'])->name('login');
     Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
     Route::post('/locale', [SiteController::class, 'locale'])->name('set-locale');
+
     //----
     Route::get('/about-us', [SiteController::class, 'aboutUs'])->name('about-us');
     Route::get('/fqas',[SiteController::class, 'FQAs'])->name('fqas');
+    
     //---
     Route::get('/service',[SiteController::class, 'service'])->name('service');
     Route::get('/catalog',[SiteController::class, 'catalog'])->name('catalog');
-    Route::get('/car-compare',[SiteController::class, 'carcompare'])->name('carcompare');
-    Route::get('/wheelchange',[SiteController::class, 'wheelchange'])->name('wheelchange');
+    Route::get('/detailcatalog',[SiteController::class, 'detailcatalog'])->name('detail-catalog');
+    Route::get('/car-compare',[SiteController::class, 'carcompare'])->name('car-compare');
+    Route::get('/steeringconversion',[SiteController::class, 'steeringconversion'])->name('steering-conversion');
 
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
     Route::get('/post/{slug}', [BlogController::class, 'detail'])->name('post');
@@ -55,9 +57,7 @@ Route::middleware('locale')->group(function () {
 });
 
 Auth::routes();
-
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/admins', [HomeController::class, 'admin']);
     Route::get('/user', [HomeController::class, 'user']);

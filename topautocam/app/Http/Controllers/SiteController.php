@@ -151,11 +151,15 @@ class SiteController extends Controller
         return view('front.pages.catalog.index');
     }
 
+    public function detailcatalog(){
+        return view('front.pages.catalog.detail1');
+    }
+
     public function carcompare(){
         return view('front.pages.car_compare.index');
     }
 
-    public function wheelchange(){
-        return view('front.pages.steering_wheel_change.index');
+    public function steeringconversion(){
+        return view('front.pages.steering_conversion.index');
     }
 }

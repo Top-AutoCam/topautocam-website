@@ -1,7 +1,6 @@
 <div class="block-listing">
     <div class="uk-container">
         <div class="inner uk-position-relative">
-
             <div class="heading">
                 <div>
                     <h4 class="title uk-h2 title-font khmer-title-font textNoBold" style="padding-top: 5px;">
@@ -12,10 +11,8 @@
                     <a href="page-category.html" class="more-link">{{ __("See all in recent")}}</a>
                 </div> -->
             </div>
-
             <div class="block-layout grid-layout four-cols">
                 <div class="uk-child-width-1-2@s uk-child-width-1-4@m" data-uk-grid="">
-
                     @foreach($recents as $recent)
                     <article class="post type-post" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
                         <div class="entry-outer">
@@ -45,7 +42,6 @@
                 </div>
             </div>
             <!-- End Layout -->
-
         </div>
     </div>
 </div>

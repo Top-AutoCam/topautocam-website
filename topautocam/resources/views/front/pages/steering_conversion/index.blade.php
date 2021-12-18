@@ -1,4 +1,3 @@
-
 @extends('front.layouts.app')
 @section('content')
 <div id="slider" class="site-slider background-style boxed-layout">
@@ -8,8 +7,8 @@
                 <div class="item">
                     <article class="post type-post">
                         <div class="entry-outer">
-                            <div class="entry-thumb" style="opacity: 0.5;">
-                                <div class="image cover-image" data-src="https://dryport.jp/wp-content/uploads/2021/03/seibi.jpg" data-uk-img=""  title="title" data-uk-parallax="bgy: -50"></div>
+                            <div class="entry-thumb" style="opacity: 0.8;">
+                                <div class="image cover-image" data-src="{{ asset('images/steering_conversion.png') }}" data-uk-img=""  title="title" data-uk-parallax="bgy: -50"></div>
                                 <a class="link-overlay uk-position-cover" href="single.html"></a>
                             </div>
                             <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
@@ -39,11 +38,9 @@
     </div>
 </div>  
 <!-- End Slider -->
-
 <div id="content" class="site-content">
 <div id="primary" class="site-primary">
     <div class="uk-container">
-        
         <div class="uk-grid" data-uk-grid="">
             <div class="uk-width-expand">
                 <main id="main" class="site-main">
@@ -55,7 +52,6 @@
                                         <h3 class="uk-h3">Who we are</h3>
                                         <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                                         <p style="text-align: justify;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
                                         <h3 class="uk-h3">What we do</h3>
                                         <p style="text-align: justify;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
                                     </div>
@@ -188,7 +184,6 @@
                                                     </div>
                                                     <!-- End Layout -->
                                                     <div class="uk-padding"></div>
-                                                    
                                                     <div class="block-layout grid-layout three-cols">
                                                         <div class="uk-grid-large uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid="masonry: true;">
                                                             <article class="post type-post">
@@ -281,7 +276,6 @@
                                                                             <div class="entry-category">
                                                                                 <a href="page-category.html">Beauty</a>
                                                                             </div>
-                                                                             
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -289,7 +283,6 @@
                                                         </div>
                                                     </div>
                                                     <!-- End Layout -->
-
                                                 </div>
                                             </div>
                                         </div>

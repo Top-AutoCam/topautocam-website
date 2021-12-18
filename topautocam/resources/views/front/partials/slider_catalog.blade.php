@@ -11,18 +11,18 @@
                                                     <a class="link-overlay uk-position-cover" href=""></a>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
-                                                    <div class="entry-content">
+                                                <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Beauty</a>
+                                                            <a href="page-category.html">TOP AUTO</a>
                                                         </div>
-                                                        <h2 class="entry-title uk-h3">
-                                                            <a href="single.html">5 Ways tsfsadddfaso stay motivated after January</a>
+                                                        <h2 class="entry-title title title-font khmer-title-font textNoBold">
+                                                            រថយន្តល្អបំផុតដែលនាំចូលពីប្រទេសជប៉ុនពិតប្រាកដ
                                                         </h2>
                                                         <hr class="entry-divider usk-divider-small" />
                                                         <div class="entry-meta">
                                                             <div>
                                                                 <span class="meta-date">
-                                                                    15 January, 2018
+                                                                បង្កើនការពេញចិត្តរបស់អតិថិជន
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -39,18 +39,18 @@
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
-                                                    <div class="entry-content">
+                                                <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Tsdravel</a>
+                                                            <a href="page-category.html">TOP AUTO</a>
                                                         </div>
-                                                        <h2 class="entry-title uk-h3">
-                                                            <a href="single.html">Traveling alone on the road</a>
+                                                        <h2 class="entry-title title title-font khmer-title-font textNoBold">
+                                                            រថយន្តល្អបំផុតដែលនាំចូលពីប្រទេសជប៉ុនពិតប្រាកដ
                                                         </h2>
-                                                        <hr class="entry-divider uk-divider-small" />
+                                                        <hr class="entry-divider usk-divider-small" />
                                                         <div class="entry-meta">
                                                             <div>
                                                                 <span class="meta-date">
-                                                                    18 January, 2018
+                                                                បង្កើនការពេញចិត្តរបស់អតិថិជន
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -67,18 +67,18 @@
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
-                                                    <div class="entry-content">
+                                                <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Tsdravel</a>
+                                                            <a href="page-category.html">TOP AUTO</a>
                                                         </div>
-                                                        <h2 class="entry-title uk-h3">
-                                                            <a href="single.html">Traveling alone on the road</a>
+                                                        <h2 class="entry-title title title-font khmer-title-font textNoBold">
+                                                            រថយន្តល្អបំផុតដែលនាំចូលពីប្រទេសជប៉ុនពិតប្រាកដ
                                                         </h2>
-                                                        <hr class="entry-divider uk-divider-small" />
+                                                        <hr class="entry-divider usk-divider-small" />
                                                         <div class="entry-meta">
                                                             <div>
                                                                 <span class="meta-date">
-                                                                    18 January, 2018
+                                                                បង្កើនការពេញចិត្តរបស់អតិថិជន
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -94,3 +94,6 @@
                         </div>
                     </div>
                     <!-- End Slider -->
+
+
+                    

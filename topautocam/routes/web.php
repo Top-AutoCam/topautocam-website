@@ -45,6 +45,16 @@ Route::middleware('locale')->group(function () {
     Route::get('/service',[SiteController::class, 'service'])->name('service');
     Route::get('/catalog',[SiteController::class, 'catalog'])->name('catalog');
     Route::get('/detailcatalog',[SiteController::class, 'detailcatalog'])->name('detail-catalog');
+    Route::get('/detailvitz06',[SiteController::class, 'detailvitz06'])->name('detail-vitz06');
+    Route::get('/detailvitz08',[SiteController::class, 'detailvitz08'])->name('detail-vitz08');
+    Route::get('/detailvitz09',[SiteController::class, 'detailvitz09'])->name('detail-vitz09');
+    Route::get('/detailvitz11',[SiteController::class, 'detailvitz11'])->name('detail-vitz11');
+    Route::get('/detailalphard06',[SiteController::class, 'detailalphard06'])->name('detail-alphard06');
+    Route::get('/detailalphard08',[SiteController::class, 'detailalphard08'])->name('detail-alphard08');
+    Route::get('/detailalphard09',[SiteController::class, 'detailalphard09'])->name('detail-alphard09');
+    Route::get('/detailalphard15',[SiteController::class, 'detailalphard15'])->name('detail-alphard15');
+    Route::get('/detailalphard19',[SiteController::class, 'detailalphard19'])->name('detail-alphard19');
+
     Route::get('/car-compare',[SiteController::class, 'carcompare'])->name('car-compare');
     Route::get('/steeringconversion',[SiteController::class, 'steeringconversion'])->name('steering-conversion');
 

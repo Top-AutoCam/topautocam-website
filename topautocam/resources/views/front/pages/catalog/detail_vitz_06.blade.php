@@ -19,12 +19,12 @@
                                         <article class="post type-post">
                                             <div class="entry-outer"  >
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Beauty</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -35,12 +35,64 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz06-07.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Life Style</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="navigation owl-nav uk-hidden-hover uk-visible@l" id="slider-nav"></div>
+                                <div class="owl-dots uk-hidden-hover" id="slider-dots"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slider -->
+
+
+
+<div id="content" class="site-content">
+
+                    <div id="slider" class="site-slider background-style grid-layout two-cols">
+                        <div class="uk-container">
+                            <div class="inner uk-position-relative uk-visible-toggle">
+
+                                <div class="owl-carousel">
+                                    <div class="item">
+                                        <article class="post type-post">
+                                            <div class="entry-outer"  >
+                                                <div class="entry-thumb">
+                                                    <img data-src="{{ asset('images/vitz_06_1.jpg') }}" width="1800" height="2000" alt="" uk-img>
+                                                </div>
+                                                <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
+                                                    <div class="entry-content">
+                                                        <div class="entry-category">
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="item">
+                                        <article class="post type-post">
+                                            <div class="entry-outer">
+                                                <div class="entry-thumb">
+                                                    <img data-src="{{ asset('images/vitz_06_2.jpg') }}" width="1800" height="2000" alt="" uk-img>
+                                                </div>
+                                                <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
+                                                    <div class="entry-content">
+                                                        <div class="entry-category">
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                         
                                                     </div>
@@ -69,12 +121,12 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz_06_3.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Beauty</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -85,12 +137,12 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz_06_4.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Life Style</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                         
                                                     </div>
@@ -119,12 +171,12 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz_06_5.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Beauty</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -135,12 +187,12 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz_06_6.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Life Style</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                         
                                                     </div>
@@ -170,35 +222,19 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
+                                                    <img data-src="{{ asset('images/vitz_06_7.jpg') }}" width="1800" height="2000" alt="" uk-img>
                                                 </div>
                                                 <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
                                                     <div class="entry-content">
                                                         <div class="entry-category">
-                                                            <a href="page-category.html">Beauty</a>
+                                                            <a href="page-category.html">LIFT HAND CONVERSION</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </article>
                                     </div>
-                                    <div class="item">
-                                        <article class="post type-post">
-                                            <div class="entry-outer">
-                                                <div class="entry-thumb">
-                                                    <img data-src="{{ asset('images/steering_conversion.png') }}" width="1800" height="2000" alt="" uk-img>
-                                                </div>
-                                                <div class="entry-inner uk-flex uk-flex-center uk-flex-middle uk-flex-first@m">
-                                                    <div class="entry-content">
-                                                        <div class="entry-category">
-                                                            <a href="page-category.html">Life Style</a>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="navigation owl-nav uk-hidden-hover uk-visible@l" id="slider-nav"></div>

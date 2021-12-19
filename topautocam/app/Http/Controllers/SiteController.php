@@ -154,6 +154,33 @@ class SiteController extends Controller
     public function detailcatalog(){
         return view('front.pages.catalog.detail1');
     }
+    public function detailvitz06(){
+        return view('front.pages.catalog.detail_vitz_06');
+    }
+    public function detailvitz08(){
+        return view('front.pages.catalog.detail_vitz_08');
+    }
+    public function detailvitz09(){
+        return view('front.pages.catalog.detail_vitz_09');
+    }
+    public function detailvitz11(){
+        return view('front.pages.catalog.detail_vitz_11');
+    }
+    public function detailalphard06(){
+        return view('front.pages.catalog.detail_alphard_06');
+    }
+    public function detailalphard08(){
+        return view('front.pages.catalog.detail_alphard_08');
+    }
+    public function detailalphard09(){
+        return view('front.pages.catalog.detail_alphard_09');
+    }
+    public function detailalphard15(){
+        return view('front.pages.catalog.detail_alphard_15');
+    }
+    public function detailalphard19(){
+        return view('front.pages.catalog.detail_alphard_19');
+    }
 
     public function carcompare(){
         return view('front.pages.car_compare.index');

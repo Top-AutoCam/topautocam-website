@@ -22,10 +22,8 @@
                 </div>
             </div>
         </div>
-
         <livewire:car-listing/>
     </div>
-
 </div>
 
 @endsection

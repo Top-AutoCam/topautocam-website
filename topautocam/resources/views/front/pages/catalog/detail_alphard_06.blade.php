@@ -52,7 +52,6 @@
 
                                 <div class="navigation owl-nav uk-hidden-hover uk-visible@l" id="slider-nav"></div>
                                 <div class="owl-dots uk-hidden-hover" id="slider-dots"></div>
-
                             </div>
                         </div>
                     </div>

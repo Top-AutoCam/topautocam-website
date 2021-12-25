@@ -8,8 +8,9 @@
     </div>
 </div>
 
-<div id="content" class="site-content">
 
+
+<div id="content" class="site-content">
                     <div id="slider" class="site-slider background-style grid-layout two-cols">
                         <div class="uk-container">
                             <div class="inner uk-position-relative uk-visible-toggle">
@@ -57,11 +58,9 @@
                         </div>
                     </div>
                     <!-- End Slider -->
-
-
+<div class="uk-padding"></div>
 
 <div id="content" class="site-content">
-
                     <div id="slider" class="site-slider background-style grid-layout two-cols">
                         <div class="uk-container">
                             <div class="inner uk-position-relative uk-visible-toggle">

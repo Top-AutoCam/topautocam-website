@@ -60,7 +60,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/49.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/check_car__in_factory.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -81,7 +81,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/49.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/agree_take_car.webp') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -102,7 +102,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/40.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/already_take_car.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -124,7 +124,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/40.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/kork_luy.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -145,7 +145,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/41.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/steering_conversion.png') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -166,7 +166,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/50.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/take_car_in_container.webp') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -187,7 +187,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/43.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/arrived_kampon_som.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -208,7 +208,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/44.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/take_car_from_kampong_som.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -229,7 +229,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/45.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/already_take_car_before_go_to_customer.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">
@@ -250,7 +250,7 @@
                                         <article class="post type-post">
                                             <div class="entry-outer">
                                                 <div class="entry-thumb">
-                                                    <div class="image cover-image" data-src="assets/images/posts/46.jpg" data-uk-img="" title="Post Title"></div>
+                                                    <div class="image cover-image" data-src="{{ asset('images/take_car_to_customer.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                     <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                 </div>
                                                 <div class="entry-inner">

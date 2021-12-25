@@ -171,7 +171,7 @@
                                                             <article class="post type-post">
                                                                 <div class="entry-outer">
                                                                     <div class="entry-thumb">
-                                                                        <div class="image cover-image ratio-portrait" data-src="http://www.zbapars.com/content/wp-content/uploads/2017/09/1548717826532-400x300.jpg" data-uk-img="" title="Post Title"></div>
+                                                                        <div class="image cover-image ratio-portrait" data-src="{{ asset('images/final_steering_conversion.jpg') }}" data-uk-img="" title="Post Title"></div>
                                                                         <a class="link-overlay uk-position-cover" href="single.html"></a>
                                                                     </div>
                                                                     <div class="entry-inner">
